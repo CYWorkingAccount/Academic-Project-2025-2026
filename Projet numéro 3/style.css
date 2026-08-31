@@ -1,0 +1,80 @@
+.note {
+  border-left: 4px solid #2196F3;
+  background-color: #dcf1ff;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.warning {
+  border-left: 4px solid #f44336;
+  background-color: #ffe1e6;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.tip {
+  border-left: 4px solid #00ff1e;
+  background-color: #b8ffc2;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    color: #0800ff;         
+    text-decoration: none;          
+    transition: all 0.3s;
+    display: inline-block;    
+}
+
+a:hover {
+    color: #a600ff;           
+    text-decoration: underline; 
+    transform: scale(1.05);
+}
+
+code {
+  background-color: #ebebeb;      
+  color: #0b2540;                  
+  padding: 2px 6px;                 
+  border-radius: 4px;             
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95em;    
+}
+
+#TOC {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+#TOC a {
+  color: #0800ff;
+  text-decoration: none;
+}
+
+#TOC a:hover {
+  text-decoration: underline;
+}
+
+#TOC ul {
+  list-style: none;      
+  padding-left: 0;
+}
+
+#TOC ul li {
+  margin: 5px 0;          
+}
+
+#TOC ul ul {
+  margin-left: 20px;      
+}

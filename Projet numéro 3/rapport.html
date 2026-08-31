@@ -1,0 +1,2528 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Aernout Robin" />
+  <meta name="author" content="Chekalil Youssef" />
+  <meta name="author" content="Verez Tom" />
+  <title>Rapport SAE</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rapport SAE</h1>
+<p class="author">Aernout Robin</p>
+<p class="author">Chekalil Youssef</p>
+<p class="author">Verez Tom</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#préparation-dune-machine-virtuelle-debian"
+id="toc-préparation-dune-machine-virtuelle-debian"><span
+class="toc-section-number">1</span> Préparation d’une machine virtuelle
+Debian</a>
+<ul>
+<li><a href="#installation-dune-virtualmachine"
+id="toc-installation-dune-virtualmachine"><span
+class="toc-section-number">1.1</span> Installation d’une
+VirtualMachine</a></li>
+<li><a href="#configuration-matérielle-dans-virtualbox"
+id="toc-configuration-matérielle-dans-virtualbox"><span
+class="toc-section-number">1.2</span> Configuration matérielle dans
+VirtualBox</a></li>
+<li><a href="#installation-os-de-base"
+id="toc-installation-os-de-base"><span
+class="toc-section-number">1.3</span> Installation OS de base</a></li>
+<li><a href="#sudo" id="toc-sudo"><span
+class="toc-section-number">1.4</span> Sudo</a></li>
+<li><a href="#suppléments-invités" id="toc-suppléments-invités"><span
+class="toc-section-number">1.5</span> Suppléments invités</a></li>
+<li><a href="#à-propos-de-la-distribution-debian"
+id="toc-à-propos-de-la-distribution-debian"><span
+class="toc-section-number">1.6</span> À propos de la distribution
+Debian</a></li>
+<li><a href="#ajustement-de-la-pré-configuration"
+id="toc-ajustement-de-la-pré-configuration"><span
+class="toc-section-number">1.7</span> Ajustement de la
+pré-configuration</a></li>
+</ul></li>
+<li><a href="#les-outils-déditions" id="toc-les-outils-déditions"><span
+class="toc-section-number">2</span> Les outils d’éditions</a>
+<ul>
+<li><a href="#présentation-des-outils"
+id="toc-présentation-des-outils"><span
+class="toc-section-number">2.1</span> Présentation des outils</a></li>
+<li><a href="#tout-savoir-sur-pandoc-et-markdown"
+id="toc-tout-savoir-sur-pandoc-et-markdown"><span
+class="toc-section-number">2.2</span> Tout savoir sur pandoc et
+markdown</a></li>
+<li><a href="#documentations" id="toc-documentations"><span
+class="toc-section-number">2.3</span> Documentations</a></li>
+</ul></li>
+<li><a href="#applications-clientes"
+id="toc-applications-clientes"><span class="toc-section-number">3</span>
+Applications clientes</a>
+<ul>
+<li><a href="#création-dun-dépot-git-local"
+id="toc-création-dun-dépot-git-local"><span
+class="toc-section-number">3.1</span> Création d’un dépot git
+Local</a></li>
+<li><a href="#dépôt-privé-gitlab" id="toc-dépôt-privé-gitlab"><span
+class="toc-section-number">3.2</span> Dépôt privé GitLab</a></li>
+<li><a href="#concept-de-base" id="toc-concept-de-base"><span
+class="toc-section-number">3.3</span> Concept de base</a></li>
+<li><a href="#protocoles-git" id="toc-protocoles-git"><span
+class="toc-section-number">3.4</span> Protocoles Git</a></li>
+<li><a href="#commandes-essentielles"
+id="toc-commandes-essentielles"><span
+class="toc-section-number">3.5</span> Commandes essentielles</a></li>
+<li><a href="#collaboration-avec-git"
+id="toc-collaboration-avec-git"><span
+class="toc-section-number">3.6</span> Collaboration avec Git</a></li>
+<li><a href="#interfaces-graphiques-pour-git"
+id="toc-interfaces-graphiques-pour-git"><span
+class="toc-section-number">3.7</span> Interfaces graphiques pour
+Git</a></li>
+<li><a href="#comparaison-et-analyse-approfondie"
+id="toc-comparaison-et-analyse-approfondie"><span
+class="toc-section-number">3.8</span> Comparaison et Analyse
+approfondie</a></li>
+</ul></li>
+<li><a href="#rapport-dinstallation-du-service-forgejo"
+id="toc-rapport-dinstallation-du-service-forgejo"><span
+class="toc-section-number">4</span> Rapport d’installation du service
+Forgejo</a>
+<ul>
+<li><a href="#préliminaire-redirection-de-port"
+id="toc-préliminaire-redirection-de-port"><span
+class="toc-section-number">4.1</span> Préliminaire : Redirection de
+port</a></li>
+<li><a href="#comprendre-lécosystème-forgejo"
+id="toc-comprendre-lécosystème-forgejo"><span
+class="toc-section-number">4.2</span> Comprendre l’écosystème
+Forgejo</a></li>
+<li><a href="#installation-de-forgejo-sur-debian"
+id="toc-installation-de-forgejo-sur-debian"><span
+class="toc-section-number">4.3</span> 3 Installation de Forgejo sur
+Debian</a></li>
+<li><a href="#architecture-et-réseau"
+id="toc-architecture-et-réseau"><span
+class="toc-section-number">4.4</span> 4 Architecture et réseau</a></li>
+<li><a href="#base-de-données" id="toc-base-de-données"><span
+class="toc-section-number">4.5</span> 5 Base de données</a></li>
+<li><a href="#gestion-du-service-systemd"
+id="toc-gestion-du-service-systemd"><span
+class="toc-section-number">4.6</span> 6 Gestion du service
+systemd</a></li>
+<li><a href="#sécurité" id="toc-sécurité"><span
+class="toc-section-number">4.7</span> 7 Sécurité</a></li>
+</ul></li>
+<li><a href="#personnalisation" id="toc-personnalisation"><span
+class="toc-section-number">5</span> Personnalisation</a>
+<ul>
+<li><a href="#yaml" id="toc-yaml"><span
+class="toc-section-number">5.1</span> YAML</a></li>
+<li><a href="#css" id="toc-css"><span
+class="toc-section-number">5.2</span> CSS</a></li>
+<li><a href="#documentations-1" id="toc-documentations-1"><span
+class="toc-section-number">5.3</span> Documentations</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="1" id="préparation-dune-machine-virtuelle-debian"><span
+class="header-section-number">1</span> Préparation d’une machine
+virtuelle Debian</h1>
+<h2 data-number="1.1" id="installation-dune-virtualmachine"><span
+class="header-section-number">1.1</span> Installation d’une
+VirtualMachine</h2>
+<blockquote>
+<p>Pour ce qui est de l’installation d’une VirtualMachine ou machine
+virtuelle, vous pouvez aussi vous référencer sur <a
+href="https://openclassrooms.com/fr/courses/2035806-virtualisez-vos-environnements-de-travail/6313951-creez-une-vm-avec-une-image-disque"><strong>ce
+site</strong></a> qui explique tout aussi bien l’installation d’une VM,
+même si il utilise une version antérieure.</p>
+</blockquote>
+<h3 data-number="1.1.1" id="installation-dun-hyperviseur"><span
+class="header-section-number">1.1.1</span> Installation d’un
+Hyperviseur</h3>
+<blockquote>
+<p>Un <a
+href="https://www.ibm.com/fr-fr/think/topics/hypervisors"><strong>hyperviseur</strong></a>
+est un logiciel qui permet de faire fonctionner des <strong>Machines
+Virtuelles (VM)</strong>.<br />
+Mais c’est quoi une <strong>machine virtuelle</strong> ?</p>
+</blockquote>
+<blockquote>
+<p>Une machine virtuelle est un <strong>ordinateur simulé à l’intérieur
+de votre ordinateur</strong>, elle possède son propre système
+d’exploitation, ses fichiers et ses paramètres.</p>
+<p>Ici, nous allons utiliser <strong>VirtualBox</strong>, mais il en
+existe d’autres comme <strong>VMware Workstation</strong> ou
+<strong>VMware Player</strong>.<br />
+Il vous faut donc un <strong>hyperviseur</strong> avant d’installer
+votre VM, car c’est lui qui va gérer les ressources de votre ordinateur
+(RAM, processeur, disque).</p>
+<p>Pour installer <strong>VirtualBox</strong>, allez sur <a
+href="https://www.virtualbox.org/wiki/Downloads">ce site</a> et
+téléchargez le fichier selon votre <strong>OS (Operating
+System)</strong>, c’est-à-dire le système d’exploitation de votre
+ordinateur (Windows, Linux ou macOS).</p>
+<p>Nous ferons l’exemple avec <strong>Windows</strong>, mais la
+procédure est quasiment identique sur les autres systèmes.</p>
+<p>Après avoir téléchargé le fichier, <strong>ouvrez-le</strong> puis
+vous devriez arriver sur cet écran.</p>
+<p><img src="img/Deuxième%20image%20installation%20VM.png"
+width="400" /></p>
+<p>Appuyez sur <strong>suivant</strong>, puis cochez la case
+<strong>“J’accepte les termes du contrat de licence”</strong>.</p>
+<p>Ensuite cliquez sur <strong>suivant</strong> (nous voulons installer
+toutes les fonctionnalités).<br />
+Puis cliquez <strong>2 fois sur “Oui”</strong> lorsque Windows vous
+demande si vous acceptez les modifications.</p>
+<p>Pour finir l’installation, <strong>cochez les cases que vous
+souhaitez</strong> (de préférence toutes) afin de créer des raccourcis
+vers <strong>VirtualBox</strong> et pouvoir le retrouver facilement.</p>
+<p>Cliquez ensuite sur <strong>installer</strong> et attendez quelques
+instants que l’installation se termine.</p>
+<p>Puis cliquez sur <strong>terminer</strong>.</p>
+<p>Si tout s’est bien passé, vous devriez arriver sur cette fenêtre
+:</p>
+<p><img src="img/Troisième%20image%20installation%20VM.png"
+width="300" /></p>
+<p>Votre installation est maintenant terminée. Nous allons maintenant
+passer à la <strong>création d’une machine virtuelle</strong>.</p>
+</blockquote>
+<hr />
+<h3 data-number="1.1.2" id="installation-dune-vm"><span
+class="header-section-number">1.1.2</span> Installation d’une VM</h3>
+<blockquote>
+<p>Créer une machine virtuelle est relativement simple, mais cela peut
+prendre un peu de temps car certains fichiers doivent être
+téléchargés.</p>
+<p>Dans VirtualBox, cliquez sur l’onglet <strong>Machine</strong> en
+haut à gauche puis sur <strong>Nouvelle</strong>.<br />
+Vous devriez arriver sur cette fenêtre :</p>
+<p><img src="img/Quatrième%20image%20installation%20VM.png"
+width="500" /></p>
+<p>Entrez un <strong>nom pour votre machine virtuelle</strong> dans
+<strong>VM Name</strong>.</p>
+<p>Pour le système d’exploitation (la case <strong>OS</strong>), nous
+utiliserons <strong>Linux</strong>, mais VirtualBox permet aussi
+d’installer d’autres systèmes comme <strong>Windows</strong> ou
+<strong>BSD</strong>.</p>
+<p>Pour la distribution (OS Distribution), nous utiliserons
+<strong>Debian</strong>, et pour la version (OS Version) <strong>Debian
+13 Trixie (64-bit)</strong>.</p>
+<p>Cliquez ensuite sur <strong>Finish</strong>.</p>
+<p><img src="img/Cinquième%20image%20installation%20VM.png"
+width="500" /></p>
+<p>Avant d’ouvrir votre VM, vous pouvez changez la configuration de
+votre VM, c’est à dire la <a
+href="#pourquoi-allouer-2048-mo-de-ram-à-la-vm--quest-ce-qui-se-passerait-avec-seulement-512-mo-">RAM</a>
+ainsi que le processeur. Pour cela il vous suffit d’aller dans l’onglet
+<strong>configuration</strong> puis <strong>système</strong>, dans
+<strong>carte mère</strong> vous pouvez changer la RAM et dans <a
+href="https://fr.wikipedia.org/wiki/Processeur"><strong>processeur</strong></a>,
+le nombre de CPU qui fonctionne comme la RAM et permet d’exécuter plus
+de tâches en même temps.</p>
+<p>Dans le panneau de gauche, vous devriez maintenant voir <strong>votre
+machine virtuelle apparaître</strong> avec le nom que vous lui avez
+donné.</p>
+<p>Si ce n’est pas le cas, c’est probablement qu’une étape a été mal
+réalisée (sauf si vous avez déjà d’autres VM).</p>
+</blockquote>
+<hr />
+<h3 data-number="1.1.3" id="installation-de-liso"><span
+class="header-section-number">1.1.3</span> Installation de l’ISO</h3>
+<blockquote>
+<p>Nous allons maintenant installer le <strong>système d’exploitation
+dans la machine virtuelle</strong>.</p>
+<p>Pour cela, il faut télécharger un <strong>fichier ISO</strong>, qui
+est une image disque contenant les fichiers nécessaires à l’installation
+du système.</p>
+<p>Téléchargez l’ISO de Debian <a
+href="https://www.debian.org/download.fr.html">ici</a> puis
+<strong>téléchargez le fichier <code>.iso</code></strong> (environ
+<strong>750 Mo</strong>).</p>
+<p>Nous allons ensuite l’insérer dans la VM.</p>
+<p>Cliquez sur <strong>Configuration</strong>, puis sur
+<strong>Stockage</strong>.</p>
+<p><img src="img/Sixième%20image%20installation%20VM.png"
+width="400" /></p>
+<p>Cliquez sur le <strong>petit disque à droite</strong>, puis
+sélectionnez le fichier <strong>.iso</strong> que vous venez de
+télécharger.</p>
+<p>Appuyez ensuite sur <strong>OK</strong> en bas de la fenêtre.</p>
+</blockquote>
+<h3 data-number="1.1.4" id="configuration-de-la-vm"><span
+class="header-section-number">1.1.4</span> Configuration de la VM</h3>
+<blockquote>
+<p>Nous allons maintenant lancer l’installation du système dans la
+VM.</p>
+<div class="tip">
+<p>Si vous vous <strong>trompez</strong> sur une de ses étapes, sur
+certaine étape vous avez <code>Go Back</code>, alors vous pourrez aller
+à <strong>l’étape d’avant</strong>.</p>
+</div>
+</blockquote>
+<blockquote>
+<p>Cependant, sur <strong>certaines étapes</strong> vous ne pouvez
+<strong>pas revenir en arrière</strong> et donc vous devrez <strong>tout
+recommencer</strong>, faites bien <strong>attention</strong> et
+<strong>lisez</strong> bien les <strong>consignes</strong></p>
+<p>Démarrez votre machine virtuelle en cliquant sur
+<strong>Démarrer</strong>.</p>
+<p>Vous devriez arriver sur cet écran :</p>
+<p><img src="img/Choix%20insta.png" /></p>
+<p>Ici, tout se fait avec les <strong>flèches directionnelles du
+clavier</strong>.<br />
+La souris n’est généralement <strong>pas utilisée pendant
+l’installation</strong>.</p>
+<p>Pour valider une option, il faut appuyer sur la touche
+<strong>Entrée</strong>.</p>
+<p>Voici les étapes à suivre :</p>
+</blockquote>
+<ol type="1">
+<li><p><strong>Choix de l’installation</strong></p>
+<blockquote>
+<p>Ici vous pouvez choisir la méthode d’installation.<br />
+Nous allons choisir <strong>Install</strong>, qui correspond à une
+installation classique.</p>
+<p>Si, par mégarde, vous vous <strong>trompez</strong>,
+<strong>éteignez</strong> votre machine en <strong>fermant
+l’application</strong></p>
+</blockquote></li>
+<li><p><strong>Choix de la langue et de la zone
+géographique</strong></p>
+<blockquote>
+<p><img src="img/Septième%20image%20installation%20VM.png"
+width="500" /><br />
+<img src="img/Choix%20géo.png" width="500" /></p>
+<p>Sélectionnez votre <strong>langue</strong> puis votre <strong>zone
+géographique</strong>.</p>
+</blockquote></li>
+<li><p><strong>Choix du clavier</strong></p>
+<blockquote>
+<p><img src="img/Choix%20clavier.png" width="250" /></p>
+<p>Sélectionnez la <strong>configuration de votre
+clavier</strong>.<br />
+Par exemple :</p>
+<ul>
+<li><strong>Français</strong> pour un clavier
+<strong>AZERTY</strong></li>
+<li><strong>Anglais</strong> pour un clavier
+<strong>QWERTY</strong></li>
+</ul>
+</blockquote></li>
+<li><p><strong>Réseau et domaine</strong></p>
+<blockquote>
+<p><img src="img/Choix%20nom.png" width="500" /></p>
+<p>Choisissez un <strong>nom pour votre machine</strong><a href="#fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>.<br />
+Laissez le <strong>domaine vide</strong><a href="#fn2"
+class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>.</p>
+</blockquote></li>
+<li><p><strong>Choix du mot de passe root</strong></p>
+<blockquote>
+<p><img src="img/Choix%20MDP%20root.png" width="500" /></p>
+<p>Saisissez un <strong>mot de passe root</strong><a href="#fn3"
+class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>
+puis <strong>confirmez-le</strong>.</p>
+</blockquote></li>
+<li><p><strong>Création d’un utilisateur</strong></p>
+<blockquote>
+<p>Vous devez créer un <strong>utilisateur principal</strong> pour
+utiliser la machine.</p>
+<p>Entrez :</p>
+<ul>
+<li>le <strong>nom de l’utilisateur</strong></li>
+<li>son <strong>identifiant</strong></li>
+<li>son <strong>mot de passe</strong> (deux fois)</li>
+</ul>
+</blockquote></li>
+<li><p><strong>Partitionnement du disque</strong></p>
+<blockquote>
+<p>Pour simplifier l’installation, nous allons utiliser le
+<strong>partitionnement automatique</strong>.</p>
+<p>Choisissez :</p>
+<ul>
+<li><code>Assisté – utiliser un disque entier</code></li>
+<li>sélectionnez le disque proposé</li>
+<li><code>Tout dans une seule partition (recommandé pour les débutants)</code></li>
+</ul>
+<p>Puis sélectionnez :</p>
+<p><code>Terminer le partitionnement et appliquer les changements</code></p>
+<p>Et confirmez par <strong>oui</strong><a href="#fn4"
+class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>.</p>
+</blockquote></li>
+</ol>
+<div class="warning">
+<p>Attention, une seule erreur ici et votre VM ne fonctionnera jamais
+!</p>
+</div>
+<ol type="1">
+<li><p><strong>Configuration du gestionnaire de paquets</strong></p>
+<blockquote>
+<p>Choisissez <strong>non</strong>, puis nous allons configurer le
+<strong>miroir Debian</strong><a href="#fn5" class="footnote-ref"
+id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<p>Sélectionnez votre <strong>pays</strong> (France par exemple) puis
+choisissez le miroir par défaut :</p>
+<p><strong>deb.debian.org</strong></p>
+<p>Pour le <strong>mandataire (proxy)</strong>, laissez ce champ
+<strong>vide</strong>.</p>
+</blockquote></li>
+<li><p><strong>Sélection des logiciels</strong></p>
+<blockquote>
+<p>Nous allons installer un <strong>environnement de bureau</strong>
+pour avoir une interface graphique.</p>
+<p>Pour <strong>cocher ou décocher une case</strong>, utilisez la
+<strong>barre espace</strong>, n’<strong>utilsez pas la <del>touche
+Entrée</del></strong>, sinon vous allez aller directement à
+l’<strong>étape suivante sans faire de modification</strong></p>
+<p>Sélectionnez :</p>
+<ul>
+<li><strong>MATE</strong></li>
+<li><strong>Serveur web</strong></li>
+<li><strong>Serveur SSH</strong></li>
+</ul>
+<p>Et <strong>décochez GNOME</strong>.</p>
+<p><img src="img/Choix%20logiciels.png" /></p>
+</blockquote></li>
+<li><p><strong>Installation de GRUB</strong></p>
+<blockquote>
+<p>Pour la dernière étape, l’installateur vous demandera si vous voulez
+installer <strong>GRUB</strong><a href="#fn6" class="footnote-ref"
+id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<p>Choisissez <strong>oui</strong>, puis sélectionnez
+<strong>/dev/sda</strong>.</p>
+<p>GRUB est le programme qui permet à votre ordinateur de
+<strong>démarrer le système d’exploitation installé</strong>.</p>
+</blockquote></li>
+</ol>
+<h2 data-number="1.2"
+id="configuration-matérielle-dans-virtualbox"><span
+class="header-section-number">1.2</span> Configuration matérielle dans
+VirtualBox</h2>
+<h3 data-number="1.2.1"
+id="que-signifie-64-bit-dans-debian-64-bit"><span
+class="header-section-number">1.2.1</span> Que signifie “64-bit” dans
+“Debian 64-bit” ?</h3>
+<blockquote>
+<p>Dans “Debian 64-bit”, <a
+href="https://fr.wikipedia.org/wiki/Processeur_64_bits"><strong>64-bit</strong></a>
+signifie que le <strong>système d’exploitation</strong> est conçu pour
+une <strong>architecture processeur 64 bits</strong>. Le processeur peut
+manipuler des <strong>registres et adresses mémoire sur 64
+bits</strong>, ce qui permet de gérer <strong>plus de 4 Go de
+RAM</strong>. <a
+href="https://www.debian.org/releases/stable/amd64/">source</a></p>
+</blockquote>
+<h3 data-number="1.2.2"
+id="quelle-est-la-configuration-réseau-utilisée-par-défaut"><span
+class="header-section-number">1.2.2</span> Quelle est la configuration
+réseau utilisée par défaut ?</h3>
+<blockquote>
+<p>La <strong>configuration réseau par défaut</strong> est
+<strong>DHCP</strong>, ce qui signifie que l’<strong>adresse IP est
+attribuée automatiquement</strong> par un <strong>serveur DHCP</strong>
+<a href="https://www.virtualbox.org/manual/ch06.html">source</a>.</p>
+</blockquote>
+<h3 data-number="1.2.3"
+id="pourquoi-allouer-2048-mo-de-ram-à-la-vm-quest-ce-qui-se-passerait-avec-seulement-512-mo"><span
+class="header-section-number">1.2.3</span> Pourquoi allouer 2048 Mo de
+RAM à la VM ? Qu’est-ce qui se passerait avec seulement 512 Mo ?</h3>
+<h4 data-number="1.2.3.1" id="quest-ce-que-la-ram"><span
+class="header-section-number">1.2.3.1</span> Qu’est-ce que la RAM ?</h4>
+<blockquote>
+<p>Tout d’abord, qu’est ce que la RAM. La <a
+href="https://www.britannica.com/technology/RAM-computing"><strong>RAM</strong></a>
+(Random Access Memory), ou mémoire vive en français, est un composant de
+l’ordinateur qui permet de <strong>stocker temporairement les données
+utilisées par les programmes en cours d’exécution</strong>.</p>
+<p>Plus vous avez de RAM, plus votre ordinateur peut <strong>gérer
+plusieurs tâches en même temps</strong> sans ralentir.</p>
+<p>Contrairement au disque dur, la RAM est une mémoire
+<strong>temporaire</strong> : toutes les données sont perdues lorsque
+l’ordinateur est éteint.</p>
+</blockquote>
+<h4 data-number="1.2.3.2"
+id="pourquoi-allouer-2048-mo-de-ram-et-que-se-passerait-il-avec-seulement-512-mo."><span
+class="header-section-number">1.2.3.2</span> Pourquoi allouer 2048 Mo de
+RAM et que se passerait il avec seulement 512 Mo.</h4>
+<blockquote>
+<p>Maintenant que vous savez ce qu’est la <strong>RAM</strong>, on va
+pouvoir vous expliquer pourquoi <strong>allouer 2048 Mo de
+RAM</strong>.<br />
+Si on allouait seulement <strong>512 Mo</strong>, la RAM serait
+<strong>rapidement saturée</strong> et votre <strong>VM serait beaucoup
+plus lente</strong>.</p>
+<p>De plus, il faut savoir que la <strong>RAM que vous allouez à votre
+VM est prise sur celle de votre ordinateur</strong> (<a
+href="https://www.virtualbox.org/manual/ch03.html#intro-64bitguests">source</a>,
+section 3.5.1).<br />
+Par exemple, si votre ordinateur a <strong>8 Go de RAM</strong> et que
+vous allouez <strong>6 Go à votre VM</strong>, il ne vous restera plus
+que <strong>2 Go pour votre PC</strong>, ce qui peut le rendre
+<strong>lent</strong>.</p>
+<p>C’est pour cela que nous allouons <strong>2048 Mo</strong>, afin que
+cela <strong>n’affecte presque pas votre ordinateur</strong> tout en
+permettant à la <strong>VM de fonctionner correctement</strong>.</p>
+</blockquote>
+<h3 data-number="1.2.4"
+id="quel-est-le-mode-réseau-utilisé-par-défaut-par-virtualbox-nat-pont-réseau-interne"><span
+class="header-section-number">1.2.4</span> Quel est le mode réseau
+utilisé par défaut par VirtualBox (NAT, pont, réseau interne…) ?</h3>
+<blockquote>
+<p>Dans la configuration de base de VirtualBox, le réseau est configuré
+en NAT (<a
+href="https://www.virtualbox.org/manual/ch06.html">source</a>, chapitre
+6, section 6.3).</p>
+</blockquote>
+<h3 data-number="1.2.5"
+id="quelle-est-ladresse-ip-de-votre-vm-comment-lavez-vous-obtenue"><span
+class="header-section-number">1.2.5</span> Quelle est l’adresse IP de
+votre VM ? Comment l’avez-vous obtenue ?</h3>
+<blockquote>
+<p>L’adresse IP est <strong>10.0.2.15</strong>. On l’obtient en tapant
+la commande <code>ip addr</code> et on regarde dans la partie
+<strong>enp0s3</strong> juste après inet (<a
+href="https://man7.org/linux/man-pages/man8/ip.8.html">source</a>).</p>
+<p><img src="img/ip_addr.png" width="600" /></p>
+<p>Il y a aussi d’autres informations tels que: * le masque qui indique
+quel est la partie host et quel est est la partie réseau * l’adresse ip
+de broadcast qui est une adresse spéciale qui permet de contacter tous
+les appareils sur le meme réseau <a
+href="https://en.wikipedia.org/wiki/Broadcast_address">source</a> *
+l’adresse ip de loopback qui permet à un ordinateur de se connecter
+lui-même. Nous pouvons obtenir l’adresse ip avec d’autres commandes
+telles que <code>ip route</code> ou encore <code>ifconfig</code>.</p>
+<p>Cependant, si vous faites la commande <code>ifconfig</code>, vous
+pouvez avoir quelques problèmes notamment le fait que
+<code>ifconfig</code> n’est pas installé comme représenté
+ci-dessous.</p>
+</blockquote>
+<pre><code>Command &#39;ifconfig&#39; not found, but can be installed with:
+sudo a pt install net-tools</code></pre>
+<blockquote>
+<p>Cependant la solution y est aussi écrit, il peut être installé avec
+la commande <code>sudo apt install net-tools</code>.<br />
+<strong>Mais que veux dire cette commande ?</strong><br />
+Pour ce qui est de <code>sudo</code>, aller voir <a
+href="#quelle-est-la-différence-entre-su-et-sudo-">ici</a>,
+<code>apt</code> est l’outil de gestion de paquets sur les distributions
+Debian/Ubuntu et <code>install net-tools</code> installe le paquet qu’on
+veut, ici net-tools.</p>
+</blockquote>
+<h3 data-number="1.2.6"
+id="quelle-est-ladresse-de-la-passerelle-par-défaut-à-quoi-correspond-cette-adresse"><span
+class="header-section-number">1.2.6</span> Quelle est l’adresse de la
+passerelle par défaut ? À quoi correspond cette adresse ?</h3>
+<blockquote>
+<p>L’adresse de la passerelle par défaut est 10.0.2.2 (on l’obtient en
+faisant <code>ip route</code> (<a
+href="https://www.man7.org/linux/man-pages/man8/ip-route.8.html">source</a>)).
+Elle correspond à l’adresse du routeur virtuel de VirtualBox qui permet
+à la VM d’accéder au réseau extérieur.</p>
+</blockquote>
+<pre><code>default via 10.0.2.2 dev enp0s3 proto dhcp src 10.0.2.15 metric 100
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 100.2.15 metric 100</code></pre>
+<h2 data-number="1.3" id="installation-os-de-base"><span
+class="header-section-number">1.3</span> Installation OS de base</h2>
+<h3 data-number="1.3.1" id="quest-ce-quun-fichier-iso-bootable"><span
+class="header-section-number">1.3.1</span> Qu’est-ce qu’un fichier iso
+bootable ?</h3>
+<blockquote>
+<p>C’est une image disque contenant tous les fichiers d’un support (DVD,
+clé USB) et incluant un secteur d’amorçage. Cela permet à l’ordinateur
+de démarrer directement sur ce fichier pour lancer une installation ou
+un système “Live” <a
+href="https://en.wikipedia.org/wiki/Optical_disc_image">source</a>.</p>
+</blockquote>
+<h3 data-number="1.3.2" id="quest-ce-que-mate-gnome"><span
+class="header-section-number">1.3.2</span> Qu’est-ce que MATE ? GNOME
+?</h3>
+<blockquote>
+<p>Ce sont des <strong>environnements de bureau</strong> (interfaces
+graphiques). <strong>GNOME</strong> est l’interface moderne et riche par
+défaut sur Debian, tandis que <strong>MATE</strong> est une interface
+plus traditionnelle, légère et consommant moins de ressources. <a
+href="https://wiki.debian.org/DebianDesktop">source</a></p>
+</blockquote>
+<h3 data-number="1.3.3" id="quest-ce-quun-serveur-mandataire"><span
+class="header-section-number">1.3.3</span> Qu’est-ce qu’un serveur
+mandataire ?</h3>
+<blockquote>
+<p>Aussi appelé <strong>Proxy</strong>, c’est un serveur qui agit comme
+intermédiaire entre un client (votre VM) et Internet. Il est souvent
+utilisé en entreprise pour filtrer le contenu ou améliorer les
+performances via un cache. <a
+href="https://en.wikipedia.org/wiki/Proxy_server">source</a></p>
+</blockquote>
+<h3 data-number="1.3.4" id="quest-ce-quun-serveur-web"><span
+class="header-section-number">1.3.4</span> Qu’est-ce qu’un serveur web
+?</h3>
+<blockquote>
+<p>C’est un logiciel (comme <strong>Apache</strong> ou
+<strong>Nginx</strong>) qui répond à des requêtes HTTP/HTTPS pour
+diffuser des pages web ou des données à des clients (navigateurs) <a
+href="https://developer.mozilla.org/fr/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server">source</a>.</p>
+</blockquote>
+<h3 data-number="1.3.5"
+id="quel-logiciel-de-serveur-ssh-a-été-installé-comment-vérifier-quil-est-bien-démarré"><span
+class="header-section-number">1.3.5</span> Quel logiciel de serveur SSH
+a été installé ? Comment vérifier qu’il est bien démarré ?</h3>
+<blockquote>
+<p>Le logiciel installé est <strong>OpenSSH Server</strong>. On vérifie
+son état avec la commande : <code>systemctl status ssh</code>.<br />
+S’il est bien démarré, vous devriez avoir au début de la 3ème ligne
+comme ci-dessous <a
+href="https://www.debian.org/releases/stable/amd64/ch06s03.html.en">source</a></p>
+</blockquote>
+<pre><code>Active: active (running) since...</code></pre>
+<h3 data-number="1.3.6"
+id="testez-une-connexion-ssh-depuis-votre-machine-hôte-vers-votre-vm.-quelle-commande-utilisez-vous-quel-problème-rencontrez-vous-et-pourquoi"><span
+class="header-section-number">1.3.6</span> Testez une connexion SSH
+depuis votre machine hôte vers votre VM. Quelle commande utilisez-vous ?
+Quel problème rencontrez-vous et pourquoi ?</h3>
+<blockquote>
+<p>Commande : <code>ssh user@10.0.2.15</code>. <strong>Problème
+:</strong> La connexion échoue (Time out ou Connection refused) au bout
+d’un long moment (très long).</p>
+</blockquote>
+<pre><code>ssh user@10.0.2.15 
+ssh: connect to host 10.0.2.15 port 22: Connection timed out</code></pre>
+<blockquote>
+<p><strong>Pourquoi :</strong> En mode <strong>NAT</strong>, la VM est
+isolée derrière le routeur virtuel de VirtualBox. L’hôte ne peut pas
+initier une connexion entrante vers l’IP privée de la VM sans une règle
+de “Redirection de ports” (Port Forwarding) <a
+href="https://www.virtualbox.org/manual/ch06.html">source</a>.</p>
+</blockquote>
+<h2 data-number="1.4" id="sudo"><span
+class="header-section-number">1.4</span> Sudo</h2>
+<h3 data-number="1.4.1"
+id="comment-peut-on-savoir-à-quels-groupes-appartient-lutilisateur-user"><span
+class="header-section-number">1.4.1</span> Comment peut-on savoir à
+quels groupes appartient l’utilisateur user ?</h3>
+<blockquote>
+<p>On utilise la commande <code>groups user</code> ou simplement
+<code>id</code>. Vous pouvez aussi ajouter un utilisateur au groupe
+<code>sudo</code> en faisant la commande
+<code>sudo usermod -aG sudo (nom de l'utilisateur)</code> <a
+href="https://wiki.debian.org/sudo">source</a></p>
+</blockquote>
+<h3 data-number="1.4.2"
+id="quelle-est-la-différence-entre-su-et-sudo"><span
+class="header-section-number">1.4.2</span> Quelle est la différence
+entre su et sudo ?</h3>
+<blockquote>
+<ul>
+<li><strong>su</strong> (Substitute User) : Permet de devenir un autre
+utilisateur (souvent root). Il nécessite de connaître le mot de passe du
+compte cible (root).</li>
+<li><strong>sudo</strong> (SuperUser Do) : Permet d’exécuter une
+commande avec les droits root (comme par exemple pour la commande
+<code>apt</code>, c’est obligatoire d’avoir les droits root) en
+utilisant <strong>son propre mot de passe</strong>. C’est plus sécurisé
+car cela évite de partager le mot de passe root et permet une gestion
+fine des permissions. <a
+href="https://www.debian.org/doc/manuals/debian-reference/ch01.fr.html">source</a></li>
+</ul>
+</blockquote>
+<h2 data-number="1.5" id="suppléments-invités"><span
+class="header-section-number">1.5</span> Suppléments invités</h2>
+<h3 data-number="1.5.1"
+id="quelle-est-la-version-du-noyau-linux-utilisé-par-votre-vm"><span
+class="header-section-number">1.5.1</span> Quelle est la version du
+noyau Linux utilisé par votre VM ?</h3>
+<blockquote>
+<p>La version du noyau Linux utilisé est <strong>6.12.69</strong>. Elle
+s’obtient en faisant la commande <code>uname -r</code>. <a
+href="https://www.kernel.org/">source</a></p>
+</blockquote>
+<h3 data-number="1.5.2"
+id="à-quoi-servent-les-suppléments-invités-donner-2-principales-raisons-de-les-installer."><span
+class="header-section-number">1.5.2</span> À quoi servent les
+suppléments invités ? Donner 2 principales raisons de les
+installer.</h3>
+<blockquote>
+<p>Les suppléments invités ajoutent plusieurs fonctionnalités utiles à
+l’utilisateur. La première raison principale est que l’écran se
+redimensionne automatiquement. La deuxième est que la souris passe de la
+VM à l’hôte sans devoir appuyer sur un bouton. <a
+href="https://www.virtualbox.org/manual/ch04.html">source</a></p>
+</blockquote>
+<h3 data-number="1.5.3"
+id="à-quoi-sert-la-commande-mount-dans-notre-cas-de-figure-et-dans-le-cas-général"><span
+class="header-section-number">1.5.3</span> À quoi sert la commande mount
+(dans notre cas de figure et dans le cas général)</h3>
+<blockquote>
+<p><strong>Dans le cas général :</strong> La commande <code>mount</code>
+permet d’attacher un système de fichiers (comme une partition disque,
+une clé USB ou une image ISO) à un répertoire dans la hiérarchie des
+fichiers, rendant son contenu accessible. Par exemple,
+<code>mount /dev/sdb1 /mnt</code> attache la partition /dev/sdb1 au
+répertoire /mnt.</p>
+<p><strong>Dans notre cas de figure :</strong> Lors de l’installation
+des Suppléments Invités (Guest Additions) de VirtualBox,
+<code>mount</code> est utilisé pour monter l’image ISO des Guest
+Additions (généralement /dev/cdrom ou un fichier .iso) sur un répertoire
+comme /mnt, afin d’accéder au script d’installation contenu dans l’ISO.
+<a
+href="https://man7.org/linux/man-pages/man8/mount.8.html">source</a></p>
+</blockquote>
+<h2 data-number="1.6" id="à-propos-de-la-distribution-debian"><span
+class="header-section-number">1.6</span> À propos de la distribution
+Debian</h2>
+<h3 data-number="1.6.1"
+id="quest-ce-que-le-projet-debian-doù-vient-le-nom-debian"><span
+class="header-section-number">1.6.1</span> Qu’est-ce que le Projet
+Debian ? D’où vient le nom Debian ?</h3>
+<blockquote>
+<p>Le “projet Debian” est une association d’individus qui ont pour cause
+commune de créer un système d’exploitation libre. Le nom Debian tire son
+origine des prénoms du créateur de Debian, Ian Murdock, et de son
+épouse, Debra <a
+href="https://www.debian.org/doc/manuals/project-history/intro.fr.html">source</a>.</p>
+</blockquote>
+<h3 data-number="1.6.2"
+id="quelle-est-la-durée-de-prise-en-charge-pour-les-trois-types-de-support-de-debian-durée-minimale-support-long-terme-lts-et-support-long-terme-étendu-elts"><span
+class="header-section-number">1.6.2</span> Quelle est la durée de prise
+en charge pour les trois types de support de Debian : durée minimale,
+support long terme (LTS) et support long terme étendu (ELTS) ?</h3>
+<blockquote>
+<ul>
+<li>La durée minimale est de 3 ans, chaque version a une prise en charge
+totale pour ce qui est de la sécurité et de la correction de bugs <a
+href="https://wiki.debian.org/fr/DebianReleases">source</a><br />
+</li>
+<li>La durée en support long terme (LTS) est de 5 ans, certaines
+versions ont une prise en charge de 5 ans pour ce qui est de la sécurité
+<a href="https://wiki.debian.org/fr/LTS">source</a><br />
+</li>
+<li>La durée en support long terme étendue est de 10 ans, certaines
+versions ont une prise en charge de 10 ans pour ce qui est de la
+sécurité <a
+href="https://wiki.debian.org/fr/LTS/Extended">source</a></li>
+</ul>
+</blockquote>
+<h3 data-number="1.6.3"
+id="pendant-combien-de-temps-les-mises-à-jour-de-sécurité-seront-elles-fournies"><span
+class="header-section-number">1.6.3</span> Pendant combien de temps les
+mises à jour de sécurité seront-elles fournies ?</h3>
+<blockquote>
+<p>Les mises à jour de sécurité sont fournies pendant toute la durée de
+prise en charge de la version Debian concernée : - Pour les versions
+standard : environ 3 ans. - Pour les versions LTS (Long Term Support) :
+5 ans. - Pour les versions ELTS (Extended Long Term Support) : 10
+ans.</p>
+</blockquote>
+<h3 data-number="1.6.4"
+id="combien-de-versions-au-minimum-sont-activement-maintenues-par-debian-donnez-leur-nom-générique"><span
+class="header-section-number">1.6.4</span> Combien de versions au
+minimum sont activement maintenues par Debian ? Donnez leur nom
+générique</h3>
+<blockquote>
+<p>Il y a au minimum 3 versions qui sont activement maintenues par
+Debian, il y a la distribution <strong>“stables”</strong> qui contient
+la dernière distribution officiellement sortie de Debian, la
+distribution <strong>“testing”</strong> qui contient des paquets qui
+sont en test pour savoir si ils sont acceptés dans la distribution
+stable ou qui ont des bugs qui font qu’ils ne peuvent aller dans la
+distribution stable, puis il y a la distribution
+<strong>“unstable”</strong> qui permet de développer des paquets, et
+peuvent subir des changements majeurs qui peuvent occasionner un
+comportement très instable du système <a
+href="https://www.debian.org/releases">source</a></p>
+</blockquote>
+<h3 data-number="1.6.5"
+id="doù-viennent-les-noms-de-code-des-distributions"><span
+class="header-section-number">1.6.5</span> D’où viennent les noms de
+code des distributions ?</h3>
+<blockquote>
+<p>Les noms de code des distributions proviennent des personnages des
+films « Toy Story »,<br />
+<strong>Pourquoi ?</strong><br />
+“La décision d’utiliser des noms provenant de Toy Story a été prise par
+Bruce Perens qui était, à l’époque, responsable du projet Debian et
+travaillait chez Pixar, la société qui a produit les films.”<a
+href="https://www.debian.org/doc/manuals/debian-faq/ftparchives.fr.html#sourceforcodenames">source</a></p>
+</blockquote>
+<h3 data-number="1.6.6"
+id="lun-des-atouts-de-debian-fut-le-nombre-darchitectures-processeurs-officiellement-prises-en-charge.-combien-et-lesquelles-sont-prises-en-charge-par-la-version-trixie"><span
+class="header-section-number">1.6.6</span> L’un des atouts de Debian fut
+le nombre d’architectures (=processeurs) officiellement prises en
+charge. Combien et lesquelles sont prises en charge par la version
+Trixie ?</h3>
+<blockquote>
+<p>Il y a au total 7 architectures qui sont prises en charge (<a
+href="https://wiki.debian.org/fr/DebianTrixie">source</a>): - PC 64 bits
+(amd64) - ARM PC 64 bits (arm64) - ARM EABI (armel) - ARMv7 (ARM avec
+unité de calcul flottant, armhf) - PowerPC 64 bits petit-boutiste
+(ppc64el) - RISC-V 64-bits petit-boutiste (riscv64) - IBM System z
+(s390x)</p>
+</blockquote>
+<h3 data-number="1.6.7" id="première-version-avec-un-nom-de-code"><span
+class="header-section-number">1.6.7</span> Première version avec un nom
+de code</h3>
+<ul>
+<li><p><strong>Quel a été le premier nom de code utilisé ?</strong></p>
+<blockquote>
+<p>Le premier nom de code utilisé est <strong>Buzz</strong> <a
+href="https://debian.org/doc/manuals/project-history/releases">source</a></p>
+</blockquote></li>
+<li><p><strong>Quand a-t-il été annoncé ?</strong></p>
+<blockquote>
+<p>Il a été annoncé le <strong>17 juin 1996</strong> <a
+href="https://debian.org/doc/manuals/project-history/releases">source</a></p>
+</blockquote></li>
+<li><p><strong>Quelle était le numéro de version de cette distribution
+?</strong></p>
+<blockquote>
+<p>Son numéro de version était la <strong>version 1.1</strong> <a
+href="https://debian.org/doc/manuals/project-history/releases">source</a></p>
+</blockquote></li>
+</ul>
+<h3 data-number="1.6.8" id="dernier-nom-de-code-attribué"><span
+class="header-section-number">1.6.8</span> Dernier nom de code
+attribué</h3>
+<ul>
+<li><p><strong>Quel est le dernier nom de code annoncé à ce jour
+?</strong></p>
+<blockquote>
+<p>Le dernier nom de code annoncé est <strong>Duke</strong> <a
+href="https://debian.org/doc/manuals/project-history/releases">source</a></p>
+</blockquote></li>
+<li><p><strong>Quand a-t-il été annoncé ?</strong></p>
+<blockquote>
+<p>Il a été annoncé le <strong>2025-01-22</strong> <a
+href="https://wiki.debian.org/DebianDuke">source</a></p>
+</blockquote></li>
+<li><p><strong>Quelle est la version de cette distribution
+?</strong></p>
+<blockquote>
+<p>La version de cette distribution est la <strong>version 15</strong>
+<a
+href="https://debian.org/doc/manuals/project-history/releases">source</a></p>
+</blockquote></li>
+</ul>
+<h2 data-number="1.7" id="ajustement-de-la-pré-configuration"><span
+class="header-section-number">1.7</span> Ajustement de la
+pré-configuration</h2>
+<h3 data-number="1.7.1" id="configuration-dune-vm-automatiquement"><span
+class="header-section-number">1.7.1</span> Configuration d’une VM
+automatiquement</h3>
+<blockquote>
+<p>Pour configurer une VM automatiquement, il y a plusieurs étapes à
+suivre.</p>
+<p>Nous allons vous expliquer les étapes à suivre et les erreurs que
+nous avons faites afin que tout se passe pour le mieux lors de votre
+configuration.</p>
+</blockquote>
+<ol type="1">
+<li><p>Récupérer les fichiers</p>
+<blockquote>
+<p>La première étape consiste à récupérer les fichiers nécessaires à la
+configuration.</p>
+<p>Pour cela, il vous suffit de télécharger <a
+href="telechargement/autoinstall_Debian13(3).zip">ce dossier</a></p>
+</blockquote></li>
+<li><p>Configuration des fichiers</p>
+<blockquote>
+<p>Ensuite vous devrez configurer vos fichiers. Pour cela il vous suffit
+de 2 choses:</p>
+<ul>
+<li><strong>Entrer une commande dans le terminal</strong></li>
+</ul>
+<p>Pour ce faire vous devrez ouvrir un terminal et vous placer dans le
+répertoire où se situe votre .viso.</p>
+<p>Sachant que le nom de votre fichier est
+<em>autoinstall_iut_salles_TP</em>, vous devrez vous placer dans ce
+dossier.</p>
+<p>Vous pouvez dans un explorateur de fichiers aller directement dans ce
+dossier puis faire <strong>clique droit</strong> en dessous de vos
+fichiers puis <strong>Ouvrir dans le Terminal</strong></p>
+<p>Ensuite, si vous êtes sur Linux, vous devrez taper cette commande</p>
+<pre><code>sed -i -E &quot;s/(--iprt-iso-maker-file-marker-bourne-sh).*$/\1=$(cat /proc/sys/kernel/random/uuid)/&quot; S203-Debian13.viso</code></pre>
+<p>Elle remplace la chaîne <code>@@UUID@@</code> par un
+<strong>identifiant unique universel</strong>.</p>
+<p>Mais si vous êtes sur <strong>Windows</strong>, vous devrez
+<strong>adapter cette commande</strong>.</p>
+<ul>
+<li><strong>Modifier le chemin des fichiers utilisé</strong></li>
+</ul>
+<p>Effectivement, vos fichiers ne se trouve pas au même emplacement que
+nous, vous devrez donc <strong>modifier le chemin</strong> vers le .iso
+et vers les Guest Additions.</p>
+<p>Pour ce faire, <strong>ouvrez le fichier</strong> .viso dans un bloc
+note ou autre pour pouvoir le modifier.</p>
+<p>Ensuite, après le <code>--import-iso=</code>, <strong>entrer
+l’emplacement</strong> de votre fichier .iso et après le
+<code>--push-iso=</code> celui des Guest Additions.</p>
+<p>Les Guest Additions se trouvent là où votre application est
+installée, par exemple sous Windows c’est très souvent dans
+<code>C:\Program Files\Oracle\VirtualBox</code></p>
+</blockquote></li>
+</ol>
+<div class="tip">
+<p>Pour <strong>connaître le chemin de votre fichier</strong>, vous
+pouvez faire un clique droit et appuyer sur
+<strong>Propriété</strong>.<br />
+Cela va vous ouvrir une fenêtre avec votre fichier et l’emplacement de
+votre fichier. Vous avez juste a copier l’emplacement de votre fichier
+puis à la fin ajouter un  ou un / selon votre OS et a mettre le nom du
+fichier puis son type (.iso par exemple)</p>
+</div>
+<ol type="1">
+<li><p>Placement des fichiers</p>
+<blockquote>
+<p>Dans cette partie, vous devrez placer vos fichiers. Pour cela vous
+devrez décompresser vos fichiers dans le répertoire de votre machine
+virtuelle.</p>
+<p>Il y a une méthode très simple pour cela, vous pouvez décompresser
+dans vos téléchargements puis ensuite vous faites clique droit sur votre
+machine virtuelle. Ceci apparaîtra</p>
+<p><img src="img/fichierViso.png" /></p>
+<p>Sélectionner “<strong>Afficher dans l’explorateur de
+fichiers</strong>”, le dossier de votre machine virtuelle s’ouvrira.
+Vous pouvez ensuite faire un copier coller de votre dossier.</p>
+</blockquote>
+<ol type="1">
+<li>Lancement de la VM</li>
+</ol>
+<blockquote>
+<p>Maintenant que tout est prêt, vous pouvez mettre le .iso comme nous
+avons fait dans la première partie.</p>
+</blockquote></li>
+</ol>
+<h3 data-number="1.7.2"
+id="quelle-est-la-différence-entre-d-i-pkgselinclude-et-tasksel-taskselfirst"><span
+class="header-section-number">1.7.2</span> Quelle est la différence
+entre d-i pkgsel/include et tasksel tasksel/first ?</h3>
+<blockquote>
+<ul>
+<li><strong>d-i pkgsel/include</strong> : Permet d’installer des paquets
+individuels spécifiques en les listant après la directive (ex. :
+<code>d-i pkgsel/include string sudo git</code>).</li>
+<li><strong>tasksel tasksel/first</strong> : Permet de sélectionner des
+“tâches” (groupes de paquets) pour des environnements complets, comme
+des bureaux ou des serveurs (ex. :
+<code>tasksel tasksel/first multiselect standard ssh-server</code>). <a
+href="https://www.debian.org/releases/stable/amd64/apbs04.fr.html">source</a></li>
+</ul>
+</blockquote>
+<h3 data-number="1.7.3"
+id="le-preseed-contient-il-des-informations-sensibles-mots-de-passe-comment-devrait-on-protéger-ce-fichier-en-production"><span
+class="header-section-number">1.7.3</span> Le preseed contient-il des
+informations sensibles (mots de passe) ? Comment devrait-on protéger ce
+fichier en production ?</h3>
+<blockquote>
+<p>Oui, les fichiers preseed peuvent contenir des informations sensibles
+comme des mots de passe (root, utilisateurs, clés de chiffrement). Cela
+est nécessaire pour l’automatisation.</p>
+<p>En production, protégez-les par : - <strong>Chiffrement</strong>
+(GPG). - <strong>Contrôle d’accès</strong> limité. - <strong>Utilisation
+temporaire</strong> : supprimer après installation. - <strong>Hachage
+des mots de passe</strong> (avec mkpasswd). <a
+href="https://www.debian.org/releases/stable/amd64/apb.html">source</a></p>
+</blockquote>
+<h3 data-number="1.7.4" id="modification-de-votre-configuration"><span
+class="header-section-number">1.7.4</span> Modification de votre
+configuration</h3>
+<blockquote>
+<p>Dans cette partie, nous allons ajouter certaine chose pour que notre
+installation automatique soit plus compléte. <a
+href="https://www.debian.org/releases/bookworm/s390x/apbs04.fr.html">source</a>.</p>
+</blockquote>
+<h4 data-number="1.7.4.1"
+id="ajouter-le-droit-sudo-à-lutilisateur-standard"><span
+class="header-section-number">1.7.4.1</span> Ajouter le droit sudo à
+l’utilisateur standard</h4>
+<blockquote>
+<p>Afin d’ajouter les droit sudo, il vous faut <strong>ajouter</strong>
+à la fin de cette ligne
+<code>d-i passwd/user-default-groups string audio cdrom video</code>
+<code>root</code>.</p>
+<p>Ceci redirigera les utilisateurs standard vers le group root. Ils
+auront donc les droit root.</p>
+</blockquote>
+<h4 data-number="1.7.4.2" id="installer-lenvironnement-mate"><span
+class="header-section-number">1.7.4.2</span> Installer l’environnement
+MATE</h4>
+<blockquote>
+<p>Pour installer l’environnement <strong>MATE</strong>, ajouter
+<code>mate-desktop</code>après la ligne de commande
+<code>tasksel tasksel/first multiselect standard ssh-server</code>.</p>
+<p>Cela vous installera l’environnement MATE.</p>
+</blockquote>
+<h4 data-number="1.7.4.3"
+id="ajouter-les-paquets-sudo-git-sqlite3-curl-bash-completion-et-fastfetch"><span
+class="header-section-number">1.7.4.3</span> Ajouter les paquets sudo,
+git, sqlite3, curl, bash-completion et fastfetch</h4>
+<blockquote>
+<p>Pour cela il vous suffit d’ajouter entre la section <strong>Apt
+setup</strong> et <strong>Installation méta-paquets</strong> la ligne de
+commande
+<code>d-i pkgsel/include string sudo git sqlite3 curl bash-completion fastfetch</code>.</p>
+<p>Cela va vous installer tous les paquets.</p>
+</blockquote>
+<h1 data-number="2" id="les-outils-déditions"><span
+class="header-section-number">2</span> Les outils d’éditions</h1>
+<p>Dans cette 2eme partie, nous allons tout d’abord vous présenter
+<strong>Markdown</strong> et <strong>Pandoc</strong> puis vous présenter
+les bases de ses outils et leurs fonctionnalités.</p>
+<h2 data-number="2.1" id="présentation-des-outils"><span
+class="header-section-number">2.1</span> Présentation des outils</h2>
+<h3 data-number="2.1.1" id="quest-ce-que-le-markdown"><span
+class="header-section-number">2.1.1</span> Qu’est ce que le
+“Markdown”</h3>
+<blockquote>
+<p>Le <strong>Markdown</strong> est un langage de balisage léger qui
+permet de <strong>mettre en forme du texte</strong> de manière simple et
+lisible, sans avoir besoin de logiciels compliqués. Il permet par
+exemple de créer des titres, listes, liens, images, ou du texte en
+gras/italique simplement avec des caractères spéciaux (<a
+href="https://daringfireball.net/projects/markdown/">source</a>).
+Markdown est très populaire car il est <strong>facile à
+apprendre</strong>, rapide à écrire, et peut être
+<strong>converti</strong> en HTML ou PDF très facilement. A titre
+informatif, notre projet est écrit en Markdown.</p>
+</blockquote>
+<h3 data-number="2.1.2" id="quest-ce-que-pandoc"><span
+class="header-section-number">2.1.2</span> Qu’est ce que pandoc ?</h3>
+<blockquote>
+<p>Vous devez probablement vous demander comment on peut convertir un
+fichier <code>.md</code> (Markdown) en HTML ou PDF. C’est là tout
+l’intérêt de Pandoc : il s’agit d’un <strong>outil de
+conversion</strong> de documents universel, capable de
+<strong>transformer</strong> des fichiers entre de nombreux formats
+différents, comme Markdown, HTML, PDF DOCX, et bien d’autres encore.
+Pandoc peut également <strong>gérer</strong> des références
+bibliographiques, des tableaux, des images et même des présentations, ce
+qui en fait un <strong>outil extrêmement puissant</strong> pour
+automatiser et standardiser la production de documents.</p>
+</blockquote>
+<h2 data-number="2.2" id="tout-savoir-sur-pandoc-et-markdown"><span
+class="header-section-number">2.2</span> Tout savoir sur pandoc et
+markdown</h2>
+<h3 data-number="2.2.1" id="utilisation-du-markdown"><span
+class="header-section-number">2.2.1</span> Utilisation du markdown</h3>
+<blockquote>
+<p>Son utilisation est <strong>extremement simple</strong>, dans cette
+partie, nous allons vous donnez le minimum requis afin de pouvoir
+utilisé markdown et vous fournir la <strong>documentation</strong> si
+vous voulez en savoir plus, car bien évidemment, il y a trop de choses
+pour que nous vous expliquons tout, et nous meme ne connaissons pas
+tous. Dans ce que je vais vous présenter, je vais vous expliquer à quoi
+cela sert et un exemple de ce que cela donne en vous montrant ce que
+j’ai mis pour avoir ce rendu.</p>
+</blockquote>
+<h4 data-number="2.2.1.1" id="les-titres"><span
+class="header-section-number">2.2.1.1</span> Les titres
+<code>#</code></h4>
+<blockquote>
+<p>Il y a différent <strong>niveau</strong> de titres, de 1 à 6:</p>
+</blockquote>
+<hr />
+<h3 data-number="2.2.2" id="titre-de-niveau-3"><span
+class="header-section-number">2.2.2</span> Titre de niveau 3</h3>
+<h4 data-number="2.2.2.1" id="titre-de-niveau-4"><span
+class="header-section-number">2.2.2.1</span> Titre de niveau 4</h4>
+<h5 data-number="2.2.2.1.1" id="titre-de-niveau-5"><span
+class="header-section-number">2.2.2.1.1</span> Titre de niveau 5</h5>
+<hr />
+<pre><code>### Titre de niveau 3
+#### Titre de niveau 4
+##### Titre de niveau 5</code></pre>
+<blockquote>
+<p>Les titres sont les éléments les plus importants pour organiser la
+structure d’un document. Pour créer un titre, ajoutez un dièse (#) avant
+un mot ou une phrase. Le nombre de dièses indique le niveau du titre,
+les titres pouvant aller jusqu’à 6.</p>
+<p>Ici nous en avons fait l’exemples avec les titres de niveaux 3, 4 et
+5. Les numéros a coté sont dues à une option de pandoc.</p>
+</blockquote>
+<div class="note">
+<p>Cependant, il est important de respecter un ordre logique : il faut
+toujours commencer par un titre de niveau 1, puis de niveau 2. Il n’est
+pas possible de passer directement à un titre de niveau 3 sans respecter
+cette hiérarchie.</p>
+</div>
+<h4 data-number="2.2.2.2"
+id="mettre-du-text-en-gras-etou-italique"><span
+class="header-section-number">2.2.2.2</span> Mettre du text en gras
+et/ou italique <code>*</code></h4>
+<blockquote>
+<p>Vous pouvez mettre du text en gras, en italique ou les 2 en utilisant
+des asthérisques (*), il vous en suffit de un de chaque côté de la
+phrase que vous voulez mettre en italique, de deux pour le mettre en
+gras et de 3 pour le mettre en gras et en italique.</p>
+</blockquote>
+<p><em>Text en italique</em><br />
+<strong>Text en gras</strong><br />
+<strong><em>Text en gras et en italique</em></strong></p>
+<pre><code>
+*Text en italique*
+**Text en gras**
+***Text en grras et en italique***
+</code></pre>
+<h4 data-number="2.2.2.3" id="mettre-des-ciations"><span
+class="header-section-number">2.2.2.3</span> Mettre des ciations
+<code>&gt;</code></h4>
+<blockquote>
+<p>Les <strong>citaions</strong> servent à <strong>mettre en
+avant</strong> un <strong>texte particulier</strong> en le distinguant
+du reste du contenu.</p>
+<p>Vous les distinguerai avec les barre sur la gauche.</p>
+<p>Dans notre rapport nous mettons trés régulièrement des ciations, nous
+trouvons que cela rend un meilleur visuelle.</p>
+<p>Nous avons aussi remarqué que même si sur la preview cela marche, si
+vous ne mettez pas d’espace entre <code>&gt;</code>et votre texte,
+lorsque vous allez modifier le format avec pandoc, les
+<code>&gt;</code>s’afficheront et le texte ne sera pas mis en avant.</p>
+</blockquote>
+<blockquote>
+<p>Ceci est une citations</p>
+</blockquote>
+<pre><code>&gt; Ceci est une citations</code></pre>
+<h4 data-number="2.2.2.4" id="insérer-une-image-et-une-source"><span
+class="header-section-number">2.2.2.4</span> Insérer une image et une
+source</h4>
+<blockquote>
+<p>Pour mettre une source, il vous suffit de mettre entre [] le texte
+qui sera cliquable puis mettre l’URL entre ()</p>
+</blockquote>
+<p><a href="https://www.google.com/?hl=fr">Ceci est une source vers
+google</a></p>
+<pre><code>[Ceci est une source vers google](https://www.google.com/?hl=fr)</code></pre>
+<blockquote>
+<p>Pour insérer une image, il vous suffit de faire la même chose mais en
+ajoutant un point d’explamation devant (!) ce qui sera entre [] sera le
+texte altérnatif et ce qui sera entre () sera la où mène votre
+image.</p>
+<p>Donc si vous etes dans un dossier A, que votre fichier .md ou vous
+écrivez s’y trouve et que vos image sont dans un sous dossiers B. Alors
+ce que vous devez mettre entre () est
+<code>B/(nom de votre image)</code></p>
+<p>Ceci est important car sinon, votre image ne s’affichera pas.
+N’oubliez pas aussi que si vous envoyez votre fichier .md à une personne
+sans aussi envoyez les images avec la bonne hiérarche de fichier, il ne
+verra pas vos image.</p>
+</blockquote>
+<h4 data-number="2.2.2.5" id="passer-à-la-ligneune-ligne"><span
+class="header-section-number">2.2.2.5</span> Passer à la ligne/une
+ligne</h4>
+<blockquote>
+<p>Pour passer à la ligne, il vous suffit de mettre 2 espaces à la fin
+de la ligne d’avant.</p>
+<p>Pour passer une ligne il n’y a pas d’autre chose à faire que de
+sauter une ligne, cepandant vous ne pouvez pas passer plus d’une ligne.
+<strong>Markdown</strong> considère plusieurs sauts de ligne comme une
+seule</p>
+</blockquote>
+<h4 data-number="2.2.2.6" id="les-listessous-listes"><span
+class="header-section-number">2.2.2.6</span> Les listes/sous-listes</h4>
+<blockquote>
+<p>Ils existent 2 type de listes, les listes numérotés et les listes
+avec des •</p>
+<p>Pour les listes numérotés, ils vous suffit de faire 1., cependant
+vous n’etes pas obliger de suivre l’ordre, vous pouvez à chaque fois
+mettre 1., cela vous numérotera automatiquement.</p>
+</blockquote>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<pre><code>    1.
+    1.
+    1.</code></pre>
+<blockquote>
+<p>Cependant faites attention à l’indentation, si vous mettez entre vos
+listes des citations, vous devez décaler le texte vers la droite
+(tabulation), sinon la liste ne marchera pas et ce ne sera pas une
+liste.</p>
+<p>Il existe aussi des liste avec des •</p>
+<p>Pour ce faire, il y a 3 façon de faire, soit avec des <code>+</code>,
+soit avec des <code>-</code> ou avec des <code>*</code>. Cependant il
+est bon de savoir que entre chacun des différent moyens de faire, il y
+aura un plus grands espaces.</p>
+</blockquote>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<pre><code>    +
+    +
+    *
+    *
+    -
+    -
+</code></pre>
+<blockquote>
+<p>Pour les sous-listes, ils vous suffit juste de décaler votre
+sous-liste. Voici un exempple</p>
+</blockquote>
+<ul>
+<li>Titre 1
+<ol type="1">
+<li>Sous titre 1</li>
+<li>Sous titre 2</li>
+<li>Sous titre 3</li>
+</ol></li>
+<li>Titre 2
+<ol type="1">
+<li>Sous titre 1</li>
+<li>Sous titre 2</li>
+<li>Sous titre 3</li>
+</ol></li>
+</ul>
+<pre><code>    - Titre 1
+        1.  Sous titre 1
+        1.  Sous titre 2
+        1.  Sous titre 3
+    - Titre 2
+        1.  Sous titre 1
+        1.  Sous titre 2
+        1.  Sous titre 3</code></pre>
+<h4 data-number="2.2.2.7" id="les-blocs-de-code"><span
+class="header-section-number">2.2.2.7</span> Les blocs de code</h4>
+<blockquote>
+<p>Vous pouvez aussi ajouter des blocs de 2 manières différentes</p>
+<p>Soit avec ` qui permet de mettre du code sur une ligne, en voici un
+exemple ;</p>
+</blockquote>
+<pre><code>    `Voici du code`</code></pre>
+<blockquote>
+<p>Soit avec ``` qui permet de mettre du code sur plusieurs ligne. Vous
+pouvez aussi mettre après vos 3 premier backtick le nom du language que
+vous utlisez. Cela va mettre le code en couleur selon le language que
+vous utilisez.</p>
+</blockquote>
+<pre><code>    ```markdown
+    Code
+    Sur
+    Plurieurs
+    Ligne
+    ```</code></pre>
+<h4 data-number="2.2.2.8" id="les-métadonnées"><span
+class="header-section-number">2.2.2.8</span> Les métadonnées</h4>
+<blockquote>
+<p>Il est possible d’ajouter des métadonnées en utilisant des accolades
+{} juste après cet élément.</p>
+<p>Par exemple, après une image, un titre ou un bloc de code, on peut
+spécifier des attributs comme la taille, l’identifiant, la classe CSS ou
+un style particulier.</p>
+<p>Pour une image, on peut ainsi écrire
+<code>![Texte alternatif](image.png){ width=50% }</code>pour indiquer
+que l’image doit occuper 50 % de la largeur du document.</p>
+<p>On peut également donner un id pour référencer l’élément dans la
+table des matières ou dans un lien <code>{#mon-id}</code>, ou une classe
+CSS pour appliquer un style <code>{.ma-classe}</code>.</p>
+<p>Ces métadonnées permettent de contrôler le rendu précis de chaque
+élément.</p>
+</blockquote>
+<h3 data-number="2.2.3" id="utilisation-de-pandoc"><span
+class="header-section-number">2.2.3</span> Utilisation de pandoc</h3>
+<blockquote>
+<p>Avant toute chose, n’oubliez pas d’installer pandoc, pour cela, vous
+pouvez aller voir dans le readme.</p>
+</blockquote>
+<h4 data-number="2.2.3.1" id="transformer-un-fichier-.md-en-.html"><span
+class="header-section-number">2.2.3.1</span> Transformer un fichier .md
+en .html</h4>
+<blockquote>
+<p>Pour transformer un fichier .md en en un autre fichier, il vous
+suffit d’ouvrir un <strong>terminal Linux</strong> et de faire la
+commande
+<code>pandoc (nom du fichier) -o (nom du fichier qui va etre créer)</code></p>
+<p>Le <code>-o</code> ou <code>--output</code> permet de transformer un
+fichier en un autre.</p>
+<p>Avec la commande <code>--list-input-formats</code> vous pouvez voir
+les formats d’entrer que pandoc accepte et avec
+<code>--list-output-formats</code> ceux de sorti.</p>
+<p>Ceci est la base de pandoc, cependant il existe de nombreuses options
+qui font la particularité de pandoc, nous allons vous en présenter
+quelques unes, mais vous pouvez aussi consulter la documentaion pandoc
+sur des sites ou sur le manuelle en fessant la commande
+<code>man pandoc</code>depuis un teminal</p>
+</blockquote>
+<h4 data-number="2.2.3.2" id="les-options"><span
+class="header-section-number">2.2.3.2</span> Les options</h4>
+<blockquote>
+<p>Comme dit precédemment, nous allons vous présenter les options les
+plus basiques.</p>
+<p>Tout ce qu’on va vous dire ici est spécifiié dans le <strong>manuelle
+de pandoc</strong> et pour plus d’information, vous pouvez aller y faire
+un tour.</p>
+<p>L’option <code>--toc</code> ou permet de faire une table des matières
+selon vos titres. D’autres options permettent d’avoir un meilleur
+visuelle pour votre table des matières comme <code>-N</code> qui vous
+permet d’avoir des numéros a côté de vos tites et de votre liste des
+matières ou de mieux gérer vos titres comme avec
+<code>--toc-depth=NUMBER</code> qui vous permet de faire la table des
+matières selon le niveau de titre (<code>NUMBER</code>) que vous
+voulez.</p>
+<p>L’option <code>-s</code> ou <code>--standalone</code> permet de
+générer un document complet. Sans cette option, pandoc va juste vous
+générer unn <strong>fragement</strong> et donc non un vrai fichier de
+votre format. Cette option est cependant mise sur certain fichier
+automatiquement comme avec PDF et d’autres enocre.</p>
+</blockquote>
+<h2 data-number="2.3" id="documentations"><span
+class="header-section-number">2.3</span> Documentations</h2>
+<blockquote>
+<p>Ici nous allons vous donner quelques liens afin de pourvoir mieux
+vous renseigner et/ou approfondir vos connaissance. A savoir qu’il
+existe de nombreuses documentations, alors ici nous allons mettre, selon
+nous, les plus utiles.</p>
+<p><a href="https://www.markdownlang.com/fr/basic/headings.html">Ici</a>
+se trouve le site qui vous montre comment fonctionne
+<strong>Mardown</strong>, il comporte une documentation complète de
+markdown, facile d’utilisation.</p>
+<p>Vous poouvez utilisez <a
+href="https://e-publish.uliege.be/md/chapter/outils/#outils">cette
+documentation</a> pour pandoc ou <a
+href="https://pandoc.org/MANUAL.html#pandocs-markdown">celle-ci</a></p>
+<p>Vous pouvez aussi apprendre Markdown grace a des tutoriels
+interactifs comme celuis de <a
+href="https://commonmark.org/help/">CommonMark</a> ou
+(https://www.markdowntutorial.com/fr/)[https://www.markdowntutorial.com/fr/]</p>
+</blockquote>
+<h1 data-number="3" id="applications-clientes"><span
+class="header-section-number">3</span> Applications clientes</h1>
+<h2 data-number="3.1" id="création-dun-dépot-git-local"><span
+class="header-section-number">3.1</span> Création d’un dépot git
+Local</h2>
+<blockquote>
+<p>Ici, nous allons vous faire une démonstration et vous expliquez
+comment faire un dépot git Local. C’est à dire seulement sur votre
+ordinateur, et non sur un dépôt Git. Seul vous y aura accés depuis votre
+ordinateur.</p>
+<p>Après nous ferons l’exemple avec un Git distant qui permet de
+partager votre code avec d’autres personnes.</p>
+</blockquote>
+<h3 data-number="3.1.1" id="compte-utilisateur"><span
+class="header-section-number">3.1.1</span> Compte utilisateur</h3>
+<blockquote>
+<p>Pour commencer, vous devez <strong>créer un compte</strong>. Pour
+cela il vous suffit de faire ses 3 commandes dans l’ordre en remplaçant
+votre Prénom, votre nom et votre addresse mail.</p>
+</blockquote>
+<pre><code>git config --global user.name &quot;Prénom Nom&quot; 
+git config --global user.email &quot;votre@email&quot; 
+git config --global init.defaultBranch &quot;master&quot;</code></pre>
+<blockquote>
+<p>Les 2 premières lignes de commandes servent a créer votre compte. La
+dernière sert à nommé votre <a
+href="#expliquez-la-différence-entre-un-commit-une-branche-et-un-tag">branche
+principale</a>.</p>
+</blockquote>
+<h3 data-number="3.1.2"
+id="création-dun-dépot-git-et-gestion-de-la-zone-de-staging"><span
+class="header-section-number">3.1.2</span> Création d’un dépot git et
+gestion de la zone de staging</h3>
+<blockquote>
+<p>Pour créer un dépot git, mettez vous dans le dossier dans lequel vous
+voulez créer votre dépot git et entrez la commande
+<code>git init</code>. Vous pouvez aussi aller voir [ici]
+(#créez-un-nouveau-dépôt-git-local-quelle-commande-utilisez-vous–que-se-passe-t-il-)
+pour avoir plus d’explication.</p>
+<p>Ensuite pour la gestion de la zone de staging (l’endroit où sont mis
+vos fichier et dossiers avant d’etre commit, seul vous pouvez voir ses
+fichiers) des fichiers, ou des dossiers, vous pouvez soit faire
+<code>git add .</code> qui va vous ajoutez tout vos fichiers
+<strong>depuis le répertoire ou vous etes</strong>,</p>
+</blockquote>
+<div class="note">
+<p>Le répertoire courant, c’est que si vous avez créer un dépot git dans
+un dossier qu’on va appelé A, que dans celuis-ci vous ajoutez un fichier
+A1 et un dossier B dont vous y incluez un fichier B2, voici donc la
+représentation :</p>
+</div>
+<ul>
+<li>A
+<ul>
+<li>A1</li>
+<li>B
+<ul>
+<li>B1</li>
+</ul></li>
+</ul></li>
+</ul>
+<blockquote>
+<p>Si vous faites un <code>git add .</code> dans le dossier B, ceci va
+uniquement ajouter le fichier B1 et non le reste.</p>
+<p>Vous pouvez aussi ajouter un seul fichier en fessant
+<code>git add (votre fichier)</code>.</p>
+<p>Vous pouvez aussi retirer des fichiers et des dossiers mais cela est
+un petit peu complexe. Ne vous inquituetez pas, nous allons vous
+expliquer.</p>
+<p>Vous pouvez faire <code>git rm --cached (votre fichier)</code> pour
+retirer un fichier. Le rm pour remove et le –cached pour qu’il soit
+supprimer uniquement de la <strong>zone de staging</strong>.</p>
+<p>Si vous avez des dossiers soit vous voulez supprimer tout ce qu’il y
+a à l’intérieur et donc vous faites
+<code>git rm -r --cached (votre dossier)</code>. Le <code>-r</code> pour
+récirsif et va donc s’appliquer au dossier et ce qu’il contient.</p>
+<p>Et si vous voulez atout enlever, vous pouvez faire
+<code>git rm -r --cached .</code>. Le <code>-r</code>est obligatoire
+même si vous n’avez pas de dossier.</p>
+<p>Vous pouvez aussi voir vos fichers/dossiers qui sont dans la zone de
+staging en fessant un <code>git status</code>, voici un exemple :</p>
+</blockquote>
+<pre><code>robin@Rob1:/mnt/c/Users/aerno/Desktop/testdepot/f2$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+        new file:   f2
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)       
+        ../f1</code></pre>
+<blockquote>
+<p>Vous pouvez voir sur qu’elle branche vous etes, les commit effectué
+ainsi que les fichiers/dossiers qui sont dans votre zone de staging.</p>
+</blockquote>
+<h3 data-number="3.1.3" id="git-commit"><span
+class="header-section-number">3.1.3</span> Git commit</h3>
+<blockquote>
+<p>La commande git commit permet d’enregistrer les fichiers ajoutés à la
+zone de staging dans l’historique local de Git. vous pouvez faire un <a
+href="#expliquez-la-différence-entre-un-commit-une-branche-et-un-tag"><code>git commit -m "(votre message)"</code></a>.
+le <code>-m "(votre message)"</code> sert à mettre un mesage en meme
+temps que le commit afin d’avoir un moyen de savoir ce que le commit a
+changé pour vous, et pour les autres et d’avoir une histroique
+clair.</p>
+<p>Vous pouvez utilier <code>git log</code> afin de voir les différent
+commit effectuer qui comprend la branche sur laquelle vous avez
+effectuer le commit, la date, l’auteur et le message du commit.</p>
+</blockquote>
+<pre><code>commit aaa61cdde660866741830bf647d1feefd589e545 (HEAD -&gt; master)
+Author: Robin Aernout &lt;robinaernout@gmail.com&gt;
+Date:   Fri Mar 27 20:18:38 2026 +0100
+
+    p
+
+commit 6ec5ec48a6eee09aca9786a20294467850b865cb
+Author: Robin Aernout &lt;robinaernout@gmail.com&gt;
+Date:   Fri Mar 27 20:17:50 2026 +0100
+
+    o
+
+commit 008f27c9921a6cc4c30c52076d06902f8cd936dd
+Author: Robin Aernout &lt;robinaernout@gmail.com&gt;
+Date:   Fri Mar 27 18:20:15 2026 +0100
+
+    m</code></pre>
+<blockquote>
+<p>Comme sur cette exemple, chaque commit à un identifiant unique,
+l’auteur qui correspond au 3 lignes de codes du début, ainsi que la date
+exacte.</p>
+</blockquote>
+<h3 data-number="3.1.4" id="les-branches"><span
+class="header-section-number">3.1.4</span> Les branches</h3>
+<blockquote>
+<p>Ici nous allons faire une nouvelle branche puis la fusionner avec la
+branche principale tout en vous explicant ce processus</p>
+<p>Pour créer une nouvelle branche, vous pouvez faire
+<code>git branch (nom branche)</code>, cela vous créer une branche mais
+vous restez sur celle que vous etiez, cependant, l’option riosnvk -b
+permet de régler ce problème. Pour juste changer de branche, vous pouvez
+utiliser la commande <code>git checkout (nom branche)</code></p>
+<p>Vous pouvez aussi supprimer une branche avec
+<code>git branch -d (nom brache)</code></p>
+<p>Ensuite vous pouvez fusionnez ses branche avec `git merge (nom
+branche). Vous devez vous mettre sur la branche sur laquelle vous voulez
+qu’elle reste. Cependant parfois il peux y avoir un conflit comme sur
+cette image</p>
+<p><img src="img/merge.png" /></p>
+<p>Cela arrivent quand deux versions d’un même fichier (ou même ligne)
+ont été modifiées différemment et que Git ne sait pas laquelle choisir
+automatiquement.</p>
+<p>Quand cela arrivee, vous etes placé dans un dépôt dans un état
+temporaire le temps que vous régler ce conflit.</p>
+<p>Pour régler ce conflit vous avez plusieurs manière. Juste au dessus
+du conflit vous avez 4 choix. <strong>Accept Current Change</strong>
+permet de garder la version locale, <strong>Accpet Incoming
+Change</strong> de garder la version de l’autre branche, <strong>Accept
+Both Changes</strong> conserve les deux modifications et seront mises à
+la suite puis <strong>Compare Changes</strong> pour voir les différences
+côte a côte.</p>
+<p>Après avoir fait votre choix, vous pouvez faire un git add puis un
+commit puis vous pouvez retourner sur votre branche
+(<code>git checkout (nom branche)</code>) et voila le conflits
+terminer.</p>
+</blockquote>
+<h2 data-number="3.2" id="dépôt-privé-gitlab"><span
+class="header-section-number">3.2</span> Dépôt privé GitLab</h2>
+<blockquote>
+<p>Nous allons dans cette partie faire un dépôt privé sur le GitLab de
+notre université. Nous allons cloner le dépot puis on va chacun créer
+une branche, push un fichier puis fusionnez les branches dans la branche
+principale.</p>
+<p>Ceci a pour objectif de vous montrez comment travailler en
+équipe.</p>
+</blockquote>
+<h3 data-number="3.2.1" id="créer-un-dépôt-privée-sur-gitlab"><span
+class="header-section-number">3.2.1</span> Créer un dépôt privée sur
+GitLab</h3>
+<h4 data-number="3.2.1.1" id="création-du-dépot"><span
+class="header-section-number">3.2.1.1</span> Création du dépot</h4>
+<blockquote>
+<p>Premièrement, connecter vous sur GitLab, cliquer sur le + en haut à
+droite puis sur New project/repository, Create blank project.</p>
+<p>Vous arriverez sur une page où il faut créer un nouveau projet.
+Entrer le nom de votre projet dans Project name et dans Project URL
+metter vos utilisateurs. La case Project slug sert à mettre le nom du
+dossier dans lequel votre Git sera, il se rempli automatiquement avec le
+nom de votre projet si rien y est mit.</p>
+<p>Par défault, votre Git est en priver est comprant un README,
+cependant, vous pouvez bien sur le changer.</p>
+<p>Pour finir cliquer sur create project. Voici votre Git prêt à
+l’emploi</p>
+<p>Pour cloner votre Git, et donc le mettre sur votre ordinateur dans un
+dossier vous avez 2 possibilité. Soit par clé HTTPS, donc vous devrez à
+chaque commit entrer vos nom d’utilisateur et votre MDP, ou par clé SSH
+qui permet de ne pas devoir entrer vos informations à chaque commit,
+mais est un peu plus long à mettre en place.</p>
+</blockquote>
+<h4 data-number="3.2.1.2" id="création-clé-ssh"><span
+class="header-section-number">3.2.1.2</span> Création clé SSH</h4>
+<blockquote>
+<p>Nous allons ici le faire par clé SSH. Nous allons donc vous donnez
+les différentes étapes a suivre.</p>
+<p>Tout d’abord, générer une clé ssh en fessant la commande
+<code>ssh-keygen -t ed25519</code>.</p>
+<p>Ils vous demanderont ensuite `Enter file in which to save the
+key.</p>
+<p>Ensuite ils vous demanderont aussi <code>Enter passphrase</code>,
+cela sert a <strong>mettre un MDP</strong> pour votre clé, donc à chaque
+utilisation de celle-ci, vous devrez entrer ce MDP.</p>
+<p>Voila, votre clé est générer, nous pouvons maintenant prendre son
+contenu avec la commande <code>cat ~/.ssh/id_ed25519.pub</code> et en
+faire un copier coller puis l’<strong>insérer</strong> dans GitLab.</p>
+</blockquote>
+<div class="tip">
+<p>Si vous ne vous souvenez plus du nom de votre clé, vous pouvez faire
+<code>ls ~/.ssh/</code></p>
+</div>
+<blockquote>
+<p>Pour cela appuiez sur le menu en haut à gauche et aller dans l’onglet
+<strong>SSH Keys</strong>. Appuiyez ensuite sur <strong>Add new
+key</strong></p>
+<p>Vous pouvez ici entrer ce que vous aviez copier. Vous pouvez aussi
+changer son type d’utilisation et sa date d’expiration.</p>
+<p>Cependant ne changez pas le titre, sinon votre clé ne va pas
+marcher.</p>
+<p>Voila votre clé ssh est prête a l’emploi.</p>
+</blockquote>
+<h4 data-number="3.2.1.3" id="git-clone"><span
+class="header-section-number">3.2.1.3</span> Git clone</h4>
+<blockquote>
+<p>Maintenant que votre clé ssh est prête a l’emploi, vous pouvez
+maintenant mettre le Git sur votre ordinateur.</p>
+<p>Pour cela, retourner sur votre projet, appuiyez sur code, puis copier
+la case <strong>Clone with SSH</strong></p>
+<p>Retourner dans votre terminale, puis faites
+<code>git clone (coller)</code></p>
+<p>Voila, votre Git est maitenant prêt à l’utilisation.</p>
+</blockquote>
+<h4 data-number="3.2.1.4" id="partage-du-git"><span
+class="header-section-number">3.2.1.4</span> Partage du Git</h4>
+<blockquote>
+<p>Pour partager votre git, ils vous suffit tout simplement d’aller dnas
+la barre de recherche tout en haut et de cliquer sur votre projet.</p>
+<p>Ouvrez le menu puis cliquez sur Manage -&gt; Membre.</p>
+<p>Cliquez sur Invite members puis inviter vos membres.</p>
+<p>Ensuite vous pouvez leur transmettre le votre projet en leur envoyant
+le lien du git clone avec SSH ou avec HTTPS.</p>
+</blockquote>
+<h4 data-number="3.2.1.5" id="création-des-branches"><span
+class="header-section-number">3.2.1.5</span> Création des branches</h4>
+<blockquote>
+<p>Pour ce qui est des branches, vous pouvez aller voir <a
+href="#les-branches">ici</a>, c’est la même chose qu’un Git Local pour
+ce qui est des commandes.</p>
+</blockquote>
+<h4 data-number="3.2.1.6"
+id="mieux-gérer-la-collaboration-avec-les-branches"><span
+class="header-section-number">3.2.1.6</span> Mieux gérer la
+collaboration avec les branches</h4>
+<blockquote>
+<p>Pour bosser efficacement à plusieurs, on ne se contente pas d’une
+seule ligne droite. L’idée, c’est de pouvoir créer des “branches” (des
+versions parallèles du projet) à différents endroits selon les besoins
+:</p>
+<ul>
+<li><strong>Créer une branche à partir de l’origine
+(<code>main</code>)</strong> : C’est ce qu’on fait le plus souvent. On
+crée une branche toute neuve à partir de la version stable du projet
+pour ajouter une nouvelle fonctionnalité sans rien casser.</li>
+<li><strong>Créer une branche à partir d’une autre branche</strong> :
+Parfois, on a besoin de diviser une grosse tâche en sous-tâches. Par
+exemple, si l’un de nous travaille sur la “Semaine 4”, un autre peut
+créer une branche à partir de celle-ci pour corriger juste un petit bug
+spécifique à cette étape sans attendre que tout soit fini.</li>
+</ul>
+<p><strong>Pourquoi on fait ça ?</strong></p>
+<p>Ça nous permet de travailler sur des parties différentes du rapport
+ou de la conf sans se marcher sur les pieds. Une fois que le travail sur
+une branche est propre et testé, on le “fusionne” (<code>merge</code>)
+dans la branche principale.</p>
+</blockquote>
+<pre><code>robin@Rob1:/mnt/c/Users/aerno/Desktop/ttt/projet-test$ git branch -a
+  main
+* robin.aernout.etu
+  remotes/origin/HEAD -&gt; origin/main
+  remotes/origin/main
+  remotes/origin/youssef.chekalil.etu</code></pre>
+<blockquote>
+<p>Comme le montre cette exemple, obtenu avec un
+<code>git branche -a</code> on peux faire une branche sur le main
+(<code>robin.aernout.etu</code>) ainsi que sur l’origin
+(`youssef.cheklil.etu).</p>
+<p>Cependant, si vous voulez push, vous devez faire
+<code>git push --set-upstream origin (votre branche)</code>. Sinon votre
+<code>git clone</code> ne marche pas.</p>
+</blockquote>
+<h2 data-number="3.3" id="concept-de-base"><span
+class="header-section-number">3.3</span> Concept de base</h2>
+<h3 data-number="3.3.1"
+id="quelle-est-la-différence-entre-git-et-les-logiciels-comme-github-gitlab-forgejo"><span
+class="header-section-number">3.3.1</span> Quelle est la différence
+entre Git et les logiciels comme GitHub / GitLab / Forgejo ?</h3>
+<blockquote>
+<p><strong>Git</strong> est un système de contrôle de version
+décentralisé qui s’exécute localement sur une machine (installé sur
+Debian via <code>sudo apt install git</code>). Il permet de gérer
+l’historique des modifications de fichiers de manière autonome. À
+l’inverse, <strong>GitHub, GitLab et Forgejo</strong> sont des
+plateformes d’hébergement web. Elles centralisent les dépôts Git sur des
+serveurs distants pour faciliter le travail collaboratif, la sauvegarde
+en ligne et la gestion de projet (Merge Requests, Issues). <a
+href="https://www.google.com/search?q=https://git-scm.com/book/fr/v2/D%25C3%25A9marrage-rapide-%25C3%2580-propos-du-contr%25C3%25B4le-de-version">source</a></p>
+</blockquote>
+<h3 data-number="3.3.2"
+id="quest-ce-quun-dépôt-git-où-sont-stockées-les-données-dun-dépôt-local"><span
+class="header-section-number">3.3.2</span> Qu’est-ce qu’un dépôt Git ?
+Où sont stockées les données d’un dépôt local ?</h3>
+<blockquote>
+<p>Un dépôt Git est une structure de données contenant l’intégralité des
+fichiers d’un projet ainsi que tout l’historique des révisions. Dans un
+environnement local, ces informations sont stockées dans un répertoire
+masqué nommé <code>.git</code>, situé à la racine du projet. Ce dossier
+contient la base de données des objets Git et les fichiers de
+configuration. <a
+href="https://www.geeksforgeeks.org/git/what-is-a-git-repository/">source</a></p>
+</blockquote>
+<h3 data-number="3.3.3"
+id="expliquez-la-différence-entre-un-commit-une-branche-et-un-tag"><span
+class="header-section-number">3.3.3</span> Expliquez la différence entre
+un commit, une branche et un tag</h3>
+<blockquote>
+<ul>
+<li><strong>Le Commit</strong> : Il représente un instantané (snapshot)
+du projet à un instant précis. Chaque commit possède un identifiant
+unique (SHA-1) et enregistre les modifications par rapport à l’état
+précédent.</li>
+<li><strong>La Branche</strong> : Il s’agit d’un pointeur mobile vers un
+commit. Elle permet de s’isoler de la ligne principale pour développer
+des fonctionnalités sans risque. Elle avance automatiquement à chaque
+nouveau commit.</li>
+<li><strong>Le Tag</strong> : C’est un pointeur immuable (fixe).
+Contrairement à la branche, il ne change jamais de position. On
+l’utilise généralement pour marquer des versions majeures du projet (ex:
+v1.0). <a
+href="https://www.google.com/search?q=https://git-scm.com/book/fr/v2/Les-branches-sur-Git-Les-branches-en-quelques-mots">source</a></li>
+</ul>
+</blockquote>
+<h3 data-number="3.3.4"
+id="quest-ce-quun-dépôt-distant-remote-comment-lister-les-remotes-configurés"><span
+class="header-section-number">3.3.4</span> Qu’est-ce qu’un dépôt distant
+(remote) ? Comment lister les remotes configurés ?</h3>
+<blockquote>
+<p>Un dépôt distant est une instance du projet hébergée sur un serveur
+réseau (ex: GitLab IUT). Il permet la synchronisation du travail entre
+plusieurs développeurs. Pour visualiser les dépôts distants associés à
+un projet local, on utilise la commande <code>git remote -v</code>. <a
+href="https://git-scm.com/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">source</a></p>
+</blockquote>
+<h3 data-number="3.3.5"
+id="quelle-est-la-différence-entre-git-pull-et-git-fetch"><span
+class="header-section-number">3.3.5</span> Quelle est la différence
+entre git pull et git fetch ?</h3>
+<blockquote>
+<p>La commande <code>git fetch</code> télécharge les nouveaux objets et
+références du dépôt distant sans modifier l’état actuel des fichiers
+locaux. <code>git pull</code> est une commande combinée qui effectue un
+<code>git fetch</code> suivi immédiatement d’un <code>git merge</code>.
+<a
+href="https://www.atlassian.com/fr/git/tutorials/syncing/git-pull">source</a></p>
+</blockquote>
+<h2 data-number="3.4" id="protocoles-git"><span
+class="header-section-number">3.4</span> Protocoles Git</h2>
+<h3 data-number="3.4.1"
+id="quels-sont-les-protocoles-supportés-par-git-pour-accéder-à-un-dépôt"><span
+class="header-section-number">3.4.1</span> Quels sont les protocoles
+supportés par Git pour accéder à un dépôt ?</h3>
+<blockquote>
+<p>Git utilise principalement quatre protocoles de transfert :</p>
+<ol type="1">
+<li><strong>Local</strong> : Utilisé pour les dépôts situés sur le même
+système de fichiers ou un disque partagé.</li>
+<li><strong>SSH</strong> : Le protocole le plus courant pour l’écriture,
+utilisant des paires de clés pour une sécurité optimale.</li>
+<li><strong>HTTP/HTTPS</strong> : Facile à configurer et capable de
+traverser la plupart des pare-feux réseau.</li>
+<li><strong>Git</strong> : Un protocole dédié, extrêmement rapide pour
+le téléchargement mais dépourvu d’authentification. <a
+href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols">source</a></li>
+</ol>
+</blockquote>
+<h3 data-number="3.4.2"
+id="sur-quels-ports-réseau-fonctionnent-ces-protocoles"><span
+class="header-section-number">3.4.2</span> Sur quels ports réseau
+fonctionnent ces protocoles ?</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Protocole</th>
+<th>Port par défaut</th>
+<th>Transport</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Local</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>SSH</td>
+<td>22</td>
+<td>SSH</td>
+</tr>
+<tr class="odd">
+<td>HTTP</td>
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>HTTPS</td>
+<td>443</td>
+<td>HTTP sur TLS</td>
+</tr>
+<tr class="odd">
+<td>Git</td>
+<td>9418</td>
+<td>Protocole Git</td>
+</tr>
+</tbody>
+</table>
+<p><a
+href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols">source</a></p>
+<h3 data-number="3.4.3"
+id="comment-configurer-lauthentification-ssh-pour-git"><span
+class="header-section-number">3.4.3</span> Comment configurer
+l’authentification SSH pour Git ?</h3>
+<blockquote>
+<p><strong>1. Génération :</strong> <code>ssh-keygen -t ed25519</code>
+crée une paire de clés. <a
+href="https://www.google.com/search?q=https://docs.gitlab.com/ee/user/ssh.html">source</a></p>
+<pre><code>ssh-keygen -t ed25519</code></pre>
+<p><strong>2. Lecture :</strong> Extraction via
+<code>cat ~/.ssh/id_ed25519.pub</code>.</p>
+<p><strong>3. Validation :</strong> Test de connexion via
+<code>ssh -T git@gitlab.com</code>.</p>
+</blockquote>
+<h2 data-number="3.5" id="commandes-essentielles"><span
+class="header-section-number">3.5</span> Commandes essentielles</h2>
+<h3 data-number="3.5.1"
+id="créez-un-nouveau-dépôt-git-local.-quelle-commande-utilisez-vous-que-se-passe-t-il"><span
+class="header-section-number">3.5.1</span> Créez un nouveau dépôt Git
+local. Quelle commande utilisez-vous ? Que se passe-t-il ?</h3>
+<blockquote>
+<p>L’initialisation se fait via <code>git init</code>, ce qui génère le
+dossier racine <code>.git</code> nécessaire au suivi des versions. <a
+href="https://git-scm.com/docs/git-init">source</a></p>
+</blockquote>
+<h3 data-number="3.5.2"
+id="utilisez-git-diff-pour-comparer-deux-commits.-expliquez-la-sortie."><span
+class="header-section-number">3.5.2</span> Utilisez git diff pour
+comparer deux commits. Expliquez la sortie.</h3>
+<blockquote>
+<p>La commande <code>git diff HEAD~1 HEAD</code> compare l’état du
+projet entre deux commits(exactement le passage de l’avant-dernier
+commit au dernier). Les lignes avec <code>-</code> indiquent les
+suppressions et <code>+</code> les ajouts. <a
+href="https://git-scm.com/docs/git-diff">source</a></p>
+</blockquote>
+<h3 data-number="3.5.3" id="quest-ce-que-le-fichier-.gitignore"><span
+class="header-section-number">3.5.3</span> Qu’est-ce que le fichier
+.gitignore ?</h3>
+<blockquote>
+<dl>
+<dt><strong>Rôle</strong></dt>
+<dd>
+Empêcher le suivi de certains fichiers par Git. <strong>Utilité</strong>
+</dd>
+<dd>
+Éviter de versionner des fichiers temporaires, des fichiers de
+compilation ou des données sensibles. <strong>Exemples</strong>
+</dd>
+<dd>
+Les fichiers <code>*.class</code>, <code>*.jar</code> ou les répertoires
+de logs. <a href="https://git-scm.com/docs/gitignore">source</a>
+</dd>
+</dl>
+</blockquote>
+<h2 data-number="3.6" id="collaboration-avec-git"><span
+class="header-section-number">3.6</span> Collaboration avec Git</h2>
+<h3 data-number="3.6.1"
+id="travail-collaboratif-en-équipe-merge-request"><span
+class="header-section-number">3.6.1</span> Travail collaboratif en
+équipe (Merge Request)</h3>
+<blockquote>
+<p>En équipe, nous utilisons des branches dédiées et des <strong>Merge
+Requests</strong> sur GitLab pour soumettre les modifications à la
+validation des pairs avant intégration. <a
+href="https://docs.gitlab.com/ee/user/project/merge_requests/">se</a>ourc</p>
+</blockquote>
+<h3 data-number="3.6.2" id="test-de-la-commande-git-blame"><span
+class="header-section-number">3.6.2</span> Test de la commande git
+blame</h3>
+<blockquote>
+<p><code>git blame</code> est un outil d’audit permettant d’identifier,
+pour chaque ligne d’un fichier, le dernier auteur et le commit associé.
+C’est une commande essentielle pour comprendre l’évolution historique
+d’un algorithme au sein d’une équipe. <a
+href="https://git-scm.com/docs/git-blame">source</a></p>
+</blockquote>
+<h2 data-number="3.7" id="interfaces-graphiques-pour-git"><span
+class="header-section-number">3.7</span> Interfaces graphiques pour
+Git</h2>
+<h3 data-number="3.7.1" id="logiciels-par-défaut-et-tiers"><span
+class="header-section-number">3.7.1</span> Logiciels par défaut et
+tiers</h3>
+<blockquote>
+<p>Nous avons utilisé les outils suivants :</p>
+<ul>
+<li><strong>gitk</strong> : Pour la visualisation de l’historique et du
+graphe des branches.</li>
+<li><strong>git-gui</strong> : Pour la gestion simplifiée des index et
+des commits.</li>
+<li><strong>Git Cola</strong> : Logiciel tiers installé
+(<code>sudo apt install git-cola</code>) pour ses capacités avancées de
+staging partiel. <a href="https://git-cola.github.io/">source</a></li>
+</ul>
+</blockquote>
+<h2 data-number="3.8" id="comparaison-et-analyse-approfondie"><span
+class="header-section-number">3.8</span> Comparaison et Analyse
+approfondie</h2>
+<h3 data-number="3.8.1"
+id="pourquoi-avez-vous-choisi-ce-logiciel-comparaison-des-outils-graphiques-et-de-la-ligne-de-commande"><span
+class="header-section-number">3.8.1</span> Pourquoi avez-vous choisi ce
+logiciel ? (Comparaison des outils graphiques et de la ligne de
+commande)</h3>
+<blockquote>
+<p>Sur notre système Debian 13, j’ai testé gitk et git-gui. La ligne de
+commande (CLI) reste mon outil privilégié pour sa rapidité d’exécution
+et sa capacité à être automatisée par des scripts. Cependant,
+l’interface graphique (GUI) apporte une clarté visuelle indispensable
+pour comprendre les fusions de branches complexes ou pour effectuer une
+sélection précise de lignes lors d’un commit partiel. <a
+href="https://www.atlassian.com/fr/git/tutorials/comparing-workflows">source</a></p>
+</blockquote>
+<h3 data-number="3.8.2"
+id="dans-un-contexte-professionnel-quel-outil-privilégieriez-vous-et-pourquoi"><span
+class="header-section-number">3.8.2</span> Dans un contexte
+professionnel, quel outil privilégieriez-vous et pourquoi ?</h3>
+<blockquote>
+<p>Dans un contexte professionnel, je privilégierais une approche
+hybride, mais centrée sur la ligne de commande. Le terminal est
+universel, fonctionne sur des serveurs distants sans interface graphique
+et permet une maîtrise totale des actions. J’utiliserais l’outil
+graphique ponctuellement, principalement comme aide visuelle pour la
+résolution de conflits de fusion majeurs ou pour la revue rapide d’un
+historique complexe. <a
+href="https://git-scm.com/downloads/guis">source</a></p>
+</blockquote>
+<h1 data-number="4" id="rapport-dinstallation-du-service-forgejo"><span
+class="header-section-number">4</span> Rapport d’installation du service
+Forgejo</h1>
+<h2 data-number="4.1" id="préliminaire-redirection-de-port"><span
+class="header-section-number">4.1</span> Préliminaire : Redirection de
+port</h2>
+<h3 data-number="4.1.1"
+id="comment-avons-nous-configuré-la-redirection-dans-virtualbox"><span
+class="header-section-number">4.1.1</span> Comment avons-nous configuré
+la redirection dans VirtualBox ?</h3>
+<blockquote>
+<p>Pour accéder à l’interface web de Forgejo (port 3000) depuis la
+machine physique, nous avons dû créer une règle de redirection, car la
+VM est isolée derrière un NAT.</p>
+<p>Nous sommes allés dans les <strong>Paramètres</strong> de la machine,
+onglet <strong>Réseau</strong>, puis dans la section
+<strong>Avancé</strong>. En ouvrant le menu <strong>Redirection de
+ports</strong>, nous avons ajouté une règle TCP : le port
+<strong>3000</strong> de l’hôte (notre PC) communique désormais avec le
+port <strong>3000</strong> de l’invité (la VM). <a
+href="https://www.google.com/search?q=https://www.virtualbox.org/manual/ch06.html%23natforward">source</a></p>
+</blockquote>
+<h2 data-number="4.2" id="comprendre-lécosystème-forgejo"><span
+class="header-section-number">4.2</span> Comprendre l’écosystème
+Forgejo</h2>
+<h3 data-number="4.2.1" id="quest-ce-que-forgejo"><span
+class="header-section-number">4.2.1</span> Qu’est-ce que Forgejo ?</h3>
+<blockquote>
+<p>Forgejo est ce qu’on appelle une forge logicielle. C’est un outil
+complet qui permet d’héberger des dépôts Git, de gérer des tickets
+d’incidents et de collaborer sur du code source. Il est léger, écrit en
+langage Go, et propose une interface web très réactive. <a
+href="https://www.google.com/search?q=https://forgejo.org/static/forgejo.pdf">source</a></p>
+</blockquote>
+<h3 data-number="4.2.2"
+id="quest-ce-quun-fork-dans-le-domaine-du-développement-logiciel"><span
+class="header-section-number">4.2.2</span> Qu’est-ce qu’un fork (dans le
+domaine du développement logiciel) ?</h3>
+<blockquote>
+<p>Un <strong>fork</strong> se produit lorsque des développeurs
+reprennent le code source d’un projet existant pour lancer une nouvelle
+branche indépendante. Cela permet de faire évoluer le logiciel selon une
+vision différente, souvent suite à des désaccords communautaires.<a
+href="https://fr.wikipedia.org/wiki/Fork_(d%C3%A9veloppement_logiciel)">source</a></p>
+</blockquote>
+<h3 data-number="4.2.3" id="de-quel-logiciel-forgejo-est-il-issu"><span
+class="header-section-number">4.2.3</span> De quel logiciel Forgejo
+est-il issu ?</h3>
+<blockquote>
+<p>Forgejo est né d’un fork de <strong>Gitea</strong>, qui était
+lui-même à l’époque une version dérivée de Gogs. On reste donc sur une
+base technique très similaire entre ces trois outils. <a
+href="https://forgejo.org/2022-12-15-hello-forgejo/">source</a></p>
+</blockquote>
+<h3 data-number="4.2.4" id="pourquoi-ce-fork-a-t-il-eu-lieu"><span
+class="header-section-number">4.2.4</span> Pourquoi ce fork a-t-il eu
+lieu ?</h3>
+<blockquote>
+<p>Le changement a été motivé par une modification de la gouvernance de
+Gitea vers une structure commerciale à but lucratif. Une partie de la
+communauté a préféré créer Forgejo pour garantir que le projet reste
+“100% libre” et géré de manière désintéressée. <a
+href="https://forgejo.org/faq/">source</a></p>
+</blockquote>
+<h3 data-number="4.2.5"
+id="les-logiciels-dorigine-existent-ils-encore"><span
+class="header-section-number">4.2.5</span> Les logiciels d’origine
+existent-ils encore ?</h3>
+<blockquote>
+<p>Oui, Gitea est toujours maintenu et bénéficie de mises à jour
+régulières. Les deux logiciels coexistent désormais, chacun suivant sa
+propre feuille de route technique. <a
+href="https://github.com/go-gitea/gitea">source</a></p>
+</blockquote>
+<h3 data-number="4.2.6"
+id="quest-ce-qui-différencie-la-gouvernance-de-forgejo-de-celle-de-gitea"><span
+class="header-section-number">4.2.6</span> Qu’est-ce qui différencie la
+gouvernance de Forgejo de celle de Gitea ?</h3>
+<blockquote>
+<p>Forgejo privilégie une gestion communautaire sous l’égide de
+l’organisation <em>Codeberg e.V.</em>, tandis que Gitea fonctionne
+désormais sous un modèle de société privée (Gitea Ltd). <a
+href="https://www.google.com/search?q=https://forgejo.org/governance/">source</a></p>
+</blockquote>
+<h2 data-number="4.3" id="installation-de-forgejo-sur-debian"><span
+class="header-section-number">4.3</span> 3 Installation de Forgejo sur
+Debian</h2>
+<blockquote>
+<p>Comme Forgejo n’est pas encore présent dans les dépôts
+<code>apt</code> officiels, nous avons utilisé l’installation par
+binaire.</p>
+</blockquote>
+<h3 data-number="4.3.1"
+id="comment-avons-nous-installé-le-binaire-forgejo"><span
+class="header-section-number">4.3.1</span> Comment avons-nous installé
+le binaire Forgejo ?</h3>
+<blockquote>
+<p>On a récupéré le fichier binaire sur le site officiel, on lui a donné
+les droits d’exécution, puis on l’a déplacé dans un répertoire système
+(<code>/usr/local/bin</code>) pour pouvoir l’appeler facilement en ligne
+de commande. <a
+href="https://forgejo.org/docs/latest/admin/installation/binary/">source</a></p>
+</blockquote>
+<pre><code>wget https://codeberg.org/forgejo/forgejo/releases/download/v14.0.3/forgejo-14.0.3-linux-amd64
+chmod +x forgejo-14.0.3-linux-amd64
+mv forgejo-14.0.3-linux-amd64 /usr/local/bin/forgejo</code></pre>
+<h3 data-number="4.3.2"
+id="quelles-sont-les-dépendances-et-lutilisateur-requis"><span
+class="header-section-number">4.3.2</span> Quelles sont les dépendances
+et l’utilisateur requis ?</h3>
+<blockquote>
+<p>On a installé Git, car c’est le moteur de la forge. Côté sécurité, on
+a créé un utilisateur système <code>forgejo</code> dédié : il n’a pas de
+mot de passe et ne peut pas se connecter directement, ce qui protège le
+reste du système. <a
+href="https://www.google.com/search?q=https://forgejo.org/docs/latest/admin/installation/binary/%23create-a-user-to-run-forgejo">source</a></p>
+</blockquote>
+<pre><code>apt install git git-lfs
+adduser --system --shell /bin/bash --group --disabled-password --home /home/forgejo forgejo</code></pre>
+<h2 data-number="4.4" id="architecture-et-réseau"><span
+class="header-section-number">4.4</span> 4 Architecture et réseau</h2>
+<h3 data-number="4.4.1"
+id="pourquoi-forgejo-écoute-t-il-sur-le-port-3000-plutôt-que-sur-le-port-80"><span
+class="header-section-number">4.4.1</span> Pourquoi Forgejo écoute-t-il
+sur le port 3000 plutôt que sur le port 80 ?</h3>
+<blockquote>
+<p>Sous Linux, seul l’utilisateur “root” peut lancer un service sur le
+port 80. Comme nous faisons tourner Forgejo avec un utilisateur
+restreint pour plus de sécurité, nous utilisons le port 3000. Cela évite
+de donner trop de privilèges au logiciel. <a
+href="https://en.wikipedia.org/wiki/Registered_port">source</a></p>
+</blockquote>
+<h2 data-number="4.5" id="base-de-données"><span
+class="header-section-number">4.5</span> 5 Base de données</h2>
+<h3 data-number="4.5.1"
+id="pourquoi-sqlite-est-il-préféré-à-postgresql-ou-mysql-pour-ce-projet"><span
+class="header-section-number">4.5.1</span> Pourquoi SQLite est-il
+préféré à PostgreSQL ou MySQL pour ce projet ?</h3>
+<blockquote>
+<p>On a choisi SQLite pour sa simplicité. Contrairement aux autres, il
+n’y a pas de serveur à installer ou à configurer : la base de données
+est un simple fichier. C’est idéal pour une petite instance ou un
+environnement de test. <a
+href="https://www.sqlite.org/whentouse.html">source</a></p>
+</blockquote>
+<h3 data-number="4.5.2"
+id="où-se-trouve-le-fichier-de-base-de-données-sqlite-et-qui-en-est-le-propriétaire"><span
+class="header-section-number">4.5.2</span> Où se trouve le fichier de
+base de données SQLite et qui en est le propriétaire ?</h3>
+<blockquote>
+<p>Le fichier se trouve dans
+<code>/var/lib/forgejo/data/forgejo.db</code>. Il appartient à
+l’utilisateur <code>forgejo</code> que nous avons créé précédemment. <a
+href="https://www.google.com/search?q=https://forgejo.org/docs/latest/admin/installation/binary/%23installation-structure">source</a></p>
+</blockquote>
+<h2 data-number="4.6" id="gestion-du-service-systemd"><span
+class="header-section-number">4.6</span> 6 Gestion du service
+systemd</h2>
+<h3 data-number="4.6.1"
+id="quest-ce-quun-service-systemd-et-à-quoi-sert-il"><span
+class="header-section-number">4.6.1</span> Qu’est-ce qu’un service
+systemd et à quoi sert-il ?</h3>
+<blockquote>
+<p>C’est un gestionnaire qui pilote les logiciels en arrière-plan. Il
+permet de lancer Forgejo automatiquement au démarrage de la machine et
+de le relancer s’il s’arrête brutalement. <a
+href="https://wiki.debian.org/fr/systemd">source</a></p>
+</blockquote>
+<h3 data-number="4.6.2"
+id="où-est-situé-le-fichier-de-service-forgejo-et-que-contient-il"><span
+class="header-section-number">4.6.2</span> Où est situé le fichier de
+service forgejo et que contient-il ?</h3>
+<blockquote>
+<p>Il est dans <code>/etc/systemd/system/forgejo.service</code>. Il
+indique au système l’utilisateur à utiliser, le dossier de travail et la
+commande exacte pour démarrer le serveur web. <a
+href="https://codeberg.org/forgejo/forgejo/src/branch/forgejo/contrib/systemd/forgejo.service">source</a></p>
+</blockquote>
+<h3 data-number="4.6.3"
+id="quelle-est-la-différence-entre-systemctl-start-enable-et-restart"><span
+class="header-section-number">4.6.3</span> Quelle est la différence
+entre systemctl start, enable et restart ?</h3>
+<blockquote>
+<p><code>start</code> lance le service tout de suite ;
+<code>enable</code> programme son lancement au démarrage de la machine ;
+<code>restart</code> l’arrête puis le relance (très utile après avoir
+modifié la configuration). <a
+href="https://man7.org/linux/man-pages/man1/systemctl.1.html">source</a></p>
+</blockquote>
+<h3 data-number="4.6.4"
+id="comment-visualiser-les-logs-avec-journalctl"><span
+class="header-section-number">4.6.4</span> Comment visualiser les logs
+avec journalctl ?</h3>
+<blockquote>
+<p>On utilise <code>journalctl -u forgejo</code>. On peut aussi filtrer
+les logs les plus récents ou les suivre en direct pour débugger
+l’installation. <a
+href="https://man7.org/linux/man-pages/man1/journalctl.1.html">source</a></p>
+</blockquote>
+<h2 data-number="4.7" id="sécurité"><span
+class="header-section-number">4.7</span> 7 Sécurité</h2>
+<h3 data-number="4.7.1"
+id="quelles-sont-les-permissions-des-fichiers-etcforgejo-et-app.ini"><span
+class="header-section-number">4.7.1</span> Quelles sont les permissions
+des fichiers /etc/forgejo et app.ini ?</h3>
+<blockquote>
+<p>Le dossier appartient à <code>root</code> et au groupe
+<code>forgejo</code>, avec des droits stricts (770). C’est crucial car
+le fichier <code>app.ini</code> contient des informations sensibles qui
+ne doivent pas être visibles par n’importe qui sur la machine. <a
+href="https://www.google.com/search?q=https://forgejo.org/docs/latest/admin/installation/binary/%23installation-structure">source</a></p>
+</blockquote>
+<h3 data-number="4.7.2"
+id="sur-quel-port-écoute-le-serveur-ssh-de-forgejo"><span
+class="header-section-number">4.7.2</span> Sur quel port écoute le
+serveur SSH de Forgejo ?</h3>
+<blockquote>
+<p>Il utilise le port <strong>22</strong>. C’est le port officiel du
+protocole SSH, indispensable pour que les utilisateurs puissent
+“pousser” ou récupérer du code de manière sécurisée. <a
+href="https://en.wikipedia.org/wiki/Secure_Shell">source</a></p>
+</blockquote>
+<h3 data-number="4.7.3"
+id="quelles-mesures-de-sécurité-prendre-si-le-serveur-était-ouvert-sur-internet"><span
+class="header-section-number">4.7.3</span> Quelles mesures de sécurité
+prendre si le serveur était ouvert sur Internet ?</h3>
+<blockquote>
+<p>On passerait obligatoirement par un certificat SSL (HTTPS) via un
+“Reverse Proxy” comme Nginx. On renforcerait aussi le SSH en désactivant
+les mots de passe au profit de clés privées uniquement. <a
+href="https://forgejo.org/docs/latest/admin/reverse-proxy/">source</a></p>
+</blockquote>
+<h1 data-number="5" id="personnalisation"><span
+class="header-section-number">5</span> Personnalisation</h1>
+<h2 data-number="5.1" id="yaml"><span
+class="header-section-number">5.1</span> YAML</h2>
+<h3 data-number="5.1.1" id="quest-ce-que-yaml"><span
+class="header-section-number">5.1.1</span> Qu’est ce que YAML</h3>
+<blockquote>
+<p>YAML est un format de sérialisation de données lisible par l’humain,
+souvent utilisé pour les fichiers de configuration et les métadonnées
+(par ex. front matter dans Markdown/Pandoc) (<a
+href="https://www.ibm.com/fr-fr/think/topics/yaml">source</a>)</p>
+</blockquote>
+<h3 data-number="5.1.2" id="utilisation-du-yaml-avec-markdown"><span
+class="header-section-number">5.1.2</span> Utilisation du YAML avec
+markdown</h3>
+<blockquote>
+<p>Ici nous allons vous présenter ce qu’il faut savoir sur YAML avec
+markdown et quelques exemple de son utilisations.</p>
+<p>YAML est à mettre tout au début de son fichier, en voici un exemple
+:</p>
+</blockquote>
+<pre><code>title: &quot;Rapport SAE&quot;
+author: 
+  - &quot;Aernout Robin&quot;  
+  - &quot;Chekalil Youssef&quot;
+  - &quot;Verez Tom&quot;
+date: \today
+
+css: style.css
+
+linkcolor: blue
+urlcolor: red
+colorlinks: true
+ 
+fenced_divs: true 
+admonition: true 
+
+toc: true          
+toc-depth: 2       
+numbersections: true</code></pre>
+<h4 data-number="5.1.2.1" id="yaml-markdown-via-pandoc"><span
+class="header-section-number">5.1.2.1</span> YAML Markdown via
+Pandoc</h4>
+<blockquote>
+<p>Le bloc ci-dessus correspond aux <strong>métadonnées YAML</strong>
+utilisées par Pandoc. Il doit toujours commencer et se terminer par
+<code>---</code>. Ce bloc permet de <strong>configurer le
+document</strong> avant sa conversion (en PDF, HTML, etc.). Il contient
+les informations principales ainsi que des options qui influencent
+directement le rendu final.</p>
+</blockquote>
+<h4 data-number="5.1.2.2" id="les-bases-de-yaml"><span
+class="header-section-number">5.1.2.2</span> Les bases de yaml</h4>
+<blockquote>
+<p>Ici, nous allons ous présenter les bases de YAML afin de
+personnaliser votre PDF ainsi que votre HTM. Dans l’exemple que nous
+avons mis ci-dessus, il y contient les bases.<br />
+Nous allons donc vous présenter les différentes lignes ainsi que leur
+fonctionnement et leur subtilité.</p>
+<p>Les premières lignes définissent les informations de base du document
+:<br />
+- <code>title</code> : correspond au titre du document, affiché en haut
+du fichier généré. - <code>author</code> : permet de renseigner un ou
+plusieurs auteurs. - <code>date</code> : ici <code>\today</code> permet
+d’afficher automatiquement la date du jour lors de la génération.</p>
+<p>Ces éléments sont souvent utilisés pour créer une <strong>page de
+couverture automatique</strong>.</p>
+</blockquote>
+<h4 data-number="5.1.2.3" id="gestion-du-style"><span
+class="header-section-number">5.1.2.3</span> Gestion du style</h4>
+<blockquote>
+<p>La ligne <code>css: style.css</code> sert uniquement pour la
+génération en <strong>HTML</strong>. Elle permet d’appliquer un fichier
+CSS externe afin de personnaliser l’apparence (couleurs, polices,
+marges, etc.).</p>
+<p>Ce qui faut retenir ici, c’est que chaque instruction YAML pour le
+PDF est un raccourci pour un paramètre d’un package LaTeX. Donc ici ce
+sont que de simples raccourci et cahce derrière les vraies
+commandes.</p>
+<p>Cependant elle reste valble, il faut juste en etre conscient.</p>
+<p>Concernant <code>linkcolor: blue</code>, cela permet de définir la
+<strong>couleur des liens</strong> dans le document PDF. Pour un rendu
+HTML, il est généralement préférable de gérer cela directement dans le
+fichier CSS.</p>
+<p>Concernant <code>urlcolor: red</code>, cela permet de définir la
+<strong>couleur des liens externes</strong> (comme les sites web) dans
+le document PDF. Pour un rendu HTML, on gère généralement cela
+directement via CSS.</p>
+<p>Concernant <code>colorlinks: true</code>, cette option indique à
+LaTeX d’<strong>appliquer les couleurs aux liens eux-mêmes</strong>
+plutôt que de les entourer d’un encadré coloré.</p>
+<p>Sans cette option, LaTeX crée par défaut des cadres colorés autour
+des liens, ce qui peut rendre les liens moins esthétiques ou surlignés
+en PDF. Pour faire bref, les liens ne changeront pas de couleur.</p>
+</blockquote>
+<h4 data-number="5.1.2.4" id="extensions-markdown"><span
+class="header-section-number">5.1.2.4</span> Extensions Markdown</h4>
+<blockquote>
+<p>Les options suivantes activent des fonctionnalités supplémentaires de
+Pandoc pour le html : - <code>fenced_divs: true</code> : permet
+d’utiliser des blocs délimités par <code>:::</code> pour créer des
+conteneurs personnalisés suivie de <code>{.(nomDeVotreClass)}.</code> -
+<code>admonition: true</code> : fonctionne de la même manière mais avec
+des blocs prédéfini, c’est à dire en mettant apèrs <code>:::</code> soit
+<code>warning/tips/note</code>.</p>
+<p>Les options restantes permettent principalement de structurer
+automatiquement le document. Par exemple, <code>toc: true</code> active
+la génération d’une table des matières, ce qui permet d’avoir une vue
+d’ensemble des différentes sections. L’option
+<code>numbersections: true</code> ajoute une numérotation automatique
+aux titres (1, 1.1, 1.2, etc.), ce qui améliore la lisibilité et
+l’organisation du document. Enfin, <code>toc-depth: 2</code> limite la
+table des matières aux titres de niveau 1 et 2, évitant ainsi qu’elle
+devienne trop longue ou difficile à lire.</p>
+</blockquote>
+<div class="warning">
+<p>Attention: ces options retantes ne fonctionne que pour le pdf, et non
+pour le html !</p>
+</div>
+<blockquote>
+<p>Il existe également de nombreuses autres options YAML plus avancées.
+Par exemple, <code>mathjax: true</code> permet d’afficher des formules
+mathématiques dans un document HTML, tandis que l’ajout de packages
+LaTeX permet de gérer des équations complexes lors de la génération en
+PDF. Ces fonctionnalités offrent davantage de possibilités, mais elles
+nécessitent une meilleure compréhension de Pandoc et de YAML pour être
+utilisées efficacement.</p>
+</blockquote>
+<h2 data-number="5.2" id="css"><span
+class="header-section-number">5.2</span> CSS</h2>
+<h3 data-number="5.2.1" id="quest-ce-que-le-css"><span
+class="header-section-number">5.2.1</span> Qu’est ce que le css</h3>
+<blockquote>
+<p>CSS, ou Cascading Style Sheets, est un langage de feuilles de style
+utilisé pour définir l’apparence et la présentation des documents HTML
+ou XML. Il permet de séparer le contenu du document de sa mise en forme,
+ce qui facilite la maintenance et assure une cohérence du design sur
+plusieurs pages (<a
+href="https://developer.mozilla.org/fr/docs/Web/CSS">source</a>)</p>
+</blockquote>
+<h3 data-number="5.2.2" id="utilisation-du-css"><span
+class="header-section-number">5.2.2</span> Utilisation du CSS</h3>
+<h4 data-number="5.2.2.1" id="son-fonctionnement"><span
+class="header-section-number">5.2.2.1</span> Son fonctionnement</h4>
+<blockquote>
+<p>Le CSS fonctionne avec des <strong>sélecteurs</strong> (comme
+<code>h1</code>, <code>a</code>, <code>.note</code>) qui permettent de
+cibler des éléments HTML, puis d’appliquer des
+<strong>propriétés</strong> (couleur, taille, marges, etc.).</p>
+</blockquote>
+<hr />
+<h4 data-number="5.2.2.2" id="structure-dune-règle-css"><span
+class="header-section-number">5.2.2.2</span> Structure d’une règle
+CSS</h4>
+<blockquote>
+<p>Une règle CSS se compose de trois éléments :</p>
+</blockquote>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sélecteur {</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  propriété<span class="in">: valeur</span>;</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<blockquote>
+<ul>
+<li>Le <strong>sélecteur</strong> désigne l’élément à modifier<br />
+</li>
+<li>La <strong>propriété</strong> correspond à ce que l’on veut
+changer<br />
+</li>
+<li>La <strong>valeur</strong> définit comment on le change</li>
+</ul>
+</blockquote>
+<hr />
+<h4 data-number="5.2.2.3" id="exemple-de-classes-personnalisées"><span
+class="header-section-number">5.2.2.3</span> Exemple de classes
+personnalisées</h4>
+<blockquote>
+<p>Voici des classes CSS permettant de styliser des blocs d’information
+:</p>
+</blockquote>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.note</span> {</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-left</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#2196F3</span><span class="op">;</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#dcf1ff</span><span class="op">;</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">10</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="fu">.warning</span> {</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-left</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#f44336</span><span class="op">;</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#ffe1e6</span><span class="op">;</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">10</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="fu">.tip</span> {</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-left</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#00ff1e</span><span class="op">;</span></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#b8ffc2</span><span class="op">;</span></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">10</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<blockquote>
+<p>Ces classes permettent de créer des blocs visuels : -
+<code>.note</code> → information<br />
+- <code>.warning</code> → avertissement<br />
+- <code>.tip</code> → conseil</p>
+<p>Vous pouvez donc les personnaliser comme bon vous semble.</p>
+<p>Nous allons vous présenter les plus basiques :</p>
+<p><code>boder-left</code> permet de gérer la bordure gauche, ici nous
+avons décider de mettre sa taille à 4px, solid pour dire que c’est un
+trait continue plein en vert</p>
+<p><code>background-color</code> pour définir la couleur de l’arrière
+plan</p>
+<p>En CSS, <strong>margin</strong> et <strong>padding</strong> servent à
+créer de l’espace autour des éléments, mais ils agissent à des endroits
+différents. Le <strong>padding</strong> correspond à l’espace <strong>à
+l’intérieur</strong> d’un élément, entre le contenu (texte, image…) et
+sa bordure. Autrement dit, il “repousse” le contenu vers l’intérieur,
+créant un espace interne. Par exemple, <code>padding: 20px;</code>
+ajoutera 20 pixels entre le texte et la bordure de l’élément.</p>
+<p>À l’inverse, le <strong>margin</strong> correspond à l’espace
+<strong>à l’extérieur</strong> d’un élément, entre la bordure de
+l’élément et les autres éléments autour. Il “repousse” l’élément
+lui-même, créant un espace externe. Par exemple,
+<code>margin: 20px;</code> ajoutera 20 pixels entre l’élément et ses
+voisins.</p>
+<p>Nous vous invitions à aller voir <a
+href="https://fr.siteground.com/kb/margin-vs-padding/">cette page</a>
+pour y comprendre un peu mieux son principe.</p>
+</blockquote>
+<blockquote>
+
+</blockquote>
+<h4 data-number="5.2.2.4" id="mise-en-forme-des-titres"><span
+class="header-section-number">5.2.2.4</span> Mise en forme des
+titres</h4>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>h1 {</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">font-family</span>: Verdana<span class="op">,</span> Geneva<span class="op">,</span> Tahoma<span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">text-transform</span>: <span class="dv">uppercase</span><span class="op">;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>h2 {</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">font-family</span>:<span class="st">&#39;Franklin Gothic Medium&#39;</span><span class="op">,</span> <span class="st">&#39;Arial Narrow&#39;</span><span class="op">,</span> Arial<span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">text-transform</span>: <span class="dv">uppercase</span><span class="op">;</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<blockquote>
+<ul>
+<li><code>font-family</code> permet de changer la police</li>
+<li><code>text-transform: uppercase</code> met le texte en
+majuscules</li>
+</ul>
+<p>Cependant il y en a une multitudes pour le text, vous pouvez tous les
+retrouver <a
+href="https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Text_styling/Fundamentals">ici</a></p>
+</blockquote>
+<hr />
+<h4 data-number="5.2.2.5" id="stylisation-des-liens"><span
+class="header-section-number">5.2.2.5</span> Stylisation des liens</h4>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>a {</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span>: <span class="cn">#0800ff</span><span class="op">;</span>         </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">text-decoration</span>: <span class="dv">none</span><span class="op">;</span>          </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">transition</span>: <span class="dv">all</span> <span class="dv">0.3</span><span class="dt">s</span><span class="op">;</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span>: <span class="dv">inline-block</span><span class="op">;</span>    </span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>a<span class="in">:hover</span> {</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span>: <span class="cn">#a600ff</span><span class="op">;</span>           </span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">text-decoration</span>: <span class="dv">underline</span><span class="op">;</span> </span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">transform</span>: <span class="fu">scale(</span><span class="dv">1.05</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<blockquote>
+<p>Le sélecteur <code>a</code> cible tous les liens du document et
+permet de définir leur style par défaut. Ici, color définit la couleur
+du lien et <code>text-decoration: none</code> supprime le soulignement
+classique. La propriété <code>display: inline-block</code> transforme le
+lien en bloc en ligne, ce qui permet d’appliquer des transformations
+comme l’agrandissement.</p>
+<p><code>transition: all 0.3s</code> crée une animation fluide sur
+toutes les propriétés lorsqu’elles changent, par exemple la couleur ou
+la taille.</p>
+<p>Le sélecteur <code>a:hover</code> s’applique lorsque l’utilisateur
+passe la souris sur le lien. <code>color</code> change la couleur du
+lien au survol, <code>text-decoration: underline</code> ajoute le
+soulignement, et <code>transform: scale(1.05)</code> agrandit légèrement
+le lien pour un effet interactif et visuel.</p>
+</blockquote>
+<hr />
+<h4 data-number="5.2.2.6" id="style-du-code"><span
+class="header-section-number">5.2.2.6</span> Style du code</h4>
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>code {</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#ebebeb</span><span class="op">;</span>      </span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="cn">#0b2540</span><span class="op">;</span>                  </span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">2</span><span class="dt">px</span> <span class="dv">6</span><span class="dt">px</span><span class="op">;</span>                 </span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span>: <span class="dv">4</span><span class="dt">px</span><span class="op">;</span>             </span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-family</span>: <span class="st">&#39;Courier New&#39;</span><span class="op">,</span> Courier<span class="op">,</span> <span class="dv">monospace</span><span class="op">;</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">0.95</span><span class="dt">em</span><span class="op">;</span>    </span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<blockquote>
+<p>Le sélecteur <code>code</code> cible tous les blocs de code ou les
+inline code dans ton document.</p>
+<p><code>background-color: #ebebeb;</code> crée un fond gris clair pour
+améliorer la lisibilité.<br />
+<code>color: #0b2540;</code> définit la couleur du texte pour qu’il
+ressorte sur le fond.<br />
+<code>padding: 2px 6px;</code> ajoute un espace à l’intérieur du bloc,
+pour que le texte ne touche pas les bords.<br />
+<code>border-radius: 4px;</code> arrondit légèrement les coins du
+bloc.<br />
+<code>font-family: 'Courier New', Courier, monospace;</code> applique
+une police à chasse fixe adaptée au code.<br />
+<code>font-size: 0.95em;</code> ajuste légèrement la taille du texte
+pour qu’il s’intègre mieux dans le document.</p>
+</blockquote>
+<hr />
+<h2 data-number="5.3" id="documentations-1"><span
+class="header-section-number">5.3</span> Documentations</h2>
+<blockquote>
+<p>Ici nous allons mettre la documetnation utile, que nous avons utilisé
+et que vous pouvez utilisé.</p>
+<p>Voici une <a
+href="https://stackoverflow.com/questions/75548339/mixing-yaml-and-markdown">doc
+YAML</a> que vous pouvez utilisé pour mieux comprendre et apprendre pour
+de choses, et en voici une pour le <a
+href="https://developer.mozilla.org/fr/docs/Web/CSS">CSS</a></p>
+</blockquote>
+<aside id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Ce nom sert à identifier la machine sur un réseau.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Le domaine sert à compléter le nom de la machine sur un
+réseau.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Le compte <strong>root</strong> est l’administrateur du
+système.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Le partitionnement est une étape importante car il
+organise le stockage du disque.<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Un miroir HTTP est un serveur qui copie les fichiers
+Debian afin de permettre un téléchargement plus rapide.<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>GRUB est un chargeur d’amorçage permettant de démarrer
+un système d’exploitation.<a href="#fnref6" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
+</body>
+</html>

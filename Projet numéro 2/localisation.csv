@@ -1,0 +1,1285 @@
+id;n5;n6;n7;n8;n9
+1;51;Marne;Grand-Est;Reims;Thillois
+2;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Lambesc
+3;92;Hauts-de-Seine;Ile-de-France;Versailles;Issy-les-Moulineaux
+4;92;Hauts-de-Seine;Ile-de-France;Versailles;Clichy
+5;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Contamine-sur-Arve
+6;79;Deux-sèvres;Nouvelle Aquitaine;Poitiers;Bressuire
+7;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Limoges
+8;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Thiers
+9;95;Val-d'oise;Ile-de-France;Versailles;Goussainville
+10;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Cusset
+11;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Riom
+12;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon
+13;76;Seine-Maritime;Normandie;Normandie;Le Havre
+14;59;Nord;Hauts-de-France;Lille;Orchies
+15;01;Ain;Auvergne-Rhône-Alpes;Lyon;Ferney-Voltaire
+16;72;Sarthe;Pays-de-la-Loire;Nantes;Le Mans
+17;32;Gers;Occitanie;Toulouse;Samatan
+18;59;Nord;Hauts-de-France;Lille;Aniche
+19;29;Finistère;Bretagne;Rennes;Plomelin
+20;974;La Réunion;Réunion;La Réunion;La Possession
+21;57;Moselle;Grand-Est;Nancy-Metz;Talange
+22;971;Guadeloupe;Guadeloupe;Guadeloupe;Port-Louis
+23;22;Côtes-d'Armor;Bretagne;Rennes;Lannion
+24;62;Pas-de-Calais;Hauts-de-France;Lille;Hénin-Beaumont
+25;33;Gironde;Nouvelle Aquitaine;Bordeaux;Bazas
+26;92;Hauts-de-Seine;Ile-de-France;Versailles;Saint-Cloud
+27;45;Loiret;Centre;Orléans-Tours;Ingré
+28;92;Hauts-de-Seine;Ile-de-France;Versailles;Clamart
+29;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Bellac
+30;48;Lozère;Occitanie;Montpellier;Mende
+31;19;Corrèze;Nouvelle Aquitaine;Limoges;Ussel
+32;83;Var;Provence-Alpes-Côte d'Azur;Nice;Saint-Raphaël
+33;78;Yvelines;Ile-de-France;Versailles;Poissy
+34;42;Loire;Auvergne-Rhône-Alpes;Lyon;Nandax
+35;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 10e  Arrondissement
+36;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Aix-en-Provence
+37;91;Essonne;Ile-de-France;Versailles;Bures-sur-Yvette
+38;57;Moselle;Grand-Est;Nancy-Metz;Algrange
+39;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Rumilly
+40;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Biarritz
+41;50;Manche;Normandie;Normandie;Agneaux
+42;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Saint-Paul-Trois-Châteaux
+43;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Jacob-Bellecombette
+44;60;Oise;Hauts-de-France;Amiens;Pierrefonds
+45;93;Seine-Saint-Denis;Ile-de-France;Créteil;Stains
+46;18;Cher;Centre;Orléans-Tours;Le Subdray
+47;34;Hérault;Occitanie;Montpellier;Gignac
+48;04;Alpes-de-Haute-Provence;Provence-Alpes-Côte d'Azur;Aix-Marseille;Digne-les-Bains
+49;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  1er Arrondissement
+50;76;Seine-Maritime;Normandie;Normandie;Darnétal
+51;59;Nord;Hauts-de-France;Lille;Aulnoye-Aymeries
+52;02;Aisne;Hauts-de-France;Amiens;Soissons
+53;15;Cantal;Auvergne-Rhône-Alpes;Clermont-Ferrand;Saint-Flour
+54;77;Seine-et-Marne;Ile-de-France;Créteil;Lieusaint
+55;94;Val-de-Marne;Ile-de-France;Créteil;Arcueil
+56;59;Nord;Hauts-de-France;Lille;Sin-le-Noble
+57;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Bourgoin-Jallieu
+58;94;Val-de-Marne;Ile-de-France;Créteil;Choisy-le-Roi
+59;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Cannes
+60;27;Eure;Normandie;Normandie;Louviers
+61;37;Indre-et-Loire;Centre;Orléans-Tours;Chambray-lès-Tours
+62;91;Essonne;Ile-de-France;Versailles;Dourdan
+63;85;Vendée;Pays-de-la-Loire;Nantes;Luçon
+64;68;Haut-Rhin;Grand-Est;Strasbourg;Illzach
+65;29;Finistère;Bretagne;Rennes;Treffiagat
+66;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Louhans
+67;95;Val-d'oise;Ile-de-France;Versailles;Jouy-le-Moutier
+68;56;Morbihan;Bretagne;Rennes;Guer
+69;59;Nord;Hauts-de-France;Lille;Dunkerque
+70;30;Gard;Occitanie;Montpellier;Marguerittes
+71;23;Creuse;Nouvelle Aquitaine;Limoges;Ahun
+72;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Rezé
+73;91;Essonne;Ile-de-France;Versailles;Les Ulis
+74;76;Seine-Maritime;Normandie;Normandie;Le Mesnil-Esnard
+75;22;Côtes-d'Armor;Bretagne;Rennes;Merdrignac
+76;29;Finistère;Bretagne;Rennes;Plouzané
+77;99;Etranger;;Etranger;Rabat
+78;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Chéraute
+79;29;Finistère;Bretagne;Rennes;Quimper
+80;72;Sarthe;Pays-de-la-Loire;Nantes;La Flèche
+81;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Valbonne
+82;77;Seine-et-Marne;Ile-de-France;Créteil;Provins
+83;974;La Réunion;Réunion;La Réunion;Saint-Pierre
+84;61;Orne;Normandie;Normandie;Damigny
+85;16;Charente;Nouvelle Aquitaine;Poitiers;Barbezieux-Saint-Hilaire
+86;79;Deux-sèvres;Nouvelle Aquitaine;Poitiers;Thouars
+87;31;Haute-Garonne;Occitanie;Toulouse;Gragnague
+88;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Moûtiers
+89;88;Vosges;Grand-Est;Nancy-Metz;Saint-Dié-des-Vosges
+90;76;Seine-Maritime;Normandie;Normandie;Sainte-Adresse
+91;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Saint-Nazaire
+92;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Aubière
+93;35;Ille-et-Vilaine;Bretagne;Rennes;Saint-Malo
+94;90;Territoire de Belfort;Bourgogne-Franche-Comté;Besancon;Valdoie
+95;32;Gers;Occitanie;Toulouse;Nogaro
+96;30;Gard;Occitanie;Montpellier;Saint-Christol-lez-Alès
+97;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Romans-sur-Isère
+98;58;Nièvre;Bourgogne-Franche-Comté;Dijon;Nevers
+99;34;Hérault;Occitanie;Montpellier;Jacou
+100;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Derval
+101;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Clermont-Ferrand
+102;40;Landes;Nouvelle Aquitaine;Bordeaux;Capbreton
+103;59;Nord;Hauts-de-France;Lille;Anzin
+104;40;Landes;Nouvelle Aquitaine;Bordeaux;Dax
+105;83;Var;Provence-Alpes-Côte d'Azur;Nice;Toulon
+106;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Nantes
+107;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  8e  Arrondissement
+108;25;Doubs;Bourgogne-Franche-Comté;Besancon;Dannemarie-sur-Crète
+109;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Martigues
+110;34;Hérault;Occitanie;Montpellier;Montpellier
+111;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Rochefort-Montagne
+112;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Port-de-Bouc
+113;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Pau
+114;81;Tarn;Occitanie;Toulouse;Brens
+115;99;Etranger;;Etranger;Yaoundé
+116;81;Tarn;Occitanie;Toulouse;Le Sequestre
+117;83;Var;Provence-Alpes-Côte d'Azur;Nice;Hyères
+118;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Pont-à-Mousson
+119;34;Hérault;Occitanie;Montpellier;Lattes
+120;19;Corrèze;Nouvelle Aquitaine;Limoges;Meymac
+121;77;Seine-et-Marne;Ile-de-France;Créteil;Congis-sur-Thérouanne
+122;65;Hautes-Pyrénées;Occitanie;Toulouse;Lourdes
+123;14;Calvados;Normandie;Normandie;Caen
+124;971;Guadeloupe;Guadeloupe;Guadeloupe;Lamentin
+125;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Marmande
+126;01;Ain;Auvergne-Rhône-Alpes;Lyon;Viriat
+127;974;La Réunion;Réunion;La Réunion;Saint-André
+128;51;Marne;Grand-Est;Reims;Châlons-en-Champagne
+129;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Fontaines
+130;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Dardilly
+131;86;Vienne;Nouvelle Aquitaine;Poitiers;Vouneuil-sous-Biard
+132;51;Marne;Grand-Est;Reims;Vitry-le-François
+133;95;Val-d'oise;Ile-de-France;Versailles;Ermont
+134;45;Loiret;Centre;Orléans-Tours;Gien
+135;86;Vienne;Nouvelle Aquitaine;Poitiers;Châtellerault
+136;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Saint-Vallier
+137;93;Seine-Saint-Denis;Ile-de-France;Créteil;Montreuil
+138;974;La Réunion;Réunion;La Réunion;Saint-Leu
+139;92;Hauts-de-Seine;Ile-de-France;Versailles;Garches
+140;60;Oise;Hauts-de-France;Amiens;Nogent-sur-Oise
+141;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Sainte-Livrade-sur-Lot
+142;22;Côtes-d'Armor;Bretagne;Rennes;Rostrenen
+143;37;Indre-et-Loire;Centre;Orléans-Tours;Château-Renault
+144;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Saint-Jean-de-Maurienne
+145;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Thonon-les-Bains
+146;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Saint-Genis-de-Saintonge
+147;12;Aveyron;Occitanie;Toulouse;Rignac
+148;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;La Gaude
+149;971;Guadeloupe;Guadeloupe;Guadeloupe;Morne-à-l'Eau
+150;12;Aveyron;Occitanie;Toulouse;Millau
+151;14;Calvados;Normandie;Normandie;Lisieux
+152;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Chalon-sur-Saône
+153;25;Doubs;Bourgogne-Franche-Comté;Besancon;Mamirolle
+154;95;Val-d'oise;Ile-de-France;Versailles;Domont
+155;94;Val-de-Marne;Ile-de-France;Créteil;Fresnes
+156;36;Indre;Centre;Orléans-Tours;Issoudun
+157;93;Seine-Saint-Denis;Ile-de-France;Créteil;Drancy
+158;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;La Rochelle
+159;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Montluçon
+160;38;Isère;Auvergne-Rhône-Alpes;Grenoble;La Côte-Saint-André
+161;62;Pas-de-Calais;Hauts-de-France;Lille;Aire-sur-la-Lys
+162;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Mâcon
+163;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Villefontaine
+164;56;Morbihan;Bretagne;Rennes;Lorient
+165;84;Vaucluse;Provence-Alpes-Côte d'Azur;Aix-Marseille;Orange
+166;72;Sarthe;Pays-de-la-Loire;Nantes;Pruillé-le-Chétif
+167;57;Moselle;Grand-Est;Nancy-Metz;Schoeneck
+168;70;Haute-saône;Bourgogne-Franche-Comté;Besancon;Fougerolles-Saint-Valbert
+169;86;Vienne;Nouvelle Aquitaine;Poitiers;Thuré
+170;84;Vaucluse;Provence-Alpes-Côte d'Azur;Aix-Marseille;Vedène
+171;62;Pas-de-Calais;Hauts-de-France;Lille;Coulogne
+172;29;Finistère;Bretagne;Rennes;Plourin-lès-Morlaix
+173;972;Martinique;Martinique;Martinique;Bellefontaine
+174;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Bourcefranc-le-Chapus
+175;92;Hauts-de-Seine;Ile-de-France;Versailles;Gennevilliers
+176;973;Guyane;Guyane;Guyane;Kourou
+177;94;Val-de-Marne;Ile-de-France;Créteil;Alfortville
+178;85;Vendée;Pays-de-la-Loire;Nantes;Rives de l'Yon
+179;59;Nord;Hauts-de-France;Lille;Douai
+180;77;Seine-et-Marne;Ile-de-France;Créteil;Torcy
+181;62;Pas-de-Calais;Hauts-de-France;Lille;Bapaume
+182;29;Finistère;Bretagne;Rennes;Châteaulin
+183;30;Gard;Occitanie;Montpellier;Le Vigan
+184;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Moulins
+185;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Rousset
+186;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Segré-en-Anjou Bleu
+187;972;Martinique;Martinique;Martinique;Le François
+188;39;Jura;Bourgogne-Franche-Comté;Besancon;Montmorot
+189;75;Paris;Ile-de-France;Paris;Paris  6e  Arrondissement
+190;65;Hautes-Pyrénées;Occitanie;Toulouse;Bagnères-de-Bigorre
+191;31;Haute-Garonne;Occitanie;Toulouse;Balma
+192;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Le Landreau
+193;08;Ardennes;Grand-Est;Reims;Sedan
+194;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marignane
+195;36;Indre;Centre;Orléans-Tours;Saint-Cyran-du-Jambot
+196;973;Guyane;Guyane;Guyane;Saint-Laurent-du-Maroni
+197;22;Côtes-d'Armor;Bretagne;Rennes;Saint-Brieuc
+198;57;Moselle;Grand-Est;Nancy-Metz;Le Ban-Saint-Martin
+199;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Sallanches
+200;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Die
+201;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Villers-lès-Nancy
+202;80;Somme;Hauts-de-France;Amiens;Amiens
+203;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Gignac-la-Nerthe
+204;25;Doubs;Bourgogne-Franche-Comté;Besancon;Audincourt
+205;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Ecully
+206;27;Eure;Normandie;Normandie;Bernay
+207;56;Morbihan;Bretagne;Rennes;Lanester
+208;27;Eure;Normandie;Normandie;Gaillon
+209;39;Jura;Bourgogne-Franche-Comté;Besancon;Lons-le-Saunier
+210;67;Bas-Rhin;Grand-Est;Strasbourg;Strasbourg
+211;62;Pas-de-Calais;Hauts-de-France;Lille;Montreuil-sur-Mer
+212;2A;Corse-du-Sud;Corse;Corse;Sarrola-Carcopino
+213;05;Hautes-Alpes;Provence-Alpes-Côte d'Azur;Aix-Marseille;Briançon
+214;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Vizille
+215;85;Vendée;Pays-de-la-Loire;Nantes;Les Sables-d'Olonne
+216;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Argonay
+217;08;Ardennes;Grand-Est;Reims;Bazeilles
+218;82;Tarn-et-Garonne;Occitanie;Toulouse;Montauban
+219;92;Hauts-de-Seine;Ile-de-France;Versailles;Bois-Colombes
+220;95;Val-d'oise;Ile-de-France;Versailles;Eragny
+221;95;Val-d'oise;Ile-de-France;Versailles;Taverny
+222;40;Landes;Nouvelle Aquitaine;Bordeaux;Saint-Paul-lès-Dax
+223;22;Côtes-d'Armor;Bretagne;Rennes;Dinan
+224;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Escurolles
+225;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Aubagne
+226;86;Vienne;Nouvelle Aquitaine;Poitiers;Montmorillon
+227;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Montardon
+228;93;Seine-Saint-Denis;Ile-de-France;Créteil;Aubervilliers
+229;57;Moselle;Grand-Est;Nancy-Metz;Peltre
+230;81;Tarn;Occitanie;Toulouse;Mazamet
+231;94;Val-de-Marne;Ile-de-France;Créteil;Vincennes
+232;60;Oise;Hauts-de-France;Amiens;Beauvais
+233;39;Jura;Bourgogne-Franche-Comté;Besancon;Moirans-en-Montagne
+234;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Istres
+235;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Tain-l'Hermitage
+236;29;Finistère;Bretagne;Rennes;Morlaix
+237;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Hasparren
+238;22;Côtes-d'Armor;Bretagne;Rennes;La Roche-Jaudy
+239;80;Somme;Hauts-de-France;Amiens;Doullens
+240;70;Haute-saône;Bourgogne-Franche-Comté;Besancon;Gray
+241;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 12e  Arrondissement
+242;39;Jura;Bourgogne-Franche-Comté;Besancon;Dole
+243;16;Charente;Nouvelle Aquitaine;Poitiers;La Couronne
+244;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Chambéry
+245;78;Yvelines;Ile-de-France;Versailles;La Queue-les-Yvelines
+246;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Cluses
+247;51;Marne;Grand-Est;Reims;Reims
+248;59;Nord;Hauts-de-France;Lille;Wattignies
+249;65;Hautes-Pyrénées;Occitanie;Toulouse;Tarbes
+250;99;Etranger;;Etranger;Singapour 139408
+251;29;Finistère;Bretagne;Rennes;Pont-l'Abbé
+252;95;Val-d'oise;Ile-de-France;Versailles;Vauréal
+253;72;Sarthe;Pays-de-la-Loire;Nantes;Sablé-sur-Sarthe
+254;62;Pas-de-Calais;Hauts-de-France;Lille;Avion
+255;78;Yvelines;Ile-de-France;Versailles;Les Mureaux
+256;68;Haut-Rhin;Grand-Est;Strasbourg;Wintzenheim
+257;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Longwy
+258;78;Yvelines;Ile-de-France;Versailles;Saint-Germain-en-Laye
+259;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Vallon-Pont-d'Arc
+260;89;Yonne;Bourgogne-Franche-Comté;Dijon;Avallon
+261;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Jarny
+262;02;Aisne;Hauts-de-France;Amiens;Prémontré
+263;57;Moselle;Grand-Est;Nancy-Metz;Saint-Avold
+264;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Sathonay-Camp
+265;84;Vaucluse;Provence-Alpes-Côte d'Azur;Aix-Marseille;Carpentras
+266;57;Moselle;Grand-Est;Nancy-Metz;Sarreguemines
+267;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Clisson
+268;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Sainte-Gemmes-sur-Loire
+269;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Saint-Palais
+270;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Tarare
+271;77;Seine-et-Marne;Ile-de-France;Créteil;Lognes
+272;34;Hérault;Occitanie;Montpellier;Sète
+273;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Verrières-en-Anjou
+274;99;Etranger;;Etranger;Casablanca
+275;78;Yvelines;Ile-de-France;Versailles;Le Mesnil-Saint-Denis
+276;51;Marne;Grand-Est;Reims;Somme-Vesle
+277;61;Orne;Normandie;Normandie;Flers
+278;16;Charente;Nouvelle Aquitaine;Poitiers;Angoulême
+279;93;Seine-Saint-Denis;Ile-de-France;Créteil;Villemomble
+280;62;Pas-de-Calais;Hauts-de-France;Lille;Noeux-les-Mines
+281;987;Polynésie française;;Polynésie Française;Faaa
+282;32;Gers;Occitanie;Toulouse;Masseube
+283;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Saint-Julien-en-Genevois
+284;62;Pas-de-Calais;Hauts-de-France;Lille;Saint-Venant
+285;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Pons
+286;75;Paris;Ile-de-France;Paris;Paris  5e  Arrondissement
+287;94;Val-de-Marne;Ile-de-France;Créteil;Orly
+288;971;Guadeloupe;Guadeloupe;Guadeloupe;Le Gosier
+289;61;Orne;Normandie;Normandie;L'Aigle
+290;78;Yvelines;Ile-de-France;Versailles;Villiers-Saint-Frédéric
+291;94;Val-de-Marne;Ile-de-France;Créteil;Nogent-sur-Marne
+292;35;Ille-et-Vilaine;Bretagne;Rennes;Redon
+293;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 1er Arrondissement
+294;77;Seine-et-Marne;Ile-de-France;Créteil;Combs-la-Ville
+295;67;Bas-Rhin;Grand-Est;Strasbourg;Sélestat
+296;76;Seine-Maritime;Normandie;Normandie;Mesnières-en-Bray
+297;79;Deux-sèvres;Nouvelle Aquitaine;Poitiers;Niort
+298;45;Loiret;Centre;Orléans-Tours;Saint-Jean-de-Braye
+299;34;Hérault;Occitanie;Montpellier;Saint-Clément-de-Rivière
+300;99;Etranger;;Etranger;Hanoï
+301;67;Bas-Rhin;Grand-Est;Strasbourg;Brumath
+302;56;Morbihan;Bretagne;Rennes;Etel
+303;81;Tarn;Occitanie;Toulouse;Castres
+304;59;Nord;Hauts-de-France;Lille;Aulnoy-lez-Valenciennes
+305;62;Pas-de-Calais;Hauts-de-France;Lille;Bruay-la-Buissière
+306;974;La Réunion;Réunion;La Réunion;Le Port
+307;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  2e  Arrondissement
+308;987;Polynésie française;;Polynésie Française;Papara
+309;75;Paris;Ile-de-France;Paris;Paris 13e  Arrondissement
+310;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Valdeblore
+311;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 9e  Arrondissement
+312;82;Tarn-et-Garonne;Occitanie;Toulouse;Valence
+313;91;Essonne;Ile-de-France;Versailles;Athis-Mons
+314;78;Yvelines;Ile-de-France;Versailles;Mantes-la-Ville
+315;33;Gironde;Nouvelle Aquitaine;Bordeaux;La Teste-de-Buch
+316;12;Aveyron;Occitanie;Toulouse;Aubin
+317;93;Seine-Saint-Denis;Ile-de-France;Créteil;Epinay-sur-Seine
+318;93;Seine-Saint-Denis;Ile-de-France;Créteil;Villetaneuse
+319;28;Eure-et-Loir;Centre;Orléans-Tours;Sours
+320;974;La Réunion;Réunion;La Réunion;Les Trois-Bassins
+321;89;Yonne;Bourgogne-Franche-Comté;Dijon;Sens
+322;95;Val-d'oise;Ile-de-France;Versailles;Fosses
+323;68;Haut-Rhin;Grand-Est;Strasbourg;Rouffach
+324;25;Doubs;Bourgogne-Franche-Comté;Besancon;Morteau
+325;76;Seine-Maritime;Normandie;Normandie;Fécamp
+326;14;Calvados;Normandie;Normandie;Deauville
+327;22;Côtes-d'Armor;Bretagne;Rennes;Guingamp
+328;76;Seine-Maritime;Normandie;Normandie;Le Grand-Quevilly
+329;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Pierrelatte
+330;31;Haute-Garonne;Occitanie;Toulouse;Saint-Jean
+331;62;Pas-de-Calais;Hauts-de-France;Lille;Saint-Pol-sur-Ternoise
+332;94;Val-de-Marne;Ile-de-France;Créteil;Le Perreux-sur-Marne
+333;2B;Haute-Corse;Corse;Corse;Corte
+334;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Toul
+335;978;Saint-Martin;Guadeloupe;Guadeloupe;Saint-Martin
+336;94;Val-de-Marne;Ile-de-France;Créteil;Fontenay-sous-Bois
+337;971;Guadeloupe;Guadeloupe;Guadeloupe;Saint-Claude
+338;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Villefranche-sur-Saône
+339;56;Morbihan;Bretagne;Rennes;Vannes
+340;58;Nièvre;Bourgogne-Franche-Comté;Dijon;Cosne-Cours-sur-Loire
+341;42;Loire;Auvergne-Rhône-Alpes;Lyon;Rive-de-Gier
+342;16;Charente;Nouvelle Aquitaine;Poitiers;Confolens
+343;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Neuvy
+344;59;Nord;Hauts-de-France;Lille;Denain
+345;24;Dordogne;Nouvelle Aquitaine;Bordeaux;Périgueux
+346;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Basse-Goulaine
+347;59;Nord;Hauts-de-France;Lille;Feignies
+348;62;Pas-de-Calais;Hauts-de-France;Lille;Boulogne-sur-Mer
+349;82;Tarn-et-Garonne;Occitanie;Toulouse;Montech
+350;42;Loire;Auvergne-Rhône-Alpes;Lyon;Saint-Genest-Lerpt
+351;45;Loiret;Centre;Orléans-Tours;Olivet
+352;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Chenôve
+353;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Lunéville
+354;92;Hauts-de-Seine;Ile-de-France;Versailles;Ville-d'Avray
+355;66;Pyrénées-orientales;Occitanie;Montpellier;Argelès-sur-Mer
+356;88;Vosges;Grand-Est;Nancy-Metz;Roville-aux-Chênes
+357;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Montceau-les-Mines
+358;33;Gironde;Nouvelle Aquitaine;Bordeaux;Blaye
+359;33;Gironde;Nouvelle Aquitaine;Bordeaux;Montagne
+360;43;Haute-Loire;Auvergne-Rhône-Alpes;Clermont-Ferrand;Fontannes
+361;78;Yvelines;Ile-de-France;Versailles;Buc
+362;14;Calvados;Normandie;Normandie;Ifs
+363;77;Seine-et-Marne;Ile-de-France;Créteil;Ozoir-la-Ferrière
+364;30;Gard;Occitanie;Montpellier;Bagnols-sur-Cèze
+365;65;Hautes-Pyrénées;Occitanie;Toulouse;Aureilhan
+366;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Issoire
+367;02;Aisne;Hauts-de-France;Amiens;La Fère
+368;88;Vosges;Grand-Est;Nancy-Metz;Epinal
+369;81;Tarn;Occitanie;Toulouse;Carmaux
+370;76;Seine-Maritime;Normandie;Normandie;Neufchâtel-en-Bray
+371;05;Hautes-Alpes;Provence-Alpes-Côte d'Azur;Aix-Marseille;Gap
+372;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Antibes
+373;31;Haute-Garonne;Occitanie;Toulouse;Saint-Gaudens
+374;33;Gironde;Nouvelle Aquitaine;Bordeaux;Eysines
+375;59;Nord;Hauts-de-France;Lille;Hazebrouck
+376;04;Alpes-de-Haute-Provence;Provence-Alpes-Côte d'Azur;Aix-Marseille;Manosque
+377;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Gannat
+378;53;Mayenne;Pays-de-la-Loire;Nantes;Saint-Berthevin
+379;67;Bas-Rhin;Grand-Est;Strasbourg;Bischwiller
+380;75;Paris;Ile-de-France;Paris;Paris  9e  Arrondissement
+381;24;Dordogne;Nouvelle Aquitaine;Bordeaux;Sarlat-la-Canéda
+382;45;Loiret;Centre;Orléans-Tours;Montargis
+383;88;Vosges;Grand-Est;Nancy-Metz;Gugnécourt
+384;93;Seine-Saint-Denis;Ile-de-France;Créteil;Gagny
+385;93;Seine-Saint-Denis;Ile-de-France;Créteil;Noisy-le-Grand
+386;62;Pas-de-Calais;Hauts-de-France;Lille;Lillers
+387;76;Seine-Maritime;Normandie;Normandie;Montivilliers
+388;57;Moselle;Grand-Est;Nancy-Metz;Courcelles-Chaussy
+389;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Grasse
+390;46;Lot;Occitanie;Toulouse;Souillac
+391;11;Aude;Occitanie;Montpellier;Lasbordes
+392;35;Ille-et-Vilaine;Bretagne;Rennes;Rennes
+393;86;Vienne;Nouvelle Aquitaine;Poitiers;Jaunay-Marigny
+394;37;Indre-et-Loire;Centre;Orléans-Tours;Chinon
+395;60;Oise;Hauts-de-France;Amiens;Creil
+396;80;Somme;Hauts-de-France;Amiens;Cottenchy
+397;75;Paris;Ile-de-France;Paris;Paris 20e  Arrondissement
+398;86;Vienne;Nouvelle Aquitaine;Poitiers;Rouillé
+399;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 14e  Arrondissement
+400;43;Haute-Loire;Auvergne-Rhône-Alpes;Clermont-Ferrand;Yssingeaux
+401;10;Aube;Grand-Est;Reims;Saint-Pouange
+402;80;Somme;Hauts-de-France;Amiens;Friville-Escarbotin
+403;976;Mayotte;Mayotte;Mayotte;Dembeni
+404;76;Seine-Maritime;Normandie;Normandie;Déville-lès-Rouen
+405;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Pontaumur
+406;95;Val-d'oise;Ile-de-France;Versailles;Osny
+407;86;Vienne;Nouvelle Aquitaine;Poitiers;Chauvigny
+408;77;Seine-et-Marne;Ile-de-France;Créteil;Moissy-Cramayel
+409;59;Nord;Hauts-de-France;Lille;Waziers
+410;70;Haute-saône;Bourgogne-Franche-Comté;Besancon;Vesoul
+411;93;Seine-Saint-Denis;Ile-de-France;Créteil;Villepinte
+412;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Epagny Metz-Tessy
+413;72;Sarthe;Pays-de-la-Loire;Nantes;Rouillon
+414;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Roussillon
+415;60;Oise;Hauts-de-France;Amiens;Noyon
+416;83;Var;Provence-Alpes-Côte d'Azur;Nice;Lorgues
+417;972;Martinique;Martinique;Martinique;La Trinité
+418;08;Ardennes;Grand-Est;Reims;Charleville-Mézières
+419;59;Nord;Hauts-de-France;Lille;Genech
+420;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Vienne
+421;28;Eure-et-Loir;Centre;Orléans-Tours;Luisant
+422;78;Yvelines;Ile-de-France;Versailles;Porcheville
+423;973;Guyane;Guyane;Guyane;Remire-Montjoly
+424;78;Yvelines;Ile-de-France;Versailles;Plaisir
+425;37;Indre-et-Loire;Centre;Orléans-Tours;Fondettes
+426;75;Paris;Ile-de-France;Paris;Paris 18e  Arrondissement
+427;40;Landes;Nouvelle Aquitaine;Bordeaux;Oeyreluy
+428;35;Ille-et-Vilaine;Bretagne;Rennes;Dol-de-Bretagne
+429;83;Var;Provence-Alpes-Côte d'Azur;Nice;Draguignan
+430;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Thônes
+431;59;Nord;Hauts-de-France;Lille;Avesnes-sur-Helpe
+432;86;Vienne;Nouvelle Aquitaine;Poitiers;Loudun
+433;39;Jura;Bourgogne-Franche-Comté;Besancon;Saint-Claude
+434;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Gardanne
+435;59;Nord;Hauts-de-France;Lille;Wasquehal
+436;14;Calvados;Normandie;Normandie;Hérouville-Saint-Clair
+437;92;Hauts-de-Seine;Ile-de-France;Versailles;Puteaux
+438;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Oloron-Sainte-Marie
+439;34;Hérault;Occitanie;Montpellier;Montferrier-sur-Lez
+440;78;Yvelines;Ile-de-France;Versailles;Verneuil-sur-Seine
+441;31;Haute-Garonne;Occitanie;Toulouse;Auzeville-Tolosane
+442;974;La Réunion;Réunion;La Réunion;Saint-Louis
+443;66;Pyrénées-orientales;Occitanie;Montpellier;Font-Romeu-Odeillo-Via
+444;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Orvault
+445;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Bidart
+446;08;Ardennes;Grand-Est;Reims;Saint-Laurent
+447;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Privas
+448;29;Finistère;Bretagne;Rennes;Lopérec
+449;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Orthez
+450;70;Haute-saône;Bourgogne-Franche-Comté;Besancon;Lure
+451;18;Cher;Centre;Orléans-Tours;Saint-Amand-Montrond
+452;50;Manche;Normandie;Normandie;Mortain-Bocage
+453;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Nice
+454;57;Moselle;Grand-Est;Nancy-Metz;Sarrebourg
+455;33;Gironde;Nouvelle Aquitaine;Bordeaux;Blanquefort
+456;77;Seine-et-Marne;Ile-de-France;Créteil;Mitry-Mory
+457;83;Var;Provence-Alpes-Côte d'Azur;Nice;Gassin
+458;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Lescar
+459;89;Yonne;Bourgogne-Franche-Comté;Dijon;Auxerre
+460;95;Val-d'oise;Ile-de-France;Versailles;Sarcelles
+461;09;Ariège;Occitanie;Toulouse;Ferrières-sur-Ariège
+462;94;Val-de-Marne;Ile-de-France;Créteil;Maisons-Alfort
+463;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Miramas
+464;22;Côtes-d'Armor;Bretagne;Rennes;Quessoy
+465;10;Aube;Grand-Est;Reims;Troyes
+466;32;Gers;Occitanie;Toulouse;Auch
+467;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Villeneuve-sur-Lot
+468;25;Doubs;Bourgogne-Franche-Comté;Besancon;Levier
+469;75;Paris;Ile-de-France;Paris;Paris 14e  Arrondissement
+470;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Cluny
+471;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Cournon-d'Auvergne
+472;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Mourenx
+473;12;Aveyron;Occitanie;Toulouse;Onet-le-Château
+474;42;Loire;Auvergne-Rhône-Alpes;Lyon;Montbrison
+475;971;Guadeloupe;Guadeloupe;Guadeloupe;Le Moule
+476;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Tournon-sur-Rhône
+477;31;Haute-Garonne;Occitanie;Toulouse;Saint-Orens-de-Gameville
+478;19;Corrèze;Nouvelle Aquitaine;Limoges;Neuvic
+479;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Quetigny
+480;59;Nord;Hauts-de-France;Lille;Valenciennes
+481;60;Oise;Hauts-de-France;Amiens;Airion
+482;30;Gard;Occitanie;Montpellier;Alès
+483;34;Hérault;Occitanie;Montpellier;Clermont-l'Hérault
+484;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Menton
+485;91;Essonne;Ile-de-France;Versailles;Palaiseau
+486;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Biot
+487;67;Bas-Rhin;Grand-Est;Strasbourg;Schiltigheim
+488;91;Essonne;Ile-de-France;Versailles;Etiolles
+489;972;Martinique;Martinique;Martinique;Le Lorrain
+490;27;Eure;Normandie;Normandie;Val-de-Reuil
+491;19;Corrèze;Nouvelle Aquitaine;Limoges;Egletons
+492;08;Ardennes;Grand-Est;Reims;Rethel
+493;48;Lozère;Occitanie;Montpellier;Peyre en Aubrac
+494;75;Paris;Ile-de-France;Paris;Paris 19e  Arrondissement
+495;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Saint-Martin-d'Hères
+496;25;Doubs;Bourgogne-Franche-Comté;Besancon;Pontarlier
+497;59;Nord;Hauts-de-France;Lille;Loos
+498;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Essey-lès-Nancy
+499;62;Pas-de-Calais;Hauts-de-France;Lille;Rollancourt
+500;85;Vendée;Pays-de-la-Loire;Nantes;La Roche-sur-Yon
+501;974;La Réunion;Réunion;La Réunion;La Plaine-des-Palmistes
+502;04;Alpes-de-Haute-Provence;Provence-Alpes-Côte d'Azur;Aix-Marseille;Le Chaffaut-Saint-Jurson
+503;91;Essonne;Ile-de-France;Versailles;Montgeron
+504;22;Côtes-d'Armor;Bretagne;Rennes;Tréguier
+505;23;Creuse;Nouvelle Aquitaine;Limoges;La Souterraine
+506;12;Aveyron;Occitanie;Toulouse;Decazeville
+507;45;Loiret;Centre;Orléans-Tours;Châlette-sur-Loing
+508;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Davayé
+509;68;Haut-Rhin;Grand-Est;Strasbourg;Colmar
+510;83;Var;Provence-Alpes-Côte d'Azur;Nice;La Garde
+511;59;Nord;Hauts-de-France;Lille;Marcq-en-Baroeul
+512;50;Manche;Normandie;Normandie;Coutances
+513;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Nérac
+514;09;Ariège;Occitanie;Toulouse;Foix
+515;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Beaune
+516;94;Val-de-Marne;Ile-de-France;Créteil;La Queue-en-Brie
+517;987;Polynésie française;;Polynésie Française;Punaauia
+518;62;Pas-de-Calais;Hauts-de-France;Lille;Longuenesse
+519;55;Meuse;Grand-Est;Nancy-Metz;Bar-le-Duc
+520;66;Pyrénées-orientales;Occitanie;Montpellier;Villelongue-dels-Monts
+521;16;Charente;Nouvelle Aquitaine;Poitiers;Saint-Yrieix-sur-Charente
+522;12;Aveyron;Occitanie;Toulouse;Saint-Sernin-sur-Rance
+523;75;Paris;Ile-de-France;Paris;Paris 12e  Arrondissement
+524;75;Paris;Ile-de-France;Paris;Paris 17e  Arrondissement
+525;70;Haute-saône;Bourgogne-Franche-Comté;Besancon;Héricourt
+526;987;Polynésie française;;Polynésie Française;Pirae
+527;19;Corrèze;Nouvelle Aquitaine;Limoges;Tulle
+528;59;Nord;Hauts-de-France;Lille;Saint-André-lez-Lille
+529;57;Moselle;Grand-Est;Nancy-Metz;Thionville
+530;987;Polynésie française;;Polynésie Française;Moorea
+531;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  7e  Arrondissement
+532;33;Gironde;Nouvelle Aquitaine;Bordeaux;Vayres
+533;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Cagnes-sur-Mer
+534;95;Val-d'oise;Ile-de-France;Versailles;L'Isle-Adam
+535;16;Charente;Nouvelle Aquitaine;Poitiers;Cognac
+536;40;Landes;Nouvelle Aquitaine;Bordeaux;Mugron
+537;72;Sarthe;Pays-de-la-Loire;Nantes;Arnage
+538;18;Cher;Centre;Orléans-Tours;Bourges
+539;99;Etranger;;Etranger;London
+540;29;Finistère;Bretagne;Rennes;Saint-Pol-de-Léon
+541;59;Nord;Hauts-de-France;Lille;Lambersart
+542;88;Vosges;Grand-Est;Nancy-Metz;Remiremont
+543;16;Charente;Nouvelle Aquitaine;Poitiers;Soyaux
+544;99;Etranger;;Etranger;RABAT-SALE
+545;10;Aube;Grand-Est;Reims;Les Loges-Margueron
+546;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Saint-Junien
+547;973;Guyane;Guyane;Guyane;Macouria
+548;91;Essonne;Ile-de-France;Versailles;Evry-Courcouronnes
+549;59;Nord;Hauts-de-France;Lille;Dechy
+550;76;Seine-Maritime;Normandie;Normandie;Bois-Guillaume
+551;72;Sarthe;Pays-de-la-Loire;Nantes;Allonnes
+552;85;Vendée;Pays-de-la-Loire;Nantes;Montaigu-Vendée
+553;88;Vosges;Grand-Est;Nancy-Metz;Contrexéville
+554;83;Var;Provence-Alpes-Côte d'Azur;Nice;Ollioules
+555;33;Gironde;Nouvelle Aquitaine;Bordeaux;Camblanes-et-Meynac
+556;974;La Réunion;Réunion;La Réunion;Le Tampon
+557;59;Nord;Hauts-de-France;Lille;Lille
+558;50;Manche;Normandie;Normandie;Granville
+559;62;Pas-de-Calais;Hauts-de-France;Lille;Le Touquet-Paris-Plage
+560;79;Deux-sèvres;Nouvelle Aquitaine;Poitiers;Parthenay
+561;29;Finistère;Bretagne;Rennes;Douarnenez
+562;48;Lozère;Occitanie;Montpellier;Langogne
+563;56;Morbihan;Bretagne;Rennes;Hennebont
+564;57;Moselle;Grand-Est;Nancy-Metz;Ottange
+565;42;Loire;Auvergne-Rhône-Alpes;Lyon;Perreux
+566;75;Paris;Ile-de-France;Paris;Paris  4e  Arrondissement
+567;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Saintes
+568;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Gorges
+569;94;Val-de-Marne;Ile-de-France;Créteil;Vitry-sur-Seine
+570;80;Somme;Hauts-de-France;Amiens;Péronne
+571;37;Indre-et-Loire;Centre;Orléans-Tours;Joué-lès-Tours
+572;92;Hauts-de-Seine;Ile-de-France;Versailles;Vaucresson
+573;93;Seine-Saint-Denis;Ile-de-France;Créteil;Rosny-sous-Bois
+574;93;Seine-Saint-Denis;Ile-de-France;Créteil;Noisy-le-Sec
+575;78;Yvelines;Ile-de-France;Versailles;Elancourt
+576;01;Ain;Auvergne-Rhône-Alpes;Lyon;Montluel
+577;84;Vaucluse;Provence-Alpes-Côte d'Azur;Aix-Marseille;Cavaillon
+578;62;Pas-de-Calais;Hauts-de-France;Lille;Oignies
+579;50;Manche;Normandie;Normandie;Carentan-les-Marais
+580;01;Ain;Auvergne-Rhône-Alpes;Lyon;Oyonnax
+581;88;Vosges;Grand-Est;Nancy-Metz;Neufchâteau
+582;57;Moselle;Grand-Est;Nancy-Metz;Montigny-lès-Metz
+583;77;Seine-et-Marne;Ile-de-France;Créteil;Varennes-sur-Seine
+584;81;Tarn;Occitanie;Toulouse;Verdalle
+585;57;Moselle;Grand-Est;Nancy-Metz;Yutz
+586;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Mont-Saint-Martin
+587;973;Guyane;Guyane;Guyane;Matoury
+588;92;Hauts-de-Seine;Ile-de-France;Versailles;Boulogne-Billancourt
+589;2A;Corse-du-Sud;Corse;Corse;Ajaccio
+590;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Vitrolles
+591;01;Ain;Auvergne-Rhône-Alpes;Lyon;Ambérieu-en-Bugey
+592;92;Hauts-de-Seine;Ile-de-France;Versailles;La Garenne-Colombes
+593;92;Hauts-de-Seine;Ile-de-France;Versailles;Courbevoie
+594;81;Tarn;Occitanie;Toulouse;Gaillac
+595;31;Haute-Garonne;Occitanie;Toulouse;Ondes
+596;33;Gironde;Nouvelle Aquitaine;Bordeaux;Pessac
+597;15;Cantal;Auvergne-Rhône-Alpes;Clermont-Ferrand;Aurillac
+598;987;Polynésie française;;Polynésie Française;Uturoa
+599;19;Corrèze;Nouvelle Aquitaine;Limoges;Brive-la-Gaillarde
+600;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Yzeure
+601;59;Nord;Hauts-de-France;Lille;Maubeuge
+602;50;Manche;Normandie;Normandie;Pont-Hébert
+603;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Semur-en-Auxois
+604;23;Creuse;Nouvelle Aquitaine;Limoges;Bourganeuf
+605;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Passy
+606;19;Corrèze;Nouvelle Aquitaine;Limoges;Voutezac
+607;10;Aube;Grand-Est;Reims;Sainte-Maure
+608;78;Yvelines;Ile-de-France;Versailles;Magnanville
+609;67;Bas-Rhin;Grand-Est;Strasbourg;Erstein
+610;52;Haute-Marne;Grand-Est;Reims;Buxières-lès-Villiers
+611;987;Polynésie française;;Polynésie Française;Taiarapu-o
+612;92;Hauts-de-Seine;Ile-de-France;Versailles;Meudon
+613;58;Nièvre;Bourgogne-Franche-Comté;Dijon;Château-Chinon (Ville)
+614;95;Val-d'oise;Ile-de-France;Versailles;Eaubonne
+615;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Oullins-Pierre-Bénite
+616;09;Ariège;Occitanie;Toulouse;Lavelanet
+617;77;Seine-et-Marne;Ile-de-France;Créteil;Coulommiers
+618;39;Jura;Bourgogne-Franche-Comté;Besancon;Hauts de Bienne
+619;99;Etranger;;Etranger;Dublin
+620;02;Aisne;Hauts-de-France;Amiens;Laon
+621;02;Aisne;Hauts-de-France;Amiens;Cuffies
+622;40;Landes;Nouvelle Aquitaine;Bordeaux;Aire-sur-l'Adour
+623;988;Nouvelle-Calédonie;;Nouvelle-Calédonie;Nouméa
+624;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Moirans
+625;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 2e  Arrondissement
+626;971;Guadeloupe;Guadeloupe;Guadeloupe;Pointe-à-Pitre
+627;83;Var;Provence-Alpes-Côte d'Azur;Nice;Six-Fours-les-Plages
+628;972;Martinique;Martinique;Martinique;Saint-Joseph
+629;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Ustaritz
+630;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Charolles
+631;57;Moselle;Grand-Est;Nancy-Metz;Rombas
+632;34;Hérault;Occitanie;Montpellier;Sérignan
+633;85;Vendée;Pays-de-la-Loire;Nantes;Challans
+634;27;Eure;Normandie;Normandie;Gisors
+635;35;Ille-et-Vilaine;Bretagne;Rennes;Saint-Méen-le-Grand
+636;78;Yvelines;Ile-de-France;Versailles;La Celle-Saint-Cloud
+637;53;Mayenne;Pays-de-la-Loire;Nantes;Changé
+638;971;Guadeloupe;Guadeloupe;Guadeloupe;Les Abymes
+639;82;Tarn-et-Garonne;Occitanie;Toulouse;Beaumont-de-Lomagne
+640;57;Moselle;Grand-Est;Nancy-Metz;Forbach
+641;92;Hauts-de-Seine;Ile-de-France;Versailles;Suresnes
+642;973;Guyane;Guyane;Guyane;Mana
+643;974;La Réunion;Réunion;La Réunion;Saint-Paul
+644;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Limas
+645;76;Seine-Maritime;Normandie;Normandie;Lillebonne
+646;57;Moselle;Grand-Est;Nancy-Metz;Château-Salins
+647;92;Hauts-de-Seine;Ile-de-France;Versailles;Vanves
+648;95;Val-d'oise;Ile-de-France;Versailles;Pontoise
+649;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Bellerive-sur-Allier
+650;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Les Ponts-de-Cé
+651;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Saint-Barthélemy-d'Anjou
+652;92;Hauts-de-Seine;Ile-de-France;Versailles;Montrouge
+653;42;Loire;Auvergne-Rhône-Alpes;Lyon;Roanne
+654;25;Doubs;Bourgogne-Franche-Comté;Besancon;Montbéliard
+655;59;Nord;Hauts-de-France;Lille;Wormhout
+656;31;Haute-Garonne;Occitanie;Toulouse;Quint-Fonsegrives
+657;40;Landes;Nouvelle Aquitaine;Bordeaux;Mont-de-Marsan
+658;33;Gironde;Nouvelle Aquitaine;Bordeaux;Cenon
+659;62;Pas-de-Calais;Hauts-de-France;Lille;Calais
+660;93;Seine-Saint-Denis;Ile-de-France;Créteil;Pantin
+661;59;Nord;Hauts-de-France;Lille;Landrecies
+662;79;Deux-sèvres;Nouvelle Aquitaine;Poitiers;Saint-Maixent-l'Ecole
+663;25;Doubs;Bourgogne-Franche-Comté;Besancon;Besançon
+664;95;Val-d'oise;Ile-de-France;Versailles;Franconville
+665;33;Gironde;Nouvelle Aquitaine;Bordeaux;Lormont
+666;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Voiron
+667;76;Seine-Maritime;Normandie;Normandie;Saint-Etienne-du-Rouvray
+668;94;Val-de-Marne;Ile-de-France;Créteil;Saint-Maurice
+669;92;Hauts-de-Seine;Ile-de-France;Versailles;Levallois-Perret
+670;92;Hauts-de-Seine;Ile-de-France;Versailles;Antony
+671;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Châteaubriant
+672;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Saint-Eloy-les-Mines
+673;01;Ain;Auvergne-Rhône-Alpes;Lyon;Misérieux
+674;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Aubenas
+675;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;La Jaille-Yvon
+676;76;Seine-Maritime;Normandie;Normandie;Offranville
+677;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Beaupréau-en-Mauges
+678;41;Loir-et-Cher;Centre;Orléans-Tours;Vendôme
+679;972;Martinique;Martinique;Martinique;Sainte-Marie
+680;974;La Réunion;Réunion;La Réunion;Sainte-Marie
+681;67;Bas-Rhin;Grand-Est;Strasbourg;Saverne
+682;16;Charente;Nouvelle Aquitaine;Poitiers;Val-de-Cognac
+683;76;Seine-Maritime;Normandie;Normandie;Barentin
+684;976;Mayotte;Mayotte;Mayotte;Chirongui
+685;12;Aveyron;Occitanie;Toulouse;Rodez
+686;91;Essonne;Ile-de-France;Versailles;Morsang-sur-Orge
+687;61;Orne;Normandie;Normandie;Sées
+688;56;Morbihan;Bretagne;Rennes;Pontivy
+689;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Val de Briey
+690;92;Hauts-de-Seine;Ile-de-France;Versailles;Rueil-Malmaison
+691;56;Morbihan;Bretagne;Rennes;Ploemeur
+692;59;Nord;Hauts-de-France;Lille;Tourcoing
+693;33;Gironde;Nouvelle Aquitaine;Bordeaux;Saint-Médard-en-Jalles
+694;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;La Motte-Servolex
+695;75;Paris;Ile-de-France;Paris;Paris 16e  Arrondissement
+696;59;Nord;Hauts-de-France;Lille;Condé-sur-l'Escaut
+697;77;Seine-et-Marne;Ile-de-France;Créteil;Vaires-sur-Marne
+698;14;Calvados;Normandie;Normandie;Falaise
+699;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Décines-Charpieu
+700;976;Mayotte;Mayotte;Mayotte;Ouangani
+701;35;Ille-et-Vilaine;Bretagne;Rennes;Montfort-sur-Meu
+702;91;Essonne;Ile-de-France;Versailles;Corbeil-Essonnes
+703;94;Val-de-Marne;Ile-de-France;Créteil;Villejuif
+704;92;Hauts-de-Seine;Ile-de-France;Versailles;Châtenay-Malabry
+705;91;Essonne;Ile-de-France;Versailles;Brunoy
+706;91;Essonne;Ile-de-France;Versailles;Orsay
+707;72;Sarthe;Pays-de-la-Loire;Nantes;Bernay-Neuvy-en-Champagne
+708;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Nyons
+709;27;Eure;Normandie;Normandie;Evreux
+710;53;Mayenne;Pays-de-la-Loire;Nantes;Mayenne
+711;77;Seine-et-Marne;Ile-de-France;Créteil;La Rochette
+712;02;Aisne;Hauts-de-France;Amiens;Hirson
+713;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Saint-Laurent-de-Chamousset
+714;29;Finistère;Bretagne;Rennes;Landerneau
+715;14;Calvados;Normandie;Normandie;Saint-Pierre-en-Auge
+716;28;Eure-et-Loir;Centre;Orléans-Tours;Mignières
+717;77;Seine-et-Marne;Ile-de-France;Créteil;Lagny-sur-Marne
+718;86;Vienne;Nouvelle Aquitaine;Poitiers;Poitiers
+719;971;Guadeloupe;Guadeloupe;Guadeloupe;Petit-Bourg
+720;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Longchamp
+721;11;Aude;Occitanie;Montpellier;Limoux
+722;11;Aude;Occitanie;Montpellier;Castelnaudary
+723;55;Meuse;Grand-Est;Nancy-Metz;Verdun
+724;68;Haut-Rhin;Grand-Est;Strasbourg;Thann
+725;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Aiguillon
+726;89;Yonne;Bourgogne-Franche-Comté;Dijon;Tonnerre
+727;94;Val-de-Marne;Ile-de-France;Créteil;Joinville-le-Pont
+728;52;Haute-Marne;Grand-Est;Reims;Wassy
+729;78;Yvelines;Ile-de-France;Versailles;Saint-Cyr-l'Ecole
+730;987;Polynésie française;;Polynésie Française;Papeete
+731;92;Hauts-de-Seine;Ile-de-France;Versailles;Nanterre
+732;95;Val-d'oise;Ile-de-France;Versailles;Enghien-les-Bains
+733;58;Nièvre;Bourgogne-Franche-Comté;Dijon;Decize
+734;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Albertville
+735;30;Gard;Occitanie;Montpellier;La Grand-Combe
+736;35;Ille-et-Vilaine;Bretagne;Rennes;La Guerche-de-Bretagne
+737;33;Gironde;Nouvelle Aquitaine;Bordeaux;Villenave-d'Ornon
+738;75;Paris;Ile-de-France;Paris;Paris  7e  Arrondissement
+739;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Châteauneuf-sur-Isère
+740;971;Guadeloupe;Guadeloupe;Guadeloupe;Basse-Terre
+741;99;Etranger;;Etranger;BARCELONA
+742;51;Marne;Grand-Est;Reims;Avize
+743;43;Haute-Loire;Auvergne-Rhône-Alpes;Clermont-Ferrand;Brives-Charensac
+744;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Rillieux-la-Pape
+745;31;Haute-Garonne;Occitanie;Toulouse;Labège
+746;974;La Réunion;Réunion;La Réunion;Saint-Joseph
+747;32;Gers;Occitanie;Toulouse;Mirande
+748;23;Creuse;Nouvelle Aquitaine;Limoges;Saint-Vaury
+749;77;Seine-et-Marne;Ile-de-France;Créteil;Brie-Comte-Robert
+750;67;Bas-Rhin;Grand-Est;Strasbourg;Lingolsheim
+751;974;La Réunion;Réunion;La Réunion;Les Avirons
+752;03;Allier;Auvergne-Rhône-Alpes;Clermont-Ferrand;Vichy
+753;30;Gard;Occitanie;Montpellier;Rodilhan
+754;57;Moselle;Grand-Est;Nancy-Metz;Fameck
+755;36;Indre;Centre;Orléans-Tours;Châteauroux
+756;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Saint-Michel-de-Maurienne
+757;82;Tarn-et-Garonne;Occitanie;Toulouse;Castelsarrasin
+758;76;Seine-Maritime;Normandie;Normandie;Bolbec
+759;77;Seine-et-Marne;Ile-de-France;Créteil;Chelles
+760;22;Côtes-d'Armor;Bretagne;Rennes;Lamballe-Armor
+761;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Ugine
+762;29;Finistère;Bretagne;Rennes;Roscoff
+763;34;Hérault;Occitanie;Montpellier;Pézenas
+764;76;Seine-Maritime;Normandie;Normandie;Eu
+765;29;Finistère;Bretagne;Rennes;Fouesnant
+766;59;Nord;Hauts-de-France;Lille;Haubourdin
+767;77;Seine-et-Marne;Ile-de-France;Créteil;Fontainebleau
+768;99;Etranger;;Etranger;Oxford OX1 1SA
+769;01;Ain;Auvergne-Rhône-Alpes;Lyon;Valserhône
+770;77;Seine-et-Marne;Ile-de-France;Créteil;Le Mée-sur-Seine
+771;29;Finistère;Bretagne;Rennes;Carhaix-Plouguer
+772;83;Var;Provence-Alpes-Côte d'Azur;Nice;Le Muy
+773;971;Guadeloupe;Guadeloupe;Guadeloupe;Capesterre-Belle-Eau
+774;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Annonay
+775;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 11e  Arrondissement
+776;91;Essonne;Ile-de-France;Versailles;Sainte-Geneviève-des-Bois
+777;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Aix-les-Bains
+778;29;Finistère;Bretagne;Rennes;Le Faou
+779;61;Orne;Normandie;Normandie;La Ferté Macé
+780;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Chemillé-en-Anjou
+781;972;Martinique;Martinique;Martinique;Fort-de-France
+782;75;Paris;Ile-de-France;Paris;Paris 15e  Arrondissement
+783;77;Seine-et-Marne;Ile-de-France;Créteil;Vaux-le-Pénil
+784;16;Charente;Nouvelle Aquitaine;Poitiers;Ruffec
+785;80;Somme;Hauts-de-France;Amiens;Flixecourt
+786;27;Eure;Normandie;Normandie;Mesnils-sur-Iton
+787;77;Seine-et-Marne;Ile-de-France;Créteil;Noisiel
+788;42;Loire;Auvergne-Rhône-Alpes;Lyon;Saint-Priest-en-Jarez
+789;11;Aude;Occitanie;Montpellier;Carcassonne
+790;28;Eure-et-Loir;Centre;Orléans-Tours;Dreux
+791;76;Seine-Maritime;Normandie;Normandie;Mont-Saint-Aignan
+792;62;Pas-de-Calais;Hauts-de-France;Lille;Saint-Omer
+793;31;Haute-Garonne;Occitanie;Toulouse;Colomiers
+794;35;Ille-et-Vilaine;Bretagne;Rennes;Bruz
+795;43;Haute-Loire;Auvergne-Rhône-Alpes;Clermont-Ferrand;Vals-près-le-Puy
+796;46;Lot;Occitanie;Toulouse;Figeac
+797;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Saint-Herblain
+798;92;Hauts-de-Seine;Ile-de-France;Versailles;Bagneux
+799;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  3e  Arrondissement
+800;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Châteauneuf-de-Galaure
+801;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;La Ravoire
+802;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Ambilly
+803;48;Lozère;Occitanie;Montpellier;La Canourgue
+804;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Jonzac
+805;70;Haute-saône;Bourgogne-Franche-Comté;Besancon;Luxeuil-les-Bains
+806;88;Vosges;Grand-Est;Nancy-Metz;Gérardmer
+807;23;Creuse;Nouvelle Aquitaine;Limoges;Aubusson
+808;55;Meuse;Grand-Est;Nancy-Metz;Stenay
+809;45;Loiret;Centre;Orléans-Tours;Fleury-les-Aubrais
+810;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Isle
+811;91;Essonne;Ile-de-France;Versailles;Cerny
+812;90;Territoire de Belfort;Bourgogne-Franche-Comté;Besancon;Belfort
+813;33;Gironde;Nouvelle Aquitaine;Bordeaux;Arcachon
+814;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Montbonnot-Saint-Martin
+815;72;Sarthe;Pays-de-la-Loire;Nantes;La Ferté-Bernard
+816;974;La Réunion;Réunion;La Réunion;Bras-Panon
+817;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Saint-Priest
+818;77;Seine-et-Marne;Ile-de-France;Créteil;Roissy-en-Brie
+819;02;Aisne;Hauts-de-France;Amiens;Bohain-en-Vermandois
+820;82;Tarn-et-Garonne;Occitanie;Toulouse;Moissac
+821;78;Yvelines;Ile-de-France;Versailles;Montigny-le-Bretonneux
+822;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 7e  Arrondissement
+823;77;Seine-et-Marne;Ile-de-France;Créteil;Savigny-le-Temple
+824;94;Val-de-Marne;Ile-de-France;Créteil;Champigny-sur-Marne
+825;65;Hautes-Pyrénées;Occitanie;Toulouse;Vic-en-Bigorre
+826;95;Val-d'oise;Ile-de-France;Versailles;Cergy
+827;59;Nord;Hauts-de-France;Lille;Le Cateau-Cambrésis
+828;20;;Corse;Corse;Borgo
+829;91;Essonne;Ile-de-France;Versailles;Draveil
+830;33;Gironde;Nouvelle Aquitaine;Bordeaux;Bègles
+831;02;Aisne;Hauts-de-France;Amiens;Château-Thierry
+832;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Rochefort
+833;30;Gard;Occitanie;Montpellier;Nîmes
+834;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Guilherand-Granges
+835;01;Ain;Auvergne-Rhône-Alpes;Lyon;Bellignat
+836;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Anglet
+837;28;Eure-et-Loir;Centre;Orléans-Tours;Châteaudun
+838;39;Jura;Bourgogne-Franche-Comté;Besancon;Mouchard
+839;35;Ille-et-Vilaine;Bretagne;Rennes;Fougères
+840;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Verneuil-sur-Vienne
+841;91;Essonne;Ile-de-France;Versailles;Saint-Michel-sur-Orge
+842;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  5e  Arrondissement
+843;62;Pas-de-Calais;Hauts-de-France;Lille;Lens
+844;12;Aveyron;Occitanie;Toulouse;Saint-Affrique
+845;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Angers
+846;99;Etranger;;Etranger;douala
+847;89;Yonne;Bourgogne-Franche-Comté;Dijon;Venoy
+848;79;Deux-sèvres;Nouvelle Aquitaine;Poitiers;Melle
+849;91;Essonne;Ile-de-France;Versailles;Bondoufle
+850;34;Hérault;Occitanie;Montpellier;Castelnau-le-Lez
+851;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Saint-Pée-sur-Nivelle
+852;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;La Roche-sur-Foron
+853;61;Orne;Normandie;Normandie;Mortagne-au-Perche
+854;972;Martinique;Martinique;Martinique;Le Robert
+855;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Bourg-de-Péage
+856;59;Nord;Hauts-de-France;Lille;Cambrai
+857;93;Seine-Saint-Denis;Ile-de-France;Créteil;Tremblay-en-France
+858;22;Côtes-d'Armor;Bretagne;Rennes;Langueux
+859;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Faverges-Seythenex
+860;78;Yvelines;Ile-de-France;Versailles;Conflans-Sainte-Honorine
+861;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 15e  Arrondissement
+862;77;Seine-et-Marne;Ile-de-France;Créteil;Nangis
+863;78;Yvelines;Ile-de-France;Versailles;Maurepas
+864;34;Hérault;Occitanie;Montpellier;Mauguio
+865;66;Pyrénées-orientales;Occitanie;Montpellier;Prades
+866;59;Nord;Hauts-de-France;Lille;Saint-Amand-les-Eaux
+867;85;Vendée;Pays-de-la-Loire;Nantes;Chantonnay
+868;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 5e  Arrondissement
+869;14;Calvados;Normandie;Normandie;Bayeux
+870;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Saint-Ismier
+871;93;Seine-Saint-Denis;Ile-de-France;Créteil;Dugny
+872;94;Val-de-Marne;Ile-de-France;Créteil;Thiais
+873;37;Indre-et-Loire;Centre;Orléans-Tours;Tours
+874;76;Seine-Maritime;Normandie;Normandie;Elbeuf
+875;51;Marne;Grand-Est;Reims;Epernay
+876;78;Yvelines;Ile-de-France;Versailles;Le Tremblay-sur-Mauldre
+877;59;Nord;Hauts-de-France;Lille;La Madeleine
+878;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Vénissieux
+879;92;Hauts-de-Seine;Ile-de-France;Versailles;Malakoff
+880;33;Gironde;Nouvelle Aquitaine;Bordeaux;Pauillac
+881;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Saint-Egrève
+882;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Malzéville
+883;64;Pyrénées-atlantiques;Nouvelle Aquitaine;Bordeaux;Bayonne
+884;42;Loire;Auvergne-Rhône-Alpes;Lyon;Saint-Etienne
+885;50;Manche;Normandie;Normandie;Cherbourg-en-Cotentin
+886;95;Val-d'oise;Ile-de-France;Versailles;Villiers-le-Bel
+887;67;Bas-Rhin;Grand-Est;Strasbourg;Illkirch-Graffenstaden
+888;77;Seine-et-Marne;Ile-de-France;Créteil;Nemours
+889;35;Ille-et-Vilaine;Bretagne;Rennes;Javené
+890;91;Essonne;Ile-de-France;Versailles;Arpajon
+891;57;Moselle;Grand-Est;Nancy-Metz;Creutzwald
+892;78;Yvelines;Ile-de-France;Versailles;Guyancourt
+893;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Lempdes
+894;86;Vienne;Nouvelle Aquitaine;Poitiers;Civray
+895;93;Seine-Saint-Denis;Ile-de-France;Créteil;Bobigny
+896;78;Yvelines;Ile-de-France;Versailles;Vélizy-Villacoublay
+897;29;Finistère;Bretagne;Rennes;Guipavas
+898;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Givors
+899;57;Moselle;Grand-Est;Nancy-Metz;Metz
+900;30;Gard;Occitanie;Montpellier;Milhaud
+901;24;Dordogne;Nouvelle Aquitaine;Bordeaux;Coulounieix-Chamiers
+902;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Nivolas-Vermelle
+903;39;Jura;Bourgogne-Franche-Comté;Besancon;Champagnole
+904;99;Etranger;;Etranger;Malaga
+905;19;Corrèze;Nouvelle Aquitaine;Limoges;Bort-les-Orgues
+906;76;Seine-Maritime;Normandie;Normandie;Rouen
+907;40;Landes;Nouvelle Aquitaine;Bordeaux;Morcenx-la-Nouvelle
+908;14;Calvados;Normandie;Normandie;Condé-en-Normandie
+909;42;Loire;Auvergne-Rhône-Alpes;Lyon;Feurs
+910;92;Hauts-de-Seine;Ile-de-France;Versailles;Asnières-sur-Seine
+911;52;Haute-Marne;Grand-Est;Reims;Chamarandes-Choignes
+912;59;Nord;Hauts-de-France;Lille;Roubaix
+913;22;Côtes-d'Armor;Bretagne;Rennes;Loudéac
+914;29;Finistère;Bretagne;Rennes;Lesneven
+915;35;Ille-et-Vilaine;Bretagne;Rennes;Cesson-Sévigné
+916;93;Seine-Saint-Denis;Ile-de-France;Créteil;Clichy-sous-Bois
+917;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Bron
+918;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Echirolles
+919;28;Eure-et-Loir;Centre;Orléans-Tours;Nogent-le-Rotrou
+920;45;Loiret;Centre;Orléans-Tours;Pithiviers
+921;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Périgny
+922;91;Essonne;Ile-de-France;Versailles;Gif-sur-Yvette
+923;56;Morbihan;Bretagne;Rennes;Arradon
+924;77;Seine-et-Marne;Ile-de-France;Créteil;Dammarie-les-Lys
+925;33;Gironde;Nouvelle Aquitaine;Bordeaux;Bruges
+926;01;Ain;Auvergne-Rhône-Alpes;Lyon;Trévoux
+927;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 13e  Arrondissement
+928;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Dijon
+929;77;Seine-et-Marne;Ile-de-France;Créteil;Montereau-Fault-Yonne
+930;2B;Haute-Corse;Corse;Corse;Borgo
+931;56;Morbihan;Bretagne;Rennes;Ploërmel
+932;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Montbard
+933;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Pont-du-Château
+934;31;Haute-Garonne;Occitanie;Toulouse;Toulouse
+935;67;Bas-Rhin;Grand-Est;Strasbourg;Haguenau
+936;972;Martinique;Martinique;Martinique;Rivière-Salée
+937;93;Seine-Saint-Denis;Ile-de-France;Créteil;Neuilly-sur-Marne
+938;91;Essonne;Ile-de-France;Versailles;Brétigny-sur-Orge
+939;75;Paris;Ile-de-France;Paris;Paris 11e  Arrondissement
+940;42;Loire;Auvergne-Rhône-Alpes;Lyon;Saint-Chamond
+941;76;Seine-Maritime;Normandie;Normandie;Canteleu
+942;05;Hautes-Alpes;Provence-Alpes-Côte d'Azur;Aix-Marseille;Embrun
+943;37;Indre-et-Loire;Centre;Orléans-Tours;Loches
+944;93;Seine-Saint-Denis;Ile-de-France;Créteil;Livry-Gargan
+945;91;Essonne;Ile-de-France;Versailles;Massy
+946;66;Pyrénées-orientales;Occitanie;Montpellier;Théza
+947;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Crest
+948;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Gleizé
+949;85;Vendée;Pays-de-la-Loire;Nantes;Saint-Jean-de-Monts
+950;95;Val-d'oise;Ile-de-France;Versailles;Arnouville
+951;60;Oise;Hauts-de-France;Amiens;Crépy-en-Valois
+952;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Plombières-lès-Dijon
+953;94;Val-de-Marne;Ile-de-France;Créteil;Sucy-en-Brie
+954;59;Nord;Hauts-de-France;Lille;Grande-Synthe
+955;14;Calvados;Normandie;Normandie;Les Moutiers-en-Cinglais
+956;39;Jura;Bourgogne-Franche-Comté;Besancon;Poligny
+957;33;Gironde;Nouvelle Aquitaine;Bordeaux;Mérignac
+958;99;Etranger;;Etranger;Monaco
+959;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Paray-le-Monial
+960;14;Calvados;Normandie;Normandie;Dives-sur-Mer
+961;02;Aisne;Hauts-de-France;Amiens;Fontaine-lès-Vervins
+962;2A;Corse-du-Sud;Corse;Corse;Sartène
+963;33;Gironde;Nouvelle Aquitaine;Bordeaux;Libourne
+964;41;Loir-et-Cher;Centre;Orléans-Tours;Romorantin-Lanthenay
+965;45;Loiret;Centre;Orléans-Tours;Amilly
+966;972;Martinique;Martinique;Martinique;Schoelcher
+967;14;Calvados;Normandie;Normandie;Vire Normandie
+968;29;Finistère;Bretagne;Rennes;Landivisiau
+969;60;Oise;Hauts-de-France;Amiens;Méru
+970;83;Var;Provence-Alpes-Côte d'Azur;Nice;Brignoles
+971;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;La Baule-Escoublac
+972;92;Hauts-de-Seine;Ile-de-France;Versailles;Neuilly-sur-Seine
+973;10;Aube;Grand-Est;Reims;Sainte-Savine
+974;59;Nord;Hauts-de-France;Lille;Fourmies
+975;94;Val-de-Marne;Ile-de-France;Créteil;Chevilly-Larue
+976;51;Marne;Grand-Est;Reims;Somme-Suippe
+977;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Sassenage
+978;93;Seine-Saint-Denis;Ile-de-France;Créteil;Saint-Denis
+979;42;Loire;Auvergne-Rhône-Alpes;Lyon;Firminy
+980;91;Essonne;Ile-de-France;Versailles;Longjumeau
+981;38;Isère;Auvergne-Rhône-Alpes;Grenoble;L'Isle-d'Abeau
+982;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Meylan
+983;59;Nord;Hauts-de-France;Lille;Caudry
+984;67;Bas-Rhin;Grand-Est;Strasbourg;Molsheim
+985;92;Hauts-de-Seine;Ile-de-France;Versailles;Sèvres
+986;37;Indre-et-Loire;Centre;Orléans-Tours;Saint-Pierre-des-Corps
+987;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Salon-de-Provence
+988;94;Val-de-Marne;Ile-de-France;Créteil;Le Kremlin-Bicêtre
+989;972;Martinique;Martinique;Martinique;Le Marin
+990;43;Haute-Loire;Auvergne-Rhône-Alpes;Clermont-Ferrand;Monistrol-sur-Loire
+991;78;Yvelines;Ile-de-France;Versailles;Trappes
+992;68;Haut-Rhin;Grand-Est;Strasbourg;Wittenheim
+993;77;Seine-et-Marne;Ile-de-France;Créteil;Champs-sur-Marne
+994;976;Mayotte;Mayotte;Mayotte;Bandraboua
+995;58;Nièvre;Bourgogne-Franche-Comté;Dijon;Fourchambault
+996;62;Pas-de-Calais;Hauts-de-France;Lille;Arras
+997;61;Orne;Normandie;Normandie;Giel-Courteilles
+998;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Montélimar
+999;78;Yvelines;Ile-de-France;Versailles;Mantes-la-Jolie
+1000;24;Dordogne;Nouvelle Aquitaine;Bordeaux;Boulazac Isle Manoire
+1001;62;Pas-de-Calais;Hauts-de-France;Lille;Saint-Martin-Boulogne
+1002;89;Yonne;Bourgogne-Franche-Comté;Dijon;Joigny
+1003;77;Seine-et-Marne;Ile-de-France;Créteil;Avon
+1004;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Evian-les-Bains
+1005;85;Vendée;Pays-de-la-Loire;Nantes;Saint-Laurent-sur-Sèvre
+1006;92;Hauts-de-Seine;Ile-de-France;Versailles;Sceaux
+1007;02;Aisne;Hauts-de-France;Amiens;Saint-Quentin
+1008;78;Yvelines;Ile-de-France;Versailles;Rambouillet
+1009;85;Vendée;Pays-de-la-Loire;Nantes;Sainte-Gemme-la-Plaine
+1010;78;Yvelines;Ile-de-France;Versailles;Sartrouville
+1011;14;Calvados;Normandie;Normandie;Mondeville
+1012;59;Nord;Hauts-de-France;Lille;Somain
+1013;61;Orne;Normandie;Normandie;Argentan
+1014;27;Eure;Normandie;Normandie;Pont-Audemer
+1015;61;Orne;Normandie;Normandie;Alençon
+1016;33;Gironde;Nouvelle Aquitaine;Bordeaux;Saint-Jean-d'Illac
+1017;27;Eure;Normandie;Normandie;Les Andelys
+1018;94;Val-de-Marne;Ile-de-France;Créteil;Chennevières-sur-Marne
+1019;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Villeurbanne
+1020;85;Vendée;Pays-de-la-Loire;Nantes;Fontenay-le-Comte
+1021;93;Seine-Saint-Denis;Ile-de-France;Créteil;Aulnay-sous-Bois
+1022;77;Seine-et-Marne;Ile-de-France;Créteil;Melun
+1023;14;Calvados;Normandie;Normandie;Douvres-la-Délivrande
+1024;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Limonest
+1025;972;Martinique;Martinique;Martinique;Le Lamentin
+1026;37;Indre-et-Loire;Centre;Orléans-Tours;Amboise
+1027;62;Pas-de-Calais;Hauts-de-France;Lille;Le Portel
+1028;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 3e  Arrondissement
+1029;971;Guadeloupe;Guadeloupe;Guadeloupe;Pointe-Noire
+1030;75;Paris;Ile-de-France;Paris;Paris  3e  Arrondissement
+1031;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Anneyron
+1032;77;Seine-et-Marne;Ile-de-France;Créteil;Bussy-Saint-Georges
+1033;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Cholet
+1034;2B;Haute-Corse;Corse;Corse;Bastia
+1035;60;Oise;Hauts-de-France;Amiens;Breuil-le-Sec
+1036;95;Val-d'oise;Ile-de-France;Versailles;Cormeilles-en-Parisis
+1037;45;Loiret;Centre;Orléans-Tours;Nogent-sur-Vernisson
+1038;31;Haute-Garonne;Occitanie;Toulouse;Revel
+1039;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Autun
+1040;45;Loiret;Centre;Orléans-Tours;Saint-Jean-de-la-Ruelle
+1041;971;Guadeloupe;Guadeloupe;Guadeloupe;Baie-Mahault
+1042;31;Haute-Garonne;Occitanie;Toulouse;Tournefeuille
+1043;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Saint-Genis-Laval
+1044;28;Eure-et-Loir;Centre;Orléans-Tours;Hanches
+1045;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Pont-de-Chéruy
+1046;53;Mayenne;Pays-de-la-Loire;Nantes;Château-Gontier-sur-Mayenne
+1047;83;Var;Provence-Alpes-Côte d'Azur;Nice;La Seyne-sur-Mer
+1048;29;Finistère;Bretagne;Rennes;Concarneau
+1049;33;Gironde;Nouvelle Aquitaine;Bordeaux;Gradignan
+1050;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Saint-Chamas
+1051;81;Tarn;Occitanie;Toulouse;Albi
+1052;59;Nord;Hauts-de-France;Lille;Wattrelos
+1053;78;Yvelines;Ile-de-France;Versailles;Versailles
+1054;50;Manche;Normandie;Normandie;Avranches
+1055;28;Eure-et-Loir;Centre;Orléans-Tours;Lucé
+1056;33;Gironde;Nouvelle Aquitaine;Bordeaux;Le Haillan
+1057;91;Essonne;Ile-de-France;Versailles;Savigny-sur-Orge
+1058;94;Val-de-Marne;Ile-de-France;Créteil;Saint-Maur-des-Fossés
+1059;974;La Réunion;Réunion;La Réunion;Sainte-Suzanne
+1060;29;Finistère;Bretagne;Rennes;Brest
+1061;81;Tarn;Occitanie;Toulouse;Graulhet
+1062;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Surgères
+1063;67;Bas-Rhin;Grand-Est;Strasbourg;Bouxwiller
+1064;67;Bas-Rhin;Grand-Est;Strasbourg;Obernai
+1065;68;Haut-Rhin;Grand-Est;Strasbourg;Mulhouse
+1066;35;Ille-et-Vilaine;Bretagne;Rennes;Vitré
+1067;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Corenc
+1068;93;Seine-Saint-Denis;Ile-de-France;Créteil;Le Raincy
+1069;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Annecy
+1070;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Bourg-lès-Valence
+1071;30;Gard;Occitanie;Montpellier;Sommières
+1072;56;Morbihan;Bretagne;Rennes;Auray
+1073;92;Hauts-de-Seine;Ile-de-France;Versailles;Colombes
+1074;31;Haute-Garonne;Occitanie;Toulouse;Cugnaux
+1075;01;Ain;Auvergne-Rhône-Alpes;Lyon;Plateau d'Hauteville
+1076;36;Indre;Centre;Orléans-Tours;Le Blanc
+1077;62;Pas-de-Calais;Hauts-de-France;Lille;Wingles
+1078;32;Gers;Occitanie;Toulouse;Lectoure
+1079;93;Seine-Saint-Denis;Ile-de-France;Créteil;Vaujours
+1080;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille 16e  Arrondissement
+1081;62;Pas-de-Calais;Hauts-de-France;Lille;Tilloy-lès-Mofflaines
+1082;61;Orne;Normandie;Normandie;Pointel
+1083;95;Val-d'oise;Ile-de-France;Versailles;Montmorency
+1084;66;Pyrénées-orientales;Occitanie;Montpellier;Canet-en-Roussillon
+1085;22;Côtes-d'Armor;Bretagne;Rennes;Plouisy
+1086;41;Loir-et-Cher;Centre;Orléans-Tours;Blois
+1087;68;Haut-Rhin;Grand-Est;Strasbourg;Guebwiller
+1088;06;Alpes-Maritimes;Provence-Alpes-Côte d'Azur;Nice;Drap
+1089;50;Manche;Normandie;Normandie;Saint-Hilaire-du-Harcouët
+1090;973;Guyane;Guyane;Guyane;Cayenne
+1091;80;Somme;Hauts-de-France;Amiens;Abbeville
+1092;09;Ariège;Occitanie;Toulouse;Mirepoix
+1093;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Saint-Sébastien-sur-Loire
+1094;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Foulayronnes
+1095;61;Orne;Normandie;Normandie;Domfront en Poiraie
+1096;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  9e  Arrondissement
+1097;62;Pas-de-Calais;Hauts-de-France;Lille;Savy-Berlette
+1098;75;Paris;Ile-de-France;Paris;Paris  8e  Arrondissement
+1099;45;Loiret;Centre;Orléans-Tours;Villemandeur
+1100;75;Paris;Ile-de-France;Paris;Paris 10e  Arrondissement
+1101;31;Haute-Garonne;Occitanie;Toulouse;Blagnac
+1102;68;Haut-Rhin;Grand-Est;Strasbourg;Wittelsheim
+1103;09;Ariège;Occitanie;Toulouse;Saint-Girons
+1104;47;Lot-et-Garonne;Nouvelle Aquitaine;Bordeaux;Agen
+1105;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Ancenis-Saint-Géréon
+1106;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Vandoeuvre-lès-Nancy
+1107;62;Pas-de-Calais;Hauts-de-France;Lille;Beuvry
+1108;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Annemasse
+1109;52;Haute-Marne;Grand-Est;Reims;Chaumont
+1110;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Nancy
+1111;66;Pyrénées-orientales;Occitanie;Montpellier;Céret
+1112;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Laxou
+1113;09;Ariège;Occitanie;Toulouse;Pamiers
+1114;88;Vosges;Grand-Est;Nancy-Metz;Mirecourt
+1115;62;Pas-de-Calais;Hauts-de-France;Lille;Béthune
+1116;10;Aube;Grand-Est;Reims;Bar-sur-Seine
+1117;95;Val-d'oise;Ile-de-France;Versailles;Garges-lès-Gonesse
+1118;60;Oise;Hauts-de-France;Amiens;Montataire
+1119;974;La Réunion;Réunion;La Réunion;Saint-Benoît
+1120;35;Ille-et-Vilaine;Bretagne;Rennes;Dinard
+1121;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Cosnes-et-Romain
+1122;972;Martinique;Martinique;Martinique;Saint-Pierre
+1123;94;Val-de-Marne;Ile-de-France;Créteil;Limeil-Brévannes
+1124;77;Seine-et-Marne;Ile-de-France;Créteil;Magny-le-Hongre
+1125;82;Tarn-et-Garonne;Occitanie;Toulouse;Monteils
+1126;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Lagord
+1127;51;Marne;Grand-Est;Reims;Bétheny
+1128;89;Yonne;Bourgogne-Franche-Comté;Dijon;Gron
+1129;33;Gironde;Nouvelle Aquitaine;Bordeaux;Langon
+1130;76;Seine-Maritime;Normandie;Normandie;Forges-les-Eaux
+1131;19;Corrèze;Nouvelle Aquitaine;Limoges;Naves
+1132;92;Hauts-de-Seine;Ile-de-France;Versailles;Villeneuve-la-Garenne
+1133;83;Var;Provence-Alpes-Côte d'Azur;Nice;Fréjus
+1134;42;Loire;Auvergne-Rhône-Alpes;Lyon;Mornand-en-Forez
+1135;77;Seine-et-Marne;Ile-de-France;Créteil;Longperrier
+1136;33;Gironde;Nouvelle Aquitaine;Bordeaux;Bordeaux
+1137;77;Seine-et-Marne;Ile-de-France;Créteil;Pontault-Combault
+1138;44;Loire-Atlantique;Pays-de-la-Loire;Nantes;Carquefou
+1139;07;Ardèche;Auvergne-Rhône-Alpes;Grenoble;Le Teil
+1140;54;Meurthe-et-Moselle;Grand-Est;Nancy-Metz;Tomblaine
+1141;10;Aube;Grand-Est;Reims;Romilly-sur-Seine
+1142;34;Hérault;Occitanie;Montpellier;Lodève
+1143;02;Aisne;Hauts-de-France;Amiens;Chauny
+1144;56;Morbihan;Bretagne;Rennes;Questembert
+1145;53;Mayenne;Pays-de-la-Loire;Nantes;Evron
+1146;75;Paris;Ile-de-France;Paris;Paris  1er Arrondissement
+1147;80;Somme;Hauts-de-France;Amiens;Albert
+1148;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 6e  Arrondissement
+1149;31;Haute-Garonne;Occitanie;Toulouse;Gourdan-Polignan
+1150;33;Gironde;Nouvelle Aquitaine;Bordeaux;Talence
+1151;62;Pas-de-Calais;Hauts-de-France;Lille;Marquise
+1152;60;Oise;Hauts-de-France;Amiens;Pont-Sainte-Maxence
+1153;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Saint-Yrieix-la-Perche
+1154;99;Etranger;;Etranger;Papeete
+1155;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Digoin
+1156;29;Finistère;Bretagne;Rennes;Quimperlé
+1157;84;Vaucluse;Provence-Alpes-Côte d'Azur;Aix-Marseille;Avignon
+1158;60;Oise;Hauts-de-France;Amiens;Clermont
+1159;22;Côtes-d'Armor;Bretagne;Rennes;Paimpol
+1160;94;Val-de-Marne;Ile-de-France;Créteil;Créteil
+1161;99;Etranger;;Etranger;Madrid
+1162;94;Val-de-Marne;Ile-de-France;Créteil;Villeneuve-le-Roi
+1163;48;Lozère;Occitanie;Montpellier;Marvejols
+1164;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Poisy
+1165;93;Seine-Saint-Denis;Ile-de-France;Créteil;Bondy
+1166;80;Somme;Hauts-de-France;Amiens;Corbie
+1167;59;Nord;Hauts-de-France;Lille;Armentières
+1168;68;Haut-Rhin;Grand-Est;Strasbourg;Altkirch
+1169;76;Seine-Maritime;Normandie;Normandie;Le Petit-Quevilly
+1170;43;Haute-Loire;Auvergne-Rhône-Alpes;Clermont-Ferrand;Le Puy-en-Velay
+1171;94;Val-de-Marne;Ile-de-France;Créteil;Villeneuve-Saint-Georges
+1172;52;Haute-Marne;Grand-Est;Reims;Saint-Dizier
+1173;93;Seine-Saint-Denis;Ile-de-France;Créteil;La Courneuve
+1174;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Arles
+1175;87;Haute-Vienne;Nouvelle Aquitaine;Limoges;Magnac-Laval
+1176;26;Drôme;Auvergne-Rhône-Alpes;Grenoble;Valence
+1177;74;Haute-Savoie;Auvergne-Rhône-Alpes;Grenoble;Bonneville
+1178;60;Oise;Hauts-de-France;Amiens;Senlis
+1179;81;Tarn;Occitanie;Toulouse;Saint-Amans-Soult
+1180;27;Eure;Normandie;Normandie;Saint-Sébastien-de-Morsent
+1181;77;Seine-et-Marne;Ile-de-France;Créteil;Champagne-sur-Seine
+1182;01;Ain;Auvergne-Rhône-Alpes;Lyon;Bourg-en-Bresse
+1183;78;Yvelines;Ile-de-France;Versailles;Le Chesnay-Rocquencourt
+1184;22;Côtes-d'Armor;Bretagne;Rennes;Saint-Quay-Portrieux
+1185;60;Oise;Hauts-de-France;Amiens;Chantilly
+1186;11;Aude;Occitanie;Montpellier;Narbonne
+1187;40;Landes;Nouvelle Aquitaine;Bordeaux;Saint-Pierre-du-Mont
+1188;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Royan
+1189;77;Seine-et-Marne;Ile-de-France;Créteil;Meaux
+1190;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 8e  Arrondissement
+1191;86;Vienne;Nouvelle Aquitaine;Poitiers;Chasseneuil-du-Poitou
+1192;77;Seine-et-Marne;Ile-de-France;Créteil;Marne-la-Vallée
+1193;85;Vendée;Pays-de-la-Loire;Nantes;Les Herbiers
+1194;71;Saône-et-loire;Bourgogne-Franche-Comté;Dijon;Le Creusot
+1195;95;Val-d'oise;Ile-de-France;Versailles;Deuil-la-Barre
+1196;63;Puy-de-dôme;Auvergne-Rhône-Alpes;Clermont-Ferrand;Chamalières
+1197;18;Cher;Centre;Orléans-Tours;Vierzon
+1198;10;Aube;Grand-Est;Reims;Rosières-près-Troyes
+1199;17;Charente-Maritime;Nouvelle Aquitaine;Poitiers;Saint-Jean-d'Angély
+1200;01;Ain;Auvergne-Rhône-Alpes;Lyon;La Boisse
+1201;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Grenoble
+1202;50;Manche;Normandie;Normandie;Saint-Lô
+1203;35;Ille-et-Vilaine;Bretagne;Rennes;Le Rheu
+1204;76;Seine-Maritime;Normandie;Normandie;Yvetot
+1205;59;Nord;Hauts-de-France;Lille;Mons-en-Baroeul
+1206;83;Var;Provence-Alpes-Côte d'Azur;Nice;Saint-Maximin-la-Sainte-Baume
+1207;94;Val-de-Marne;Ile-de-France;Créteil;Ivry-sur-Seine
+1208;84;Vaucluse;Provence-Alpes-Côte d'Azur;Aix-Marseille;L'Isle-sur-la-Sorgue
+1209;45;Loiret;Centre;Orléans-Tours;Beaugency
+1210;95;Val-d'oise;Ile-de-France;Versailles;Gonesse
+1211;68;Haut-Rhin;Grand-Est;Strasbourg;Cernay
+1212;95;Val-d'oise;Ile-de-France;Versailles;Beaumont-sur-Oise
+1213;42;Loire;Auvergne-Rhône-Alpes;Lyon;Andrézieux-Bouthéon
+1214;34;Hérault;Occitanie;Montpellier;Lunel
+1215;73;Savoie;Auvergne-Rhône-Alpes;Grenoble;Le Bourget-du-Lac
+1216;72;Sarthe;Pays-de-la-Loire;Nantes;Saint-Saturnin
+1217;31;Haute-Garonne;Occitanie;Toulouse;Muret
+1218;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Châtillon-sur-Seine
+1219;76;Seine-Maritime;Normandie;Normandie;Dieppe
+1220;77;Seine-et-Marne;Ile-de-France;Créteil;Chailly-en-Brie
+1221;48;Lozère;Occitanie;Montpellier;Saint-Chély-d'Apcher
+1222;14;Calvados;Normandie;Normandie;Epron
+1223;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  4e  Arrondissement
+1224;972;Martinique;Martinique;Martinique;Ducos
+1225;46;Lot;Occitanie;Toulouse;Cahors
+1226;52;Haute-Marne;Grand-Est;Reims;Langres
+1227;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Vaulx-en-Velin
+1228;27;Eure;Normandie;Normandie;Vernon
+1229;59;Nord;Hauts-de-France;Lille;Villeneuve-d'Ascq
+1230;76;Seine-Maritime;Normandie;Normandie;Franqueville-Saint-Pierre
+1231;38;Isère;Auvergne-Rhône-Alpes;Grenoble;Seyssinet-Pariset
+1232;34;Hérault;Occitanie;Montpellier;Béziers
+1233;59;Nord;Hauts-de-France;Lille;Estaires
+1234;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;La Ciotat
+1235;91;Essonne;Ile-de-France;Versailles;Etampes
+1236;66;Pyrénées-orientales;Occitanie;Montpellier;Perpignan
+1237;68;Haut-Rhin;Grand-Est;Strasbourg;Saint-Louis
+1238;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Lyon 4e  Arrondissement
+1239;28;Eure-et-Loir;Centre;Orléans-Tours;Chartres
+1240;62;Pas-de-Calais;Hauts-de-France;Lille;Liévin
+1241;59;Nord;Hauts-de-France;Lille;Louvroil
+1242;77;Seine-et-Marne;Ile-de-France;Créteil;Samois-sur-Seine
+1243;69;Rhône;Auvergne-Rhône-Alpes;Lyon;Marcy-l'Etoile
+1244;94;Val-de-Marne;Ile-de-France;Créteil;Cachan
+1245;11;Aude;Occitanie;Montpellier;Souilhanels
+1246;53;Mayenne;Pays-de-la-Loire;Nantes;Laval
+1247;49;Maine-et-Loire;Pays-de-la-Loire;Nantes;Saumur
+1248;23;Creuse;Nouvelle Aquitaine;Limoges;Felletin
+1249;976;Mayotte;Mayotte;Mayotte;Mamoudzou
+1250;33;Gironde;Nouvelle Aquitaine;Bordeaux;Lesparre-Médoc
+1251;976;Mayotte;Mayotte;Mayotte;Sada
+1252;40;Landes;Nouvelle Aquitaine;Bordeaux;Peyrehorade
+1253;976;Mayotte;Mayotte;Mayotte;Pamandzi
+1254;60;Oise;Hauts-de-France;Amiens;Compiègne
+1255;976;Mayotte;Mayotte;Mayotte;Mtsamboro
+1256;77;Seine-et-Marne;Ile-de-France;Créteil;Serris
+1257;23;Creuse;Nouvelle Aquitaine;Limoges;Guéret
+1258;99;Etranger;;Etranger;Budapest
+1259;50;Manche;Normandie;Normandie;Les Loges-Marchis
+1260;95;Val-d'oise;Ile-de-France;Versailles;Saint-Ouen-l'Aumône
+1261;68;Haut-Rhin;Grand-Est;Strasbourg;Ingersheim
+1262;13;Bouches-du-Rhône;Provence-Alpes-Côte d'Azur;Aix-Marseille;Marseille  6e  Arrondissement
+1263;974;La Réunion;Réunion;La Réunion;Saint-Denis
+1264;77;Seine-et-Marne;Ile-de-France;Créteil;Tournan-en-Brie
+1265;80;Somme;Hauts-de-France;Amiens;Montdidier
+1266;90;Territoire de Belfort;Bourgogne-Franche-Comté;Besancon;Bavilliers
+1267;91;Essonne;Ile-de-France;Versailles;Juvisy-sur-Orge
+1268;12;Aveyron;Occitanie;Toulouse;Villefranche-de-Rouergue
+1269;67;Bas-Rhin;Grand-Est;Strasbourg;Wissembourg
+1270;45;Loiret;Centre;Orléans-Tours;Orléans
+1271;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Auxonne
+1272;95;Val-d'oise;Ile-de-France;Versailles;Argenteuil
+1273;24;Dordogne;Nouvelle Aquitaine;Bordeaux;Bergerac
+1274;987;Polynésie française;;Polynésie Française;Mahina
+1275;02;Aisne;Hauts-de-France;Amiens;Crézancy
+1276;30;Gard;Occitanie;Montpellier;Uzès
+1277;37;Indre-et-Loire;Centre;Orléans-Tours;Azay-le-Rideau
+1278;15;Cantal;Auvergne-Rhône-Alpes;Clermont-Ferrand;Mauriac
+1279;62;Pas-de-Calais;Hauts-de-France;Lille;Berck
+1280;95;Val-d'oise;Ile-de-France;Versailles;Margency
+1281;21;Côte-d'Or;Bourgogne-Franche-Comté;Dijon;Saint-Apollinaire
+1282;62;Pas-de-Calais;Hauts-de-France;Lille;Carvin
+1283;76;Seine-Maritime;Normandie;Normandie;Sotteville-lès-Rouen
+1284;93;Seine-Saint-Denis;Ile-de-France;Créteil;Saint-Ouen-sur-Seine

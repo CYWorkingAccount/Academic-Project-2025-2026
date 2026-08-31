@@ -1,0 +1,168 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Encodage & langue ──────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{polyglossia}
+\setmainlanguage{french}
+
+% ── Mise en page ───────────────────────────────────────────────────────────────
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.8cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ── Couleurs & graphiques ──────────────────────────────────────────────────────
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage{graphicx}
+
+\definecolor{mainblue}{HTML}{003B71}
+\definecolor{accentblue}{HTML}{0073C2}
+\definecolor{lightgray}{HTML}{F2F4F6}
+\definecolor{codebg}{HTML}{F0F4F8}
+\definecolor{coderule}{HTML}{CBD5E0}
+\definecolor{shadecolor}{RGB}{240,244,248}
+
+% ── Pandoc essentials ──────────────────────────────────────────────────────────
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}}
+
+$highlighting-macros$
+
+% ── Listes ─────────────────────────────────────────────────────────────────────
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=2pt}
+
+% ── Titres ─────────────────────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}
+  {\color{mainblue}\Large\bfseries}
+  {\thesection}{1em}{}[{\color{accentblue}\titlerule[1.5pt]}]
+\titlespacing{\section}{0pt}{18pt}{8pt}
+
+\titleformat{\subsection}
+  {\color{accentblue}\large\bfseries}
+  {\thesubsection}{1em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+\titleformat{\subsubsection}
+  {\color{accentblue}\normalsize\bfseries}
+  {\thesubsubsection}{1em}{}
+
+% ── Table des matières ─────────────────────────────────────────────────────────
+\usepackage{tocloft}
+\renewcommand{\cftsecfont}{\color{mainblue}\bfseries}
+\renewcommand{\cftsubsecfont}{\color{accentblue}}
+\renewcommand{\cftsecpagefont}{\color{mainblue}\bfseries}
+\renewcommand{\cftsubsecpagefont}{\color{accentblue}}
+\setlength{\cftbeforesecskip}{4pt}
+
+% ── Hyperliens ─────────────────────────────────────────────────────────────────
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=mainblue,
+  urlcolor=accentblue,
+  citecolor=accentblue,
+  pdftitle={Rapport BDD SAE},
+  pdfauthor={CY}
+}
+
+% ── Blocs de citation ──────────────────────────────────────────────────────────
+\usepackage{framed}
+\usepackage{mdframed}
+\newmdenv[
+  backgroundcolor=lightgray,
+  linecolor=accentblue,
+  linewidth=3pt,
+  topline=false,
+  bottomline=false,
+  rightline=false,
+  skipabove=6pt,
+  skipbelow=6pt,
+  innerleftmargin=12pt,
+  innerrightmargin=8pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt
+]{quoteblock}
+
+\renewenvironment{quote}
+  {\begin{quoteblock}\small\color{black!80}}
+  {\end{quoteblock}}
+
+% ── Code ───────────────────────────────────────────────────────────────────────
+\usepackage{fancyvrb}
+
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{%
+  \colorbox{codebg}{\small\oldtexttt{#1}}%
+}
+
+% ── En-têtes et pieds de page ──────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{mainblue}\textbf{Rapport BDD SAE}}
+\fancyhead[R]{\small\color{gray}CY}
+\fancyfoot[C]{\small\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{accentblue}\leaders\hrule height \headrulewidth\hfill}}
+
+% ── Page de titre ──────────────────────────────────────────────────────────────
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \newgeometry{top=1cm,bottom=2cm,left=2.5cm,right=2.5cm}
+
+    \begin{center}
+      \includegraphics[width=6cm]{img/logoiut}
+    \end{center}
+
+    \vspace{0.5cm}
+    {\color{accentblue}\rule{\linewidth}{1.5pt}}
+    \vspace{1cm}
+
+    \begin{center}
+      {\color{mainblue}\Huge\bfseries Rapport SAE 204}\\[0.4cm]
+      {\color{accentblue}\Large\bfseries Bases de données — ParcourSup}\\[0.3cm]
+      {\color{gray}\large Analyse, importation et requêtage de données ouvertes}
+    \end{center}
+
+    \vspace{1cm}
+    {\color{accentblue}\rule{\linewidth}{0.5pt}}
+    \vspace{1cm}
+
+    \begin{center}
+      {\large\bfseries Auteur}\\[0.4cm]
+      \large CY
+    \end{center}
+
+    \vfill
+
+    \begin{center}
+      {\color{mainblue}\bfseries IUT de Lille --- Université de Lille}\\[0.2cm]
+      {\color{gray}Département Informatique}\\[0.4cm]
+      {\large \today}
+    \end{center}
+
+    {\color{accentblue}\rule{\linewidth}{1.5pt}}
+    \restoregeometry
+  \end{titlepage}
+}
+
+% ── Document ───────────────────────────────────────────────────────────────────
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents
+\newpage
+
+$body$
+
+\end{document}
