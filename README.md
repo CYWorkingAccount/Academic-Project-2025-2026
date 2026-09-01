@@ -57,5 +57,5 @@ This project documents the setup of a Debian virtual machine configured via scri
 > *Chaque projet a été réalisé en équipe. Par souci de confidentialité et de respect de leur vie privée, les noms de mes camarades ne sont pas publiés.*  
 > *All projects were completed as team efforts. Peer names remain undisclosed for privacy reasons.*  
 >  
-> *Ce dépôt est mis à jour au fil de la finalisation des nouveaux .*  
+> *Ce dépôt est mis à jour au fil de la finalisation des nouveaux projets.*  
 > *This repository is updated regularly as new projects are completed.*
